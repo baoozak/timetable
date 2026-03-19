@@ -1,0 +1,11 @@
+# HBuilderX 项目忽略文件
+.hbuilderx/
+unpackage/
+项目改进建议.md
+
+# 静态资源处理
+static/*
+!static/logo.png
+!static/logo.jpg
+!static/logo.jpeg
+!static/logo.svg

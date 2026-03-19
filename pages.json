@@ -1,0 +1,67 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "我的课表"
+      }
+    },
+    {
+      "path": "pages/import/import",
+      "style": {
+        "navigationBarTitleText": "导入课表",
+        "navigationBarBackgroundColor": "#0891B2",
+        "navigationBarTextStyle": "white",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "导入课表",
+                "fontSize": "14",
+                "color": "#FFFFFF",
+                "background": "#22C55E",
+                "width": "90px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/schedule/schedule",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "编辑时间表"
+      }
+    },
+    {
+      "path": "pages/profile/list",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "我的课表"
+      }
+    },
+    {
+      "path": "pages/profile/create",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "新建课表"
+      }
+    },
+    {
+      "path": "pages/profile/edit",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "编辑课表"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "课表",
+    "navigationBarBackgroundColor": "#4A6CF7",
+    "backgroundColor": "#F5F6FA"
+  },
+  "uniIdRouter": {}
+}
