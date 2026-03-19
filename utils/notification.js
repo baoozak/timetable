@@ -1,12 +1,20 @@
 /**
  * 原生安卓常驻通知栏模块
  * 利用 plus.android 调用底层 NotificationManager
+ * 支持后台保活：WakeLock + 原生 Handler 定时器
  */
 
 let notificationManager = null;
 let notifyId = 10086; // 固定ID，保证覆盖更新而不是重复创建
 let channelId = "school_timetable_channel";
 let channelName = "下节啥课提醒";
+
+// ===== 后台保活相关变量 =====
+let wakeLock = null;       // CPU 唤醒锁
+let nativeHandler = null;  // 原生 Handler（替代 JS setInterval）
+let nativeRunnable = null; // 原生 Runnable
+let updateCallback = null; // 存储 JS 回调函数
+let isTimerRunning = false;
 
 /**
  * 初始化通知渠道 (Android 8.0+)
@@ -140,6 +148,166 @@ export function hideNotification() {
     notificationManager.cancel(notifyId);
   } catch (e) {
     console.error("取消通知失败:", e);
+  }
+  // #endif
+}
+
+// =============================================
+// ===== 后台保活：WakeLock + 原生定时器 =====
+// =============================================
+
+/**
+ * 获取 CPU 唤醒锁，防止系统休眠后 JS 停止执行
+ */
+function acquireWakeLock() {
+  // #ifdef APP-PLUS
+  if (plus.os.name !== "Android") return;
+  if (wakeLock) return; // 已持有
+
+  try {
+    const PowerManager = plus.android.importClass("android.os.PowerManager");
+    const Context = plus.android.runtimeMainActivity();
+    const pm = Context.getSystemService(Context.POWER_SERVICE);
+    // PARTIAL_WAKE_LOCK: 保持 CPU 运行，屏幕和键盘背光可关闭
+    wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "timetable:bg_notify");
+    wakeLock.setReferenceCounted(false);
+    wakeLock.acquire();
+    console.log("[保活] WakeLock 已获取");
+  } catch (e) {
+    console.error("[保活] 获取 WakeLock 失败:", e);
+  }
+  // #endif
+}
+
+/**
+ * 释放 CPU 唤醒锁
+ */
+function releaseWakeLock() {
+  // #ifdef APP-PLUS
+  if (wakeLock) {
+    try {
+      wakeLock.release();
+      console.log("[保活] WakeLock 已释放");
+    } catch (e) {
+      console.error("[保活] 释放 WakeLock 失败:", e);
+    }
+    wakeLock = null;
+  }
+  // #endif
+}
+
+/**
+ * 启动原生后台定时器
+ * 使用 Android Handler + Runnable 代替 JS setInterval
+ * Handler 运行在 Android 主线程 Looper 上，比 WebView 的 setInterval 更可靠
+ *
+ * @param {Function} callback - 每次触发时执行的回调函数（即 updateNotification）
+ * @param {Number} intervalMs - 间隔毫秒数，默认 60000（1分钟）
+ */
+export function startBackgroundTimer(callback, intervalMs = 60000) {
+  // #ifdef APP-PLUS
+  if (plus.os.name !== "Android") return;
+  if (isTimerRunning) return; // 防止重复启动
+
+  updateCallback = callback;
+
+  try {
+    // 1. 获取 WakeLock，防止 CPU 休眠
+    acquireWakeLock();
+
+    // 2. 创建原生 Handler（绑定主线程 Looper）
+    const Handler = plus.android.importClass("android.os.Handler");
+    const Looper = plus.android.importClass("android.os.Looper");
+    nativeHandler = new Handler(Looper.getMainLooper());
+
+    // 3. 创建 Runnable，作为定时任务的载体
+    nativeRunnable = plus.android.implements("java.lang.Runnable", {
+      run: function () {
+        try {
+          // 执行通知更新回调
+          if (updateCallback) {
+            updateCallback();
+          }
+        } catch (e) {
+          console.error("[保活] 定时回调执行失败:", e);
+        }
+        // 重新调度自身，形成循环
+        if (isTimerRunning && nativeHandler && nativeRunnable) {
+          nativeHandler.postDelayed(nativeRunnable, intervalMs);
+        }
+      },
+    });
+
+    // 4. 启动第一次调度
+    isTimerRunning = true;
+    nativeHandler.postDelayed(nativeRunnable, intervalMs);
+    console.log("[保活] 原生定时器已启动，间隔:", intervalMs, "ms");
+  } catch (e) {
+    console.error("[保活] 启动原生定时器失败:", e);
+    // 回退到 JS setInterval
+    isTimerRunning = true;
+    console.log("[保活] 回退到 JS setInterval");
+  }
+  // #endif
+}
+
+/**
+ * 停止原生后台定时器并释放资源
+ */
+export function stopBackgroundTimer() {
+  // #ifdef APP-PLUS
+  isTimerRunning = false;
+
+  if (nativeHandler && nativeRunnable) {
+    try {
+      nativeHandler.removeCallbacks(nativeRunnable);
+      console.log("[保活] 原生定时器已停止");
+    } catch (e) {
+      console.error("[保活] 停止定时器失败:", e);
+    }
+  }
+  nativeHandler = null;
+  nativeRunnable = null;
+  updateCallback = null;
+
+  releaseWakeLock();
+  // #endif
+}
+
+/**
+ * 请求忽略电池优化（针对 Android 6.0+ Doze 模式）
+ * 会弹出系统对话框询问用户，只需请求一次
+ */
+export function requestIgnoreBatteryOptimization() {
+  // #ifdef APP-PLUS
+  if (plus.os.name !== "Android") return;
+
+  try {
+    const Build = plus.android.importClass("android.os.Build");
+    if (Build.VERSION.SDK_INT < 23) return; // Android 6.0 以下不需要
+
+    const Context = plus.android.runtimeMainActivity();
+    const PowerManager = plus.android.importClass("android.os.PowerManager");
+    const pm = Context.getSystemService(Context.POWER_SERVICE);
+    const packageName = Context.getPackageName();
+
+    // 检查是否已经在白名单中
+    if (pm.isIgnoringBatteryOptimizations(packageName)) {
+      console.log("[保活] 已在电池优化白名单中");
+      return;
+    }
+
+    // 请求加入白名单
+    const Intent = plus.android.importClass("android.content.Intent");
+    const Settings = plus.android.importClass("android.provider.Settings");
+    const Uri = plus.android.importClass("android.net.Uri");
+
+    const intent = new Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
+    intent.setData(Uri.parse("package:" + packageName));
+    Context.startActivity(intent);
+    console.log("[保活] 已请求忽略电池优化");
+  } catch (e) {
+    console.error("[保活] 请求电池优化白名单失败:", e);
   }
   // #endif
 }

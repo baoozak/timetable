@@ -10,7 +10,7 @@
 
 - 支持同时维护**多套独立课表**（如"大三下"、"大四上"），自由切换
 - 每个课表独立存储课程数据、学期起始日期和作息时间
-- 课表支持**新建 / 编辑 / 删除 / 切换**等完整生命周期管理
+- 课表支持**新建 / 编辑 / 删除 / 切换 / 重新导入**等完整生命周期管理
 
 ### 📥 教务系统导入
 
@@ -42,7 +42,8 @@
   - 🎉 **今天没课** → 轻松提示
   - ✨ **今天的课上完了** → 辛苦提示
   - 🎓 **本学期课程已结束** → 精确到天级别的结课判断
-- 每分钟自动轮询刷新通知内容
+- 每分钟自动刷新通知内容（基于 Android 原生 Handler 定时器 + WakeLock 保活，后台也能持续更新）
+- 支持请求忽略电池优化，减少 Doze 模式对后台更新的影响
 
 ---
 
@@ -101,7 +102,7 @@ school-timetable/
 1. **克隆项目**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/baoozak/timetable.git
    cd school-timetable
    ```
 
@@ -147,6 +148,7 @@ school-timetable/
 
 - **切换课表**：点击课表卡片即可切换（正在使用的课表带有 cyan 色边框标记）
 - **编辑课表**：点击 `编辑` 按钮，可修改课表名称和开学日期
+- **重新导入**：点击 `重新导入` 按钮，可重新从教务系统抓取课程数据覆盖当前课表（新学期换课时使用）
 - **删除课表**：点击 `删除` 按钮，确认后删除（不可恢复）
 
 ### 自定义作息时间
@@ -275,12 +277,17 @@ UI 风格要点：
 | `upcoming` | 下节课即将开始（含倒计时） |
 | `finished` | 今天所有课已上完           |
 
-### `utils/notification.js` — Android 原生通知
+### `utils/notification.js` — Android 原生通知 + 后台保活
 
 基于 `plus.android` 桥接调用：
 
-- `showPersistentNotification(title, content, subText)` — 显示/更新常驻通知
-- `hideNotification()` — 隐藏通知
+| 函数                                               | 说明                                      |
+| -------------------------------------------------- | ----------------------------------------- |
+| `showPersistentNotification(title, content, subText)` | 显示/更新常驻通知                         |
+| `hideNotification()`                                | 隐藏通知                                  |
+| `startBackgroundTimer(callback, intervalMs)`         | 启动原生 Handler 定时器（后台保活）        |
+| `stopBackgroundTimer()`                             | 停止定时器并释放资源                       |
+| `requestIgnoreBatteryOptimization()`                | 请求忽略电池优化（Doze 模式白名单）        |
 
 通知特性：
 
@@ -288,11 +295,23 @@ UI 风格要点：
 - 常驻模式：`setOngoing(true)`，不可滑动清除
 - 点击跳转回 App
 
+后台保活机制：
+
+- **WakeLock**：`PARTIAL_WAKE_LOCK` 防止 CPU 休眠，确保后台定时器正常运行
+- **原生 Handler 定时器**：替代不可靠的 JS `setInterval`，基于 Android 主线程 Looper 调度
+- **电池优化白名单**：请求系统将应用加入 Doze 模式白名单，减少后台限制
+
 ---
 
 ## 📝 更新日志
 
-### v1.1.3（当前版本）
+### v1.1.4（当前版本）
+
+- ✅ 新增课表**重新导入**功能，支持对已有课表重新从教务系统抓取课程数据
+- ✅ 通知栏后台保活：使用 Android 原生 Handler 定时器 + WakeLock 替代 JS setInterval
+- ✅ 支持请求忽略电池优化，改善 Doze 模式下的通知更新
+
+### v1.1.3
 
 - ✅ 支持多课表管理（新建 / 切换 / 编辑 / 删除）
 - ✅ 移除"标准版"作息预设，仅保留冬令时 / 夏令时

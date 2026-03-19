@@ -2,7 +2,7 @@
     "name" : "下节啥课",
     "appid" : "__UNI__1F19F18",
     "description" : "",
-    "versionName" : "1.1.3",
+    "versionName" : "1.1.4",
     "versionCode" : "100",
     "transformPx" : false,
     "app-plus" : {
@@ -34,7 +34,9 @@
                     "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
                     "<uses-feature android:name=\"android.hardware.camera\"/>",
                     "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
-                    "<uses-permission android:name=\"android.permission.POST_NOTIFICATIONS\"/>"
+                    "<uses-permission android:name=\"android.permission.POST_NOTIFICATIONS\"/>",
+                    "<uses-permission android:name=\"android.permission.FOREGROUND_SERVICE\"/>",
+                    "<uses-permission android:name=\"android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS\"/>"
                 ]
             },
             "ios" : {

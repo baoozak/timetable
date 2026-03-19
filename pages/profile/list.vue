@@ -37,6 +37,9 @@
             <view class="action-btn edit-btn clickable" @tap.stop="handleEdit(p)">
               <text class="action-icon">编辑</text>
             </view>
+            <view class="action-btn reimport-btn clickable" @tap.stop="handleReimport(p)">
+              <text class="action-icon reimport-text">重新导入</text>
+            </view>
             <view class="action-btn delete-btn clickable" @tap.stop="handleDelete(p)">
               <text class="action-icon delete-text">删除</text>
             </view>
@@ -113,6 +116,25 @@ export default {
     handleEdit(profile) {
       uni.navigateTo({
         url: `/pages/profile/edit?id=${profile.id}`,
+      });
+    },
+    // 重新导入课表
+    handleReimport(profile) {
+      uni.showModal({
+        title: "重新导入",
+        content: `确定要重新导入课表 "${profile.name}" 的课程数据吗？导入后将覆盖当前课程。`,
+        confirmColor: "#0891B2",
+        success: (res) => {
+          if (res.confirm) {
+            // 先切换到目标课表
+            setActiveProfileId(profile.id);
+            this.activeId = profile.id;
+            // 跳转到导入页面
+            uni.navigateTo({
+              url: "/pages/import/import",
+            });
+          }
+        },
       });
     },
     handleDelete(profile) {
@@ -305,6 +327,10 @@ export default {
   background: rgba(8, 145, 178, 0.1);
 }
 
+.reimport-btn {
+  background: rgba(34, 197, 94, 0.1);
+}
+
 .delete-btn {
   background: rgba(239, 68, 68, 0.1);
 }
@@ -317,6 +343,10 @@ export default {
 
 .delete-text {
   color: var(--color-danger);
+}
+
+.reimport-text {
+  color: #16a34a;
 }
 
 /* Bottom Action Fixed */

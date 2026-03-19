@@ -1,16 +1,27 @@
 <script>
 import { getCourses, getSettings } from '@/utils/storage.js'
 import { getNextClassInfo } from '@/utils/next-class.js'
-import { showPersistentNotification, hideNotification } from '@/utils/notification.js'
+import {
+	showPersistentNotification,
+	hideNotification,
+	startBackgroundTimer,
+	stopBackgroundTimer,
+	requestIgnoreBatteryOptimization
+} from '@/utils/notification.js'
 import { calculateCurrentWeek } from '@/utils/time.js'
 
 export default {
 	globalData: {
-		notificationTimer: null
+		timerStarted: false
 	},
 	onLaunch: function () {
 		console.log('App Launch')
 		this.startNotificationService()
+
+		// 首次启动时请求忽略电池优化（系统弹窗，只弹一次）
+		setTimeout(() => {
+			requestIgnoreBatteryOptimization()
+		}, 3000)
 	},
 	onShow: function () {
 		console.log('App Show')
@@ -19,14 +30,19 @@ export default {
 	},
 	onHide: function () {
 		console.log('App Hide')
+		// 后台时不停止定时器，让它继续更新通知
 	},
 	methods: {
 		startNotificationService() {
+			// 立即执行一次
 			this.updateNotification()
-			// 每分钟轮询更新一次通知栏剩余时间
-			this.globalData.notificationTimer = setInterval(() => {
-				this.updateNotification()
-			}, 60000)
+			// 使用原生 Handler 定时器，每 60 秒触发一次（后台也有效）
+			if (!this.globalData.timerStarted) {
+				startBackgroundTimer(() => {
+					this.updateNotification()
+				}, 60000)
+				this.globalData.timerStarted = true
+			}
 		},
 		updateNotification() {
 			const settings = getSettings()
