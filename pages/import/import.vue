@@ -25,14 +25,24 @@
 <script>
 import { saveCourses } from "@/utils/storage.js";
 import { parseWeeks } from "@/utils/parser.js";
+import { getAdapter } from "@/utils/parsers/index.js";
 
 export default {
   data() {
     return {
-      webviewUrl: "https://vpn.tzc.edu.cn/",
+      webviewUrl: "",
+      adapterType: "",
       importing: false,
-      tipText: "登录后进入课表页面，点右上角「导入课表」按钮",
+      tipText: "登录后进入教务系统页面，点右上角「导入课表」按钮",
     };
+  },
+  onLoad(options) {
+    if (options.url) {
+      this.webviewUrl = decodeURIComponent(options.url);
+    } else {
+      this.webviewUrl = "https://vpn.tzc.edu.cn/";
+    }
+    this.adapterType = options.type || "zhengfang_new";
   },
   // 监听原生导航栏按钮点击
   onNavigationBarButtonTap() {
@@ -73,93 +83,14 @@ export default {
       };
       wv.addEventListener("titleUpdate", onTitle);
 
-      // 注入 JS：获取课表数据，通过 document.title 传回
-      const jsCode = `
-                (function() {
-                    try {
-                        var xnm = '';
-                        var xqm = '';
-                        var xnmSelect = document.getElementById('xnm');
-                        var xqmSelect = document.getElementById('xqm');
-                        if (xnmSelect) xnm = xnmSelect.value;
-                        if (xqmSelect) xqm = xqmSelect.value;
-
-                        if (!xnm) {
-                            var now = new Date();
-                            var year = now.getFullYear();
-                            var month = now.getMonth() + 1;
-                            if (month >= 9) { xnm = year.toString(); xqm = '3'; }
-                            else if (month >= 2) { xnm = (year - 1).toString(); xqm = '12'; }
-                            else { xnm = (year - 1).toString(); xqm = '3'; }
-                        }
-
-                        // 检查是否在教务系统页面
-                        if (window.location.href.indexOf('jwglxt') === -1) {
-                            document.title = 'KEBIAO_ERR:请先进入教务系统的课表查询页面后再点击导入';
-                            return;
-                        }
-
-                        // 构建 API 路径（兼容 VPN 代理 URL 结构）
-                        var basePath = window.location.pathname;
-                        var kbcxIdx = basePath.indexOf('/kbcx/');
-                        var apiPath = '';
-                        if (kbcxIdx !== -1) {
-                            apiPath = basePath.substring(0, kbcxIdx) + '/kbcx/xskbcx_cxXsgrkb.html?gnmkdm=N253508';
-                        } else {
-                            var jwIdx = basePath.indexOf('/jwglxt/');
-                            if (jwIdx !== -1) {
-                                apiPath = basePath.substring(0, jwIdx) + '/jwglxt/kbcx/xskbcx_cxXsgrkb.html?gnmkdm=N253508';
-                            } else {
-                                apiPath = '/jwglxt/kbcx/xskbcx_cxXsgrkb.html?gnmkdm=N253508';
-                            }
-                        }
-
-                        var xhr = new XMLHttpRequest();
-                        xhr.open('POST', apiPath, true);
-                        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-                        xhr.withCredentials = true;
-                        xhr.onreadystatechange = function() {
-                            if (xhr.readyState === 4) {
-                                if (xhr.status === 200) {
-                                    // 在 WebView 内解析，只传紧凑数据
-                                    try {
-                                        var resp = JSON.parse(xhr.responseText);
-                                        var list = resp.kbList || [];
-                                        if (list.length === 0) {
-                                            document.title = 'KEBIAO_ERR:未查询到课程数据';
-                                            return;
-                                        }
-                                        // 紧凑格式: name~day~jcs~room~weeks~teacher 用 | 分隔课程
-                                        var parts = [];
-                                        for (var i = 0; i < list.length; i++) {
-                                            var c = list[i];
-                                            parts.push([
-                                                (c.kcmc || '').replace(/[~|]/g, ' '),
-                                                c.xqj || '',
-                                                (c.jcs || '').replace(/[~|]/g, ' '),
-                                                (c.cdmc || '').replace(/[~|]/g, ' '),
-                                                (c.zcd || '').replace(/[~|]/g, ' '),
-                                                (c.xm || '').replace(/[~|]/g, ' ')
-                                            ].join('~'));
-                                        }
-                                        document.title = 'KEBIAO_OK:' + parts.join('|');
-                                    } catch(pe) {
-                                        document.title = 'KEBIAO_ERR:数据解析失败 ' + pe.message;
-                                    }
-                                } else {
-                                    document.title = 'KEBIAO_ERR:请求失败 (HTTP ' + xhr.status + ')';
-                                }
-                            }
-                        };
-                        xhr.onerror = function() {
-                            document.title = 'KEBIAO_ERR:网络请求失败';
-                        };
-                        xhr.send('xnm=' + xnm + '&xqm=' + xqm);
-                    } catch(e) {
-                        document.title = 'KEBIAO_ERR:' + e.message;
-                    }
-                })();
-            `;
+      // 注入 JS：从适配器获取 provider
+      const adapter = getAdapter(this.adapterType);
+      if (!adapter) {
+          this.importing = false;
+          uni.showToast({ title: "未找到对应的解析器", icon: "none" });
+          return;
+      }
+      const jsCode = adapter.provider;
       wv.evalJS(jsCode);
       // #endif
 
@@ -172,44 +103,18 @@ export default {
     // 兼容旧的 onMessage
     onMessage(e) { },
 
-    // 导入成功：解析紧凑格式数据
+    // 导入成功：调用适配器的解析器
     handleImportSuccess(compactStr) {
       try {
-        // 紧凑格式: name~day~jcs~room~weeks~teacher  用 | 分隔
-        const items = compactStr.split("|");
-        const courses = [];
-        let id = 0;
-        for (const item of items) {
-          const parts = item.split("~");
-          if (parts.length < 3) continue;
-          const [name, dayStr, jcsStr, room, weeksStr, teacher] = parts;
-          const day = parseInt(dayStr);
-          if (!day || day < 1 || day > 7) continue;
-
-          // 解析节次 "1-2" -> startNode=1, endNode=2
-          const jcsMatch = jcsStr.match(/(\d+)-(\d+)/);
-          if (!jcsMatch) continue;
-          const startNode = parseInt(jcsMatch[1]);
-          const endNode = parseInt(jcsMatch[2]);
-
-          // 解析周次
-          const weeks = parseWeeks(weeksStr || "");
-
-          courses.push({
-            id: id++,
-            name: name || "",
-            day,
-            startNode,
-            endNode,
-            room: room || "",
-            teacher: teacher || "",
-            weeks,
-            weeksText: weeksStr || "",
-          });
+        const adapter = getAdapter(this.adapterType);
+        if (!adapter || typeof adapter.parser !== 'function') {
+            throw new Error("解析器不可用");
         }
+        
+        const courses = adapter.parser(compactStr);
 
-        if (courses.length === 0) {
-          uni.showToast({ title: "未解析到课程", icon: "none" });
+        if (!courses || courses.length === 0) {
+          uni.showToast({ title: "未解析到课程或格式不支持", icon: "none" });
           this.importing = false;
           return;
         }

@@ -8,6 +8,14 @@
       }
     },
     {
+      "path": "pages/import/select-school",
+      "style": {
+        "navigationBarTitleText": "选择学校",
+        "navigationBarBackgroundColor": "#0891B2",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
       "path": "pages/import/import",
       "style": {
         "navigationBarTitleText": "导入课表",

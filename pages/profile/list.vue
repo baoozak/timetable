@@ -131,7 +131,7 @@ export default {
             this.activeId = profile.id;
             // 跳转到导入页面
             uni.navigateTo({
-              url: "/pages/import/import",
+              url: "/pages/import/select-school",
             });
           }
         },

@@ -354,7 +354,7 @@ export default {
 				uni.navigateTo({ url: "/pages/profile/create" });
 			} else {
 				// 有当前课表，正常导入
-				uni.navigateTo({ url: "/pages/import/import" });
+				uni.navigateTo({ url: "/pages/import/select-school" });
 			}
 		},
 

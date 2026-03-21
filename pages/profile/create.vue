@@ -167,7 +167,7 @@ export default {
       // 3. 跳转到导入页 (注意：不能用 navigateBack 因为要走新流程)
       setTimeout(() => {
         uni.redirectTo({
-          url: "/pages/import/import",
+          url: "/pages/import/select-school",
         });
       }, 600);
     },
