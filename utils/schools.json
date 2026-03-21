@@ -60,12 +60,6 @@
     "url": "http://jwts.hit.edu.cn/"
   },
   {
-    "id": "scu",
-    "name": "四川大学",
-    "type": "urp",
-    "url": "http://zhjw.scu.edu.cn/"
-  },
-  {
     "id": "jlu",
     "name": "吉林大学",
     "type": "kingosoft",
@@ -276,30 +270,6 @@
     "url": "https://jw.afc.edu.cn/jwglxt/xtgl/login_slogin.html"
   },
   {
-    "id": "u_e3380a50",
-    "name": "安阳工学院",
-    "type": "kingosoft",
-    "url": "http://jwgl.ayit.edu.cn/"
-  },
-  {
-    "id": "u_11e81c4b",
-    "name": "安阳幼儿师范高等专科学校",
-    "type": "kingosoft",
-    "url": "https://jw.ayyz.edu.cn/ayyzjw/cas/login.action"
-  },
-  {
-    "id": "u_f786190a",
-    "name": "安阳师范学院",
-    "type": "kingosoft",
-    "url": "https://authserver.aynu.edu.cn/authserver/login?service=https%3A%2F%2Fnginx.aynu.edu.cn%2Fwengine-auth%2flogin%3Fcas_login%3Dtrue"
-  },
-  {
-    "id": "u_d5f2e5b2",
-    "name": "安阳学院",
-    "type": "kingosoft",
-    "url": "http://cas.ayxy.edu.cn/cas/login?service=http%3A%2F%2Fjw.ayxy.edu.cn%2Fjxcjcaslogin"
-  },
-  {
     "id": "u_faeb732e",
     "name": "安徽外国语学院",
     "type": "zhengfang_new",
@@ -322,24 +292,6 @@
     "name": "安顺学院",
     "type": "zhengfang_new",
     "url": "http://222.198.248.142:8080/asxyjw/cas/login.action"
-  },
-  {
-    "id": "u_5962ac8d",
-    "name": "安庆职业技术学院",
-    "type": "kingosoft",
-    "url": "http://jw.aqvtc.edu.cn/aqzyjw/cas/login.action"
-  },
-  {
-    "id": "u_0f58842c",
-    "name": "安徽文达信息工程学院",
-    "type": "kingosoft",
-    "url": "http://218.22.58.76:2346/cas/login.action"
-  },
-  {
-    "id": "u_c788c85b",
-    "name": "安徽城市管理职业学院",
-    "type": "kingosoft",
-    "url": "https://jw.cua.edu.cn/ahcsjw/cas/login.action"
   },
   {
     "id": "u_17fa8e27",
@@ -432,22 +384,10 @@
     "url": "http://canvardjw.yinghuaonline.com/bjgsdxjhxy/"
   },
   {
-    "id": "u_4ad256b2",
-    "name": "北京师范大学",
-    "type": "kingosoft",
-    "url": "http://zyfw.prsc.bnu.edu.cn/cas/login.action"
-  },
-  {
     "id": "u_2d2bab13",
     "name": "北京师范大学珠海分校",
     "type": "zhengfang_new",
     "url": "http://es.bnuz.edu.cn/"
-  },
-  {
-    "id": "u_c015655f",
-    "name": "北京师范大学珠海校区",
-    "type": "kingosoft",
-    "url": "https://www.bnuzh.edu.cn"
   },
   {
     "id": "u_b896ec41",
@@ -534,22 +474,10 @@
     "url": "http://jw.zcst.edu.cn/xtgl/login_slogin.html"
   },
   {
-    "id": "u_58672553",
-    "name": "百色学院",
-    "type": "kingosoft",
-    "url": "http://jwgl.bsuc.edu.cn/bsxyjw/cas/login.action"
-  },
-  {
     "id": "u_0dd4d452",
     "name": "北海职业学院",
     "type": "zhengfang_new",
     "url": "https://cas.bhzyxy.net/lyuapServer/login?service=http://portal.bhzyxy.net:4106/shiro-cas"
-  },
-  {
-    "id": "u_95bba8a2",
-    "name": "北京邮电大学世纪学院",
-    "type": "urp",
-    "url": "http://10.1.1.102/student/courseSelect/thisSemesterCurriculum/index"
   },
   {
     "id": "u_851871a6",
@@ -604,12 +532,6 @@
     "name": "北海康养职业学院",
     "type": "zhengfang_new",
     "url": "http://cas.bhkyxy.com:9080/cas/login?service=http%3A%2F%2Fcas.bhkyxy.com%3A9085%2Fpersonal-center"
-  },
-  {
-    "id": "u_7efa3bda",
-    "name": "蚌埠学院",
-    "type": "kingosoft",
-    "url": "http://222.207.13.101/bbxyjw/"
   },
   {
     "id": "u_7c508930",
@@ -670,24 +592,6 @@
     "name": "北京科技职业大学",
     "type": "zhengfang_new",
     "url": "https://e.besti.edu.cn/login#/login"
-  },
-  {
-    "id": "u_ddd9bb5b",
-    "name": "北京师范大学（北京校区）",
-    "type": "kingosoft",
-    "url": "https://onevpn.bnu.edu.cn/https/77726476706e69737468656265737421f3f652d2253e7d1e7b0c9ce29b5b/cas/login?service=https%3A%2F%2Fonevpn.bnu.edu.cn%2Flogin%3Fcas_login%3Dtrue#"
-  },
-  {
-    "id": "u_c9e10c0d",
-    "name": "北京师范大学（珠海校区）",
-    "type": "kingosoft",
-    "url": "https://onevpn.bnu.edu.cn/https/77726476706e69737468656265737421f3f652d2253e7d1e7b0c9ce29b5b/cas/login?service=https%3A%2F%2Fonevpn.bnu.edu.cn%2Flogin%3Fcas_login%3Dtrue#"
-  },
-  {
-    "id": "u_57077554",
-    "name": "蚌埠医科大学",
-    "type": "kingosoft",
-    "url": "https://byjw.bbmc.edu.cn/cas/login.action"
   },
   {
     "id": "u_b611bd83",
@@ -870,12 +774,6 @@
     "url": "http://jiaowu.cswu.cn/"
   },
   {
-    "id": "u_fdabd8ac",
-    "name": "重庆工业职业技术学院",
-    "type": "kingosoft",
-    "url": "https://jwgl.cqipc.edu.cn:9080/cqipcjw/cas/login.action"
-  },
-  {
     "id": "u_cf4c463b",
     "name": "重庆工商大学",
     "type": "qiangzhi",
@@ -894,12 +792,6 @@
     "url": "https://www.paisi.edu.cn:8181/jsxsd/?tdsourcetag=s_pcqq_aiomsg"
   },
   {
-    "id": "u_989be029",
-    "name": "重庆工程学院",
-    "type": "kingosoft",
-    "url": "http://jw.cqie.edu.cn/cas/login.action"
-  },
-  {
     "id": "u_5e3872e5",
     "name": "重庆工程职业技术学院",
     "type": "zhengfang_new",
@@ -916,12 +808,6 @@
     "name": "重庆建筑工程职业学院",
     "type": "zhengfang_new",
     "url": "https://ai.cqjzc.edu.cn/center-auth-server/officeHallApplicationCode/cas/login?service=https%3A%2F%2Fai.cqjzc.edu.cn%2Fump%2Fcommon%2Flogin%2FauthSourceAuth%2Fauth%3FapplicationCode%3DC5BQ290"
-  },
-  {
-    "id": "u_5069e4bf",
-    "name": "重庆文理学院",
-    "type": "kingosoft",
-    "url": "http://www.cqwu.edu.cn/redir/redirTmp.jsp"
   },
   {
     "id": "u_41c52b00",
@@ -1008,12 +894,6 @@
     "url": "http://jwxt.jwc.ccsu.cn/jwglxt/xtgl/login_slogin.html"
   },
   {
-    "id": "u_10f1496d",
-    "name": "长沙师范学院",
-    "type": "kingosoft",
-    "url": "http://192.168.10.115:8080/cssfjw"
-  },
-  {
     "id": "u_2f50f4ee",
     "name": "长沙民政职业技术学院",
     "type": "zhengfang_new",
@@ -1036,12 +916,6 @@
     "name": "成都文理学院",
     "type": "qiangzhi",
     "url": "http://cdcasjw.yinghuaonline.com/cdwlxy/"
-  },
-  {
-    "id": "u_aeb238fa",
-    "name": "滁州职业技术学院",
-    "type": "kingosoft",
-    "url": "http://183.167.211.134:8989/czcvcjw/cas/login.action"
   },
   {
     "id": "u_70fe862c",
@@ -1068,28 +942,10 @@
     "url": "https://my.ghu.edu.cn/tpass/login?service=https%3A%2F%2Fmy.ghu.edu.cn%2Ftp_up%2Fview%3Fm%3Dup"
   },
   {
-    "id": "u_01b4743c",
-    "name": "重庆青年职业技术学院",
-    "type": "kingosoft",
-    "url": "http://authserver.cqyu.edu.cn/authserver/login?service=http%3A%2F%2Fehall.cqyu.edu.cn%2Flogin%3Fservice%3Dhttp%3A%2F%2Fehall.cqyu.edu.cn%2Fnew%2Findex.html"
-  },
-  {
     "id": "u_8588afff",
     "name": "重庆智能工程职业学院",
     "type": "zhengfang_new",
     "url": "http://183.230.27.247:86/jwglxt/xtgl/login_slogin.html"
-  },
-  {
-    "id": "u_664169d9",
-    "name": "长垣烹饪职业技术学院",
-    "type": "kingosoft",
-    "url": "https://portal.cyprxy.edu.cn/portal-pc/pc/zzcj/index.html#/"
-  },
-  {
-    "id": "u_d3127f5c",
-    "name": "长治学院",
-    "type": "kingosoft",
-    "url": "https://cas.czc.edu.cn/tpass/login?service=https%3A%2F%2Fone.czc.edu.cn%2Ftp_up%2F"
   },
   {
     "id": "u_25b6df4b",
@@ -1152,12 +1008,6 @@
     "url": "http://123.146.162.135:81/"
   },
   {
-    "id": "u_9cf6a115",
-    "name": "重庆安全技术职业学院",
-    "type": "kingosoft",
-    "url": "https://rz.cqvist.net/cas/login?service=https%3A%2F%2Fmhapi.cqvist.net%2Fintegrate%2Fuaap%2Fcas%2Fresolve-cas-return%3Fnext%3Dhttps%253A%252F%252Fmh.cqvist.net%252F%2523%252FcasLogin%253FtoUrl%253D%25252Findex"
-  },
-  {
     "id": "u_1448d6d9",
     "name": "重庆中医药学院",
     "type": "zhengfang_new",
@@ -1188,12 +1038,6 @@
     "url": "https://authserver.cdnvc.edu.cn:10443/authserver/login?service=https%3A%2F%2Fehall.cdnvc.edu.cn%3A10443%2Flogin"
   },
   {
-    "id": "u_29f28c7c",
-    "name": "重庆工业职业技术大学",
-    "type": "kingosoft",
-    "url": "https://jwgl.cqipc.edu.cn:9080/cqipcjw/cas/login.action"
-  },
-  {
     "id": "u_851c3360",
     "name": "常德学院（原湖南文理学院芙蓉学院）",
     "type": "qiangzhi",
@@ -1212,12 +1056,6 @@
     "url": "https://jiaowu3.nsmc.edu.cn/jsxsd/"
   },
   {
-    "id": "u_22c440b7",
-    "name": "东北农业大学",
-    "type": "urp",
-    "url": "http://jwc.neau.edu.cn"
-  },
-  {
     "id": "u_0e72b506",
     "name": "东北林业大学",
     "type": "qiangzhi",
@@ -1230,12 +1068,6 @@
     "url": "https://jwxt.neepu.edu.cn/indexdbdldx.jsp"
   },
   {
-    "id": "u_1586f7b9",
-    "name": "东北财经大学",
-    "type": "urp",
-    "url": "http://202.199.165.159/login"
-  },
-  {
     "id": "u_3c5e1422",
     "name": "东华理工大学",
     "type": "zhengfang_new",
@@ -1246,12 +1078,6 @@
     "name": "东莞城市学院",
     "type": "qiangzhi",
     "url": "http://jwn.ccdgut.edu.cn/jsxsd/"
-  },
-  {
-    "id": "u_b8a48c18",
-    "name": "东莞理工学院",
-    "type": "kingosoft",
-    "url": "http://jwyd.dgut.edu.cn/cas/login.action"
   },
   {
     "id": "u_0d54233d",
@@ -1344,28 +1170,10 @@
     "url": "http://www.zsc.edu.cn"
   },
   {
-    "id": "u_e0e77e9d",
-    "name": "东北师范大学",
-    "type": "qiangzhi",
-    "url": "https://authserver-443.webvpn.nenu.edu.cn/authserver/login?service=https%3A%2F%2Fwebvpn.nenu.edu.cn%2Fusers%2Fauth%2Fcas%2Fcallback%3Furl%3Dhttps%253A%252F%252Fjwc.nenu.edu.cn%252F"
-  },
-  {
-    "id": "u_040bf312",
-    "name": "东营职业学院",
-    "type": "kingosoft",
-    "url": "https://jw.dyxy.edu.cn:8086/dyzyjw/"
-  },
-  {
     "id": "u_f2464725",
     "name": "鄂尔多斯应用技术学院",
     "type": "zhengfang_new",
     "url": "http://jwxt.oit.edu.cn:40608/jwglxt/xtgl/login_slogin.html"
-  },
-  {
-    "id": "u_b67bb903",
-    "name": "鄂州职业大学",
-    "type": "kingosoft",
-    "url": "https://jwxt.ezu.cn/ezzyjw/cas/login.action"
   },
   {
     "id": "u_096669a8",
@@ -1482,28 +1290,10 @@
     "url": "http://jiaowu.fjwzy.cn/"
   },
   {
-    "id": "u_f70ef0b6",
-    "name": "阜阳师范大学",
-    "type": "kingosoft",
-    "url": "https://tyrz.fynu.edu.cn/oshall/"
-  },
-  {
     "id": "u_98aad2ae",
     "name": "佛山职业技术学院",
     "type": "qiangzhi",
     "url": "https://jwgl.fspt.edu.cn/jsxsd/"
-  },
-  {
-    "id": "u_ed44cfde",
-    "name": "福州英华职业学院",
-    "type": "kingosoft",
-    "url": "http://112.5.131.20:94/fzyhjw/cas/login.action"
-  },
-  {
-    "id": "u_e8f8c97a",
-    "name": "阜阳师范大学信息工程学院",
-    "type": "kingosoft",
-    "url": "http://jw.fynu.edu.cn:8080/fysdjw/cas/login.action"
   },
   {
     "id": "u_a723c53b",
@@ -1722,12 +1512,6 @@
     "url": "http://210.36.24.21:9017/jwglxt/xtgl/login_slogin.html"
   },
   {
-    "id": "u_e2044766",
-    "name": "广西工商职业技术学院",
-    "type": "kingosoft",
-    "url": "http://jwmis.gxgsxy.com/cas/login.action"
-  },
-  {
     "id": "u_c6ad812b",
     "name": "广西师范学院",
     "type": "qiangzhi",
@@ -1782,12 +1566,6 @@
     "url": "https://atrust.gxau.edu.cn/portal/?redirectid=0.020116846600043092#/login"
   },
   {
-    "id": "u_0412db8a",
-    "name": "广西财经学院",
-    "type": "kingosoft",
-    "url": "http://jwglxt.gxufe.edu.cn/cas/login.action"
-  },
-  {
     "id": "u_bded7288",
     "name": "广西金融职业技术学院",
     "type": "zhengfang_new",
@@ -1798,12 +1576,6 @@
     "name": "桂林旅游学院",
     "type": "zhengfang_new",
     "url": "https://jwcweb1.gltu.cn/xtgl/login_slogin.html"
-  },
-  {
-    "id": "u_65d2795f",
-    "name": "桂林航天工业学院",
-    "type": "kingosoft",
-    "url": "http://jw.guat.edu.cn/cas/login.action"
   },
   {
     "id": "u_5f32cca0",
@@ -1914,12 +1686,6 @@
     "url": "https://jwgl.gdc.edu.cn/"
   },
   {
-    "id": "u_da10fa03",
-    "name": "广西建设职业技术学院",
-    "type": "kingosoft",
-    "url": "https://ids.gxjsxy.cn/authserver/login?service=https%3A%2F%2Fehall.gxjsxy.cn%2Flogin%3Fservice%3Dhttps%3A%2F%2Fehall.gxjsxy.cn%2Fnew%2Findex.html"
-  },
-  {
     "id": "u_141b43be",
     "name": "赣南卫生健康职业学院",
     "type": "zhengfang_new",
@@ -2004,18 +1770,6 @@
     "url": "https://gdjdxy.jw.chaoxing.com/admin/login"
   },
   {
-    "id": "u_d988c194",
-    "name": "桂林师范高等专科学校",
-    "type": "kingosoft",
-    "url": "https://authserver.glnc.edu.cn/authserver/login?service=https%3A%2F%2Fehall.glnc.edu.cn%2Flogin%3Fservice%3Dhttps%3A%2F%2Fehall.glnc.edu.cn%2Fnew%2Findex.html%3Fbrowser%3Dno"
-  },
-  {
-    "id": "u_aae88ff4",
-    "name": "贵州黔南科技学院",
-    "type": "kingosoft",
-    "url": "http://jw.gzucst.com/gdkyjw/cas/login.action"
-  },
-  {
     "id": "u_67f206de",
     "name": "广州科技贸易职业学院",
     "type": "zhengfang_new",
@@ -2032,18 +1786,6 @@
     "name": "广西演艺职业学院",
     "type": "zhengfang_new",
     "url": "http://jw.gxart.cn:8400/jwglxt/xtgl/login_slogin.html"
-  },
-  {
-    "id": "u_4fcc6068",
-    "name": "广州华商职业学院",
-    "type": "kingosoft",
-    "url": "http://jwxt.gdhsc.edu.cn/jsxsd/"
-  },
-  {
-    "id": "u_a7b1cfd7",
-    "name": "广西警察学院",
-    "type": "kingosoft",
-    "url": "https://jw.gxjcxy.com/cas/login.action"
   },
   {
     "id": "u_3fe010f9",
@@ -2178,18 +1920,6 @@
     "url": "https://jwxt.gdxa.edu.cn/jwglxt/xtgl/login_slogin.html"
   },
   {
-    "id": "u_311c6f86",
-    "name": "广东岭南职业技术学院",
-    "type": "kingosoft",
-    "url": "https://portals.lnc.edu.cn/"
-  },
-  {
-    "id": "u_909072cc",
-    "name": "赣南科技学院",
-    "type": "kingosoft",
-    "url": "https://jw.gnust.edu.cn/cas/login.action"
-  },
-  {
     "id": "u_befea93e",
     "name": "广州南方学院",
     "type": "zhengfang_new",
@@ -2206,12 +1936,6 @@
     "name": "广东艺术职业学院",
     "type": "qiangzhi",
     "url": "https://jw.gdddc.edu.cn"
-  },
-  {
-    "id": "u_30c13da4",
-    "name": "广西制造工程职业技术学院",
-    "type": "kingosoft",
-    "url": "https://jwxt.gxzzzy.cn/cas/login.action"
   },
   {
     "id": "u_648570db",
@@ -2314,12 +2038,6 @@
     "name": "湖北大学知行学院",
     "type": "qiangzhi",
     "url": "http://jwgl.hudazx.edu.cn/jsxsd"
-  },
-  {
-    "id": "u_8d83aa14",
-    "name": "湖北工业大学工程技术学院",
-    "type": "urp",
-    "url": "http://202.114.190.75/login"
   },
   {
     "id": "u_6daa32a1",
@@ -2508,12 +2226,6 @@
     "url": "https://jwglxt.hmlc.edu.cn/jwglxt/xtgl/login_slogin.html"
   },
   {
-    "id": "u_41efb29a",
-    "name": "湖南理工学院",
-    "type": "urp",
-    "url": "http://uia.hnist.cn"
-  },
-  {
     "id": "u_f1d9c9ec",
     "name": "湖南生物机电职业技术学院",
     "type": "qiangzhi",
@@ -2590,12 +2302,6 @@
     "name": "菏泽医学专科学校",
     "type": "qiangzhi",
     "url": "https://authserver.hzmc.edu.cn/authserver/login?service=http%3A%2F%2Fwww.jwc.hzmc.edu.cn%2Fcaslogin.jsp"
-  },
-  {
-    "id": "u_98bb78b8",
-    "name": "衡水学院",
-    "type": "urp",
-    "url": "http://xjw.hsnc.edu.cn:7777/login"
   },
   {
     "id": "u_7f825d5d",
@@ -2688,12 +2394,6 @@
     "url": "https://hljstgc.jw.chaoxing.com/admin/login"
   },
   {
-    "id": "u_339d5bd6",
-    "name": "黑龙江科技大学",
-    "type": "urp",
-    "url": "http://xsurp.usth.edu.cn/index.jsp/"
-  },
-  {
     "id": "u_58fe7840",
     "name": "黑龙江职业学院",
     "type": "qiangzhi",
@@ -2710,24 +2410,6 @@
     "name": "黑河学院",
     "type": "zhengfang_new",
     "url": "https://172-16-121-26.webvpn.hhxy.edu.cn/jwglxt/kbcx/xskbcx_cxXskbcxIndex.html?gnmkdm=N2151&layout=default&ticket=ST-374089-3CkiIcJUxGgkOrGZ7ptH-zfsoft.com"
-  },
-  {
-    "id": "u_622ea4a0",
-    "name": "华北理工大学轻工学院",
-    "type": "urp",
-    "url": "http://jws.qgxy.cn/login"
-  },
-  {
-    "id": "u_7cfdf7c3",
-    "name": "华北理工大学冀唐学院",
-    "type": "urp",
-    "url": "https://authserver.ncst.edu.cn/authserver/login?service=https://webexp.ncst.edu.cn/login/casCallback/RGQGotNQ/"
-  },
-  {
-    "id": "u_70b031dd",
-    "name": "河北科技工程职业技术大学",
-    "type": "kingosoft",
-    "url": "http://authserver.hevute.edu.cn/authserver/login"
   },
   {
     "id": "u_9fd810a5",
@@ -2850,52 +2532,10 @@
     "url": "https://cas.hciit.edu.cn/cas/login?service=http%3A%2F%2Fzhkt.hciit.edu.cn%2Fzhjx%2F\nhttp://218.198.152.48/"
   },
   {
-    "id": "u_6a1b5f75",
-    "name": "湖南石油化工职业技术学院",
-    "type": "kingosoft",
-    "url": "https://jwc.hnshzy.cn:90/hnshjw/cas/login.action"
-  },
-  {
-    "id": "u_f19f95d4",
-    "name": "河南工学院",
-    "type": "kingosoft",
-    "url": "https://sfrz.hait.edu.cn/cas/login?service=https%3A%2F%2Fsec.hait.edu.cn%2Frump_frontend%2FloginFromCas%2F"
-  },
-  {
-    "id": "u_9553a526",
-    "name": "河南经贸职业学院",
-    "type": "kingosoft",
-    "url": "https://henetc.hnscen.cn/classroom/login"
-  },
-  {
-    "id": "u_cc755e89",
-    "name": "湖南铁道职业技术学院",
-    "type": "kingosoft",
-    "url": "https://cas.hnrpc.com/cas/login?service=https://xgxt.hnrpc.com/zftal-xgxt-web/teacher/xtgl/index/check.zf"
-  },
-  {
-    "id": "u_c62a83b7",
-    "name": "河南科技学院",
-    "type": "kingosoft",
-    "url": "http://jwgl.hist.edu.cn/cas/login.action"
-  },
-  {
-    "id": "u_1c48bb56",
-    "name": "哈尔滨学院",
-    "type": "kingosoft",
-    "url": "http://jwmis.hrbu.edu.cn/"
-  },
-  {
     "id": "u_c0ce0e3a",
     "name": "湖南工艺美术职业学院",
     "type": "qiangzhi",
     "url": "http://jw.hnmeida.com.cn:6013"
-  },
-  {
-    "id": "u_9ad900c6",
-    "name": "杭州科技职业技术学院",
-    "type": "kingosoft",
-    "url": "https://cas.hzpt.edu.cn/cas/login?service=https://i.hzpt.edu.cn"
   },
   {
     "id": "u_1d205fde",
@@ -2920,18 +2560,6 @@
     "name": "海南卫生健康职业学院",
     "type": "zhengfang_new",
     "url": "https://jwxt.hnhvc.edu.cn/jwglxt/xtgl/login_slogin.html"
-  },
-  {
-    "id": "u_99ce596c",
-    "name": "湖南汽车工程职业学院",
-    "type": "kingosoft",
-    "url": "http://jw.hnqczy.com/cas/login.action"
-  },
-  {
-    "id": "u_9c6c314c",
-    "name": "河南开封科技传媒学院",
-    "type": "kingosoft",
-    "url": "https://msjw.humc.edu.cn/cas/login.action"
   },
   {
     "id": "u_eb81ddcb",
@@ -2976,24 +2604,6 @@
     "url": "http://jx.189jxt.com:10081/jsxsd/"
   },
   {
-    "id": "u_0331e596",
-    "name": "黄淮学院",
-    "type": "kingosoft",
-    "url": "https://huanghuai.jijiaox.com/mg/login?type=3"
-  },
-  {
-    "id": "u_565003fe",
-    "name": "河北机电职业技术学院",
-    "type": "kingosoft",
-    "url": "138.1.2.175"
-  },
-  {
-    "id": "u_31ed48dc",
-    "name": "河南牧业经济学院",
-    "type": "kingosoft",
-    "url": "http://211.84.213.21/cas/login.action"
-  },
-  {
     "id": "u_6b2118e9",
     "name": "湖南商务职业技术学院",
     "type": "qiangzhi",
@@ -3024,12 +2634,6 @@
     "url": "https://jwglxxfwpt.hebeu.edu.cn/xtgl/login_slogin.html"
   },
   {
-    "id": "u_c4495fbc",
-    "name": "湖南幼儿师范高等专科学校",
-    "type": "qiangzhi",
-    "url": "https://hnyz.jw.chaoxing.com/"
-  },
-  {
     "id": "u_6d197eed",
     "name": "汉中职业技术学院",
     "type": "zhengfang_new",
@@ -3040,30 +2644,6 @@
     "name": "合肥城市学院",
     "type": "zhengfang_new",
     "url": "http://60.174.215.2:8005/xtgl/login_slogin.html"
-  },
-  {
-    "id": "u_d8ac9571",
-    "name": "河南机电职业学院",
-    "type": "kingosoft",
-    "url": "http://61.163.103.43:8081/hnjdjw/cas/login.action"
-  },
-  {
-    "id": "u_fc72afbe",
-    "name": "河南地矿职业学院",
-    "type": "kingosoft",
-    "url": "https://jwxt.hagmc.edu.cn/cas/login.action"
-  },
-  {
-    "id": "u_501e4f6f",
-    "name": "黑龙江工程学院昆仑旅游学院",
-    "type": "kingosoft",
-    "url": "http://111.40.42.202:8077/kllyjw/cas/login.action"
-  },
-  {
-    "id": "u_fa20f180",
-    "name": "海南职业技术学院",
-    "type": "kingosoft",
-    "url": "http://oa.hcvt.cn/"
   },
   {
     "id": "u_a26b4a50",
@@ -3096,12 +2676,6 @@
     "url": "http://jwgl.hbgdys.cn:8045/jwglxt/xtgl/login_slogin.html"
   },
   {
-    "id": "u_99b7dcc9",
-    "name": "海南科技职业大学",
-    "type": "kingosoft",
-    "url": "https://auth.hnkjedu.cn/sso/auth?redirect=https://program.hnkjedu.cn/ssoLogin?back="
-  },
-  {
     "id": "u_b1f29cfc",
     "name": "湖北三峡职业技术学院",
     "type": "zhengfang_new",
@@ -3112,12 +2686,6 @@
     "name": "淮阴师范学院",
     "type": "zhengfang_new",
     "url": "http://portal.hytc.edu.cn/"
-  },
-  {
-    "id": "u_409d658f",
-    "name": "淮南联合大学",
-    "type": "kingosoft",
-    "url": "http://jwgl.hnuu.edu.cn/hnlhdxjw/cas/login.action"
   },
   {
     "id": "u_e5a4e525",
@@ -3162,12 +2730,6 @@
     "url": "210.37.88.3"
   },
   {
-    "id": "u_57f52e6f",
-    "name": "河西学院",
-    "type": "kingosoft",
-    "url": "http://172.20.0.144/hxxyjw/"
-  },
-  {
     "id": "u_147b5fc4",
     "name": "河海大学",
     "type": "qiangzhi",
@@ -3210,12 +2772,6 @@
     "url": "https://jwxt.hnp.edu.cn/jwglxt/xtgl/login_slogin.html"
   },
   {
-    "id": "u_d2e272ec",
-    "name": "河南职业技术学院",
-    "type": "kingosoft",
-    "url": "http://jwgl.hnzj.edu.cn/cas/login.action"
-  },
-  {
     "id": "u_e6ecf6db",
     "name": "河南工程学院",
     "type": "zhengfang_new",
@@ -3228,22 +2784,10 @@
     "url": "http://jwgl.hnpi.edu.cn/"
   },
   {
-    "id": "u_00a4e94c",
-    "name": "河南大学",
-    "type": "kingosoft",
-    "url": "https://xk.henu.edu.cn/cas/login.action"
-  },
-  {
     "id": "u_9fb972c3",
     "name": "河南医学高等专科学校",
     "type": "zhengfang_new",
     "url": "https://authserver.hamc.edu.cn/authserver/login?service=https%3A%2F%2Fzf.hamc.edu.cn%2Fsso%2Fjziotlogin"
-  },
-  {
-    "id": "u_0b3e260d",
-    "name": "河南农业大学",
-    "type": "kingosoft",
-    "url": "http://jw.henau.edu.cn/cas/login.action"
   },
   {
     "id": "u_e47bb590",
@@ -3262,18 +2806,6 @@
     "name": "河北经贸大学",
     "type": "zhengfang_new",
     "url": "https://jwc.heuet.edu.cn/yyxt/jwxt.htm"
-  },
-  {
-    "id": "u_c98c8145",
-    "name": "河北科技大学理工学院",
-    "type": "kingosoft",
-    "url": "http://202.206.64.204/hbkjlgxyjw/cas/login.action"
-  },
-  {
-    "id": "u_aae1af58",
-    "name": "河北科技大学",
-    "type": "kingosoft",
-    "url": "http://jw.hebust.edu.cn/hbkjjw/cas/login.action"
   },
   {
     "id": "u_4c820711",
@@ -3318,28 +2850,10 @@
     "url": "https://jwglxxfwpt.hebeu.edu.cn"
   },
   {
-    "id": "u_3a66c745",
-    "name": "河北工业大学",
-    "type": "urp",
-    "url": "https://webvpn.hebut.edu.cn/portal/#/login"
-  },
-  {
-    "id": "u_d72114b5",
-    "name": "河北大学",
-    "type": "urp",
-    "url": "http://zhjw.hbu.edu.cn/"
-  },
-  {
     "id": "u_bbfbfcf3",
     "name": "河北地质大学华信学院",
     "type": "qiangzhi",
     "url": "http://61.182.88.214:8090"
-  },
-  {
-    "id": "u_d18c53b1",
-    "name": "河北地质大学",
-    "type": "urp",
-    "url": "https://cas.hgu.edu.cn/cas/login?service=https%3A%2F%2Fmy.hgu.edu.cn%2Fsopcb%2F"
   },
   {
     "id": "u_62e13469",
@@ -3474,18 +2988,6 @@
     "url": "https://ids-443.webvpn.ncepu.edu.cn/?timestamp=1756278685607&service=https%3A%2F%2Fwebvpn.ncepu.edu.cn%2Fcas_ncepu"
   },
   {
-    "id": "u_856a16cd",
-    "name": "华北理工大学",
-    "type": "urp",
-    "url": "http://xjw1.ncst.edu.cn/"
-  },
-  {
-    "id": "u_76b1d3ef",
-    "name": "华北水利水电大学",
-    "type": "kingosoft",
-    "url": "https://jwmis.ncwu.edu.cn/"
-  },
-  {
     "id": "u_7f1f81d3",
     "name": "华中师范大学",
     "type": "zhengfang_new",
@@ -3504,18 +3006,6 @@
     "url": "http://jhxyjwxt.ahu.edu.cn/"
   },
   {
-    "id": "u_8ec9ccdb",
-    "name": "河南医药大学",
-    "type": "kingosoft",
-    "url": "https://qgjw.xxmu.edu.cn/rump_frontend/access_forbidden/"
-  },
-  {
-    "id": "u_3395b04f",
-    "name": "海南医科大学",
-    "type": "kingosoft",
-    "url": "https://zshy.muhn.edu.cn/#/"
-  },
-  {
     "id": "u_6fc3f015",
     "name": "湖北中医药大学",
     "type": "zhengfang_new",
@@ -3532,24 +3022,6 @@
     "name": "呼和浩特职业技术大学",
     "type": "zhengfang_new",
     "url": "https://pass.hhvc.edu.cn/authserver/login?service=https://pass.hhvc.edu.cn/authserver/login"
-  },
-  {
-    "id": "u_0eeca5dc",
-    "name": "杭州职业技术大学",
-    "type": "kingosoft",
-    "url": "http://jwglxt.hzvtc.edu.cn/"
-  },
-  {
-    "id": "u_394562e3",
-    "name": "河南中医药大学",
-    "type": "kingosoft",
-    "url": "http://211.69.32.174/zy21w/"
-  },
-  {
-    "id": "u_b1b280b8",
-    "name": "江西警察学院",
-    "type": "kingosoft",
-    "url": "http://jw.jxga.edu.cn/jxjcxyjw/cas/login.action"
   },
   {
     "id": "u_7a5fc3cd",
@@ -3618,12 +3090,6 @@
     "url": "https://webvpn.jsu.edu.cn/https/77726476706e69737468656265737421e0f6528f693a7b45300d8db9d6562d/ - /UserLogin?sn=vcIdEFIUReqeg5_haJpYmg&client_id=lFkRfDkwSW6z3IDAZpZo3g&redirect_uri=https%3A%2F%2Fwebvpn.jsu.edu.cn%2Flogin%3Foauth_login%3Dtrue"
   },
   {
-    "id": "u_09c347e2",
-    "name": "嘉兴南洋职业技术学院",
-    "type": "kingosoft",
-    "url": "https://www.jxnyi.edu.cn:2316/portal/#/login"
-  },
-  {
     "id": "u_1d049fd2",
     "name": "嘉兴南湖学院",
     "type": "zhengfang_new",
@@ -3664,12 +3130,6 @@
     "name": "九江职业技术大学",
     "type": "qiangzhi",
     "url": "https://cas.paas.jjvu.jx.cn/cas/login"
-  },
-  {
-    "id": "u_fca2b2d0",
-    "name": "江苏信息职业技术学院",
-    "type": "kingosoft",
-    "url": "http://jwxt.jsit.edu.cn/jsxxzyjw/cas/login.action"
   },
   {
     "id": "u_238cee1c",
@@ -3816,12 +3276,6 @@
     "url": "https://cas-jxstnu-edu-cn-s.atrust.jxstnu.edu.cn/lyuapServer/login?service=https%3A%2F%2Fsdpc.jxstnu.edu.cn%3A443%2Fpassport%2Fv1%2Fauth%2Fcas%3FsfDomain%3Dcas.com"
   },
   {
-    "id": "u_601532e9",
-    "name": "江西财经大学",
-    "type": "kingosoft",
-    "url": "http://portal.jxufe.edu.cn/"
-  },
-  {
     "id": "u_0edc8b6a",
     "name": "江西财经职业学院",
     "type": "zhengfang_new",
@@ -3858,12 +3312,6 @@
     "url": "https://jwgl.jyvtc.edu.cn/jyvtcjw/cas/login.action"
   },
   {
-    "id": "u_6d4061f3",
-    "name": "江苏农牧科技职业学院",
-    "type": "kingosoft",
-    "url": "https://cas.jsahvc.edu.cn/lyuapServer/login"
-  },
-  {
     "id": "u_74d7a4bc",
     "name": "焦作师范高等专科学校",
     "type": "qiangzhi",
@@ -3898,30 +3346,6 @@
     "name": "锦州医科大学",
     "type": "qiangzhi",
     "url": "http://jwgl.jzmu.edu.cn:9995/jsxsd/"
-  },
-  {
-    "id": "u_c272e115",
-    "name": "集宁师范学院",
-    "type": "kingosoft",
-    "url": "http://111.56.74.189:8088/cas/login.action"
-  },
-  {
-    "id": "u_a3fb8b20",
-    "name": "江苏农林职业技术学院",
-    "type": "kingosoft",
-    "url": "http://authserver.jsafc.edu.cn/authserver/login?service=http%3A%2F%2F121.248.67.6%3A8080%2Fjsafcjw%2Fcaslogin"
-  },
-  {
-    "id": "u_2d3761e4",
-    "name": "江汉大学",
-    "type": "kingosoft",
-    "url": "https://jwxt.jhun.edu.cn/cas/login.action"
-  },
-  {
-    "id": "u_7189789c",
-    "name": "江西交通职业技术学院",
-    "type": "kingosoft",
-    "url": "https://jw.jxjtxy.edu.cn/jxjtxy/cas/login.action"
   },
   {
     "id": "u_7dca1024",
@@ -3966,12 +3390,6 @@
     "url": "https://c.jlemcc.edu.cn/"
   },
   {
-    "id": "u_205e2063",
-    "name": "济源职业技术学院",
-    "type": "kingosoft",
-    "url": "http://jwgl.jyvtc.edu.cn/jyvtcjw/cas/login.action"
-  },
-  {
     "id": "u_adbfe98d",
     "name": "江苏警官学院",
     "type": "zhengfang_new",
@@ -4000,18 +3418,6 @@
     "name": "江西制造职业技术学院",
     "type": "zhengfang_new",
     "url": "https://ca.jxmtc.com:8082/cas/login"
-  },
-  {
-    "id": "u_b26f6581",
-    "name": "济南幼儿师范高等专科学校",
-    "type": "kingosoft",
-    "url": "https://jw.jnpec.edu.cn/cas/login.action"
-  },
-  {
-    "id": "u_cbc80322",
-    "name": "晋中学院",
-    "type": "kingosoft",
-    "url": "https://sso-jzxy-edu-cn-s.jzxy.edu.cn:8118/auth/#/login?service=https://portal.jzxy.edu.cn/auth/cas_validate?entry_id=1"
   },
   {
     "id": "u_5d638dbd",
@@ -4044,18 +3450,6 @@
     "url": "http://192.168.177.11/"
   },
   {
-    "id": "u_b94805c6",
-    "name": "佳木斯大学",
-    "type": "kingosoft",
-    "url": "https://jwxt.jmsu.edu.cn:456/jmsujw/cas/login.action"
-  },
-  {
-    "id": "u_01e2b0c1",
-    "name": "晋中信息学院",
-    "type": "urp",
-    "url": "https://www.jzci.edu.cn/vpn.htm"
-  },
-  {
     "id": "u_cd2115d1",
     "name": "嘉兴大学",
     "type": "zhengfang_new",
@@ -4084,12 +3478,6 @@
     "name": "喀什大学",
     "type": "zhengfang_new",
     "url": "http://jwc.ksu.edu.cn/"
-  },
-  {
-    "id": "u_1a6af38b",
-    "name": "昆明医科大学",
-    "type": "kingosoft",
-    "url": "http://61.166.241.221/cas/login.action"
   },
   {
     "id": "u_ee94cb14",
@@ -4132,12 +3520,6 @@
     "name": "昆明工业职业技术学院",
     "type": "zhengfang_new",
     "url": "https://jwxt.kmvtc.net/"
-  },
-  {
-    "id": "u_b12ba74b",
-    "name": "开封职业学院",
-    "type": "kingosoft",
-    "url": "http://211.142.110.50:8081/kfzyjw/cas/login.action"
   },
   {
     "id": "u_77af48ed",
@@ -4266,34 +3648,10 @@
     "url": "http://jw.lygtc.edu.cn/eams/sso/login.action"
   },
   {
-    "id": "u_205914a0",
-    "name": "陇东学院",
-    "type": "kingosoft",
-    "url": "https://jwxt.ldxy.edu.cn/cas/login.action"
-  },
-  {
     "id": "u_574a6eaf",
     "name": "龙岩学院",
     "type": "zhengfang_new",
     "url": "https://app.lyun.edu.cn/lyxy/ly-app/m/index.html#/login?authorizeUrl=https%3A%2F%2Fapp.lyun.edu.cn%2Flyxy%2Fauth%2Foauth%2Fv1%2Fauthorize%3FclientId%3D44336230245131%26redirectUrl%3Dhttps%253A%252F%252Fapp.lyun.edu.cn%252FadminService%252FserviceHallIndex%252Fadmin%252Findex%26responseType%3Dcode%26scope%3DuserInfo%26state%3De0949cbf-44ea-474f-9614-e781b27bcc33%26sign%3DMWU4OWRiZTAwOTg0NTAyMWNkZjFmMTBkM2U2MGY1NzA%3D"
-  },
-  {
-    "id": "u_3c31b303",
-    "name": "鲁东大学",
-    "type": "urp",
-    "url": "https://xsjw.ldu.edu.cn/login"
-  },
-  {
-    "id": "u_e8a5f055",
-    "name": "柳州铁道职业技术学院",
-    "type": "kingosoft",
-    "url": "https://ehall.ltzy.edu.cn/ywtb-portal/ltzy/index.html?browser=no#/home/ltzy_home"
-  },
-  {
-    "id": "u_c690ad78",
-    "name": "吕梁学院",
-    "type": "kingosoft",
-    "url": "https://sso.llu.edu.cn/auth/#/login?service=https://jwgl.llu.edu.cn/llxyjw/caslogin"
   },
   {
     "id": "u_d6d9a060",
@@ -4314,18 +3672,6 @@
     "url": "http://jw.lanzhoutbc.cn/jsxsd/"
   },
   {
-    "id": "u_c43e10fb",
-    "name": "辽宁省交通高等专科学校",
-    "type": "kingosoft",
-    "url": "https://zhjx.lncc.edu.cn/login?redirect=/index"
-  },
-  {
-    "id": "u_c5004098",
-    "name": "辽宁大学",
-    "type": "urp",
-    "url": "http://jwstudent.lnu.edu.cn/login"
-  },
-  {
     "id": "u_96eb104c",
     "name": "廊坊卫生职业学院",
     "type": "zhengfang_new",
@@ -4336,12 +3682,6 @@
     "name": "辽宁现代服务职业技术学院",
     "type": "zhengfang_new",
     "url": "https://jwxt.lnxdfwxy.edu.cn/jwglxt/xtgl/login_slogin.html"
-  },
-  {
-    "id": "u_9ee89a3c",
-    "name": "辽宁金融职业学院",
-    "type": "kingosoft",
-    "url": "https://jw.lnfvc.edu.cn/lnjrjw/cas/login.action"
   },
   {
     "id": "u_25a6e7aa",
@@ -4416,12 +3756,6 @@
     "url": "https://jwgl.lyvc.edu.cn/jwglxt/xtgl/login_slogin.html"
   },
   {
-    "id": "u_ea3b89e1",
-    "name": "兰州博文科技学院",
-    "type": "kingosoft",
-    "url": "http://jwxt.bowenedu.cn:8080/cas/login.action"
-  },
-  {
     "id": "u_8bce3f6c",
     "name": "辽宁特殊教育师范高等专科学校",
     "type": "zhengfang_new",
@@ -4438,12 +3772,6 @@
     "name": "柳州职业技术大学",
     "type": "zhengfang_new",
     "url": "https://authserver.lzzy.net/authserver/login?service=http%3A%2F%2Fzfjw.lzzy.net%2Fsso%2Fjziotlogin"
-  },
-  {
-    "id": "u_02f45abc",
-    "name": "聊城职业技术学院",
-    "type": "kingosoft",
-    "url": "http://61.133.116.247/"
   },
   {
     "id": "u_a8ae5eaf",
@@ -4494,12 +3822,6 @@
     "url": "https://zfjw.msykxy.edu.cn/xtgl/login_slogin.html"
   },
   {
-    "id": "u_e5671b7c",
-    "name": "绵阳城市学院",
-    "type": "kingosoft",
-    "url": "https://sso.mycc.edu.cn/mcauth/login?service=http://jwgl.mycc.edu.cn/caslogin"
-  },
-  {
     "id": "u_f2e98164",
     "name": "马鞍山职业技术学院",
     "type": "zhengfang_new",
@@ -4536,12 +3858,6 @@
     "url": "http://sso.mtc.edu.cn/login?service=http%3A%2F%2Fjw.mtc.edu.cn%2F"
   },
   {
-    "id": "u_b094c469",
-    "name": "牡丹江师范学院",
-    "type": "kingosoft",
-    "url": "http://webvpn.mdjnu.edu.cn"
-  },
-  {
     "id": "u_27d56161",
     "name": "满洲里俄语职业学院",
     "type": "zhengfang_new",
@@ -4566,40 +3882,16 @@
     "url": "https://jw.hgzyxy.com.cn/xtgl/login_slogin.html"
   },
   {
-    "id": "u_22dcc272",
-    "name": "内蒙古大学",
-    "type": "urp",
-    "url": "https://jwxt.imu.edu.cn/"
-  },
-  {
-    "id": "u_406b6042",
-    "name": "内蒙古民族大学",
-    "type": "urp",
-    "url": "http://219.225.128.30/login"
-  },
-  {
     "id": "u_0f99bba6",
     "name": "内蒙古电子信息职业技术学院",
     "type": "zhengfang_new",
     "url": "http://jwxt.imeic.cn/"
   },
   {
-    "id": "u_a4f6a705",
-    "name": "内蒙古科技大学",
-    "type": "urp",
-    "url": "https://xsjw.imust.edu.cn/login"
-  },
-  {
     "id": "u_b6a5c05a",
     "name": "南京警察学院",
     "type": "zhengfang_new",
     "url": "https://client.njpu.edu.cn:5443/http/webvpn811f75f89fe42d0d0621ce35ce2ad5853281b101dd5f5ab759aea26982f7e0f0/cas/login?service=http%3A%2F%2Fpuportal.njpu.edu.cn%2F"
-  },
-  {
-    "id": "u_2f4570f4",
-    "name": "内蒙古大学创业学院",
-    "type": "urp",
-    "url": "http://110.16.109.224:82/login"
   },
   {
     "id": "u_10347b8e",
@@ -4926,12 +4218,6 @@
     "url": "https://atrust.nbufe.edu.cn/"
   },
   {
-    "id": "u_58e494de",
-    "name": "南昌师范学院",
-    "type": "urp",
-    "url": "http://jwxtxs.ncnu.edu.cn:8080"
-  },
-  {
     "id": "u_cf40587b",
     "name": "南京理工大学紫金学院",
     "type": "urp",
@@ -5076,28 +4362,10 @@
     "url": "http://sso.qlnu.edu.cn"
   },
   {
-    "id": "u_2d65f98e",
-    "name": "齐鲁理工学院",
-    "type": "urp",
-    "url": "http://58.56.101.14:881/login"
-  },
-  {
-    "id": "u_109881bd",
-    "name": "齐齐哈尔大学",
-    "type": "urp",
-    "url": "http://111.43.36.164"
-  },
-  {
     "id": "u_caabfa32",
     "name": "青岛城市学院",
     "type": "zhengfang_new",
     "url": "https://www.qdc.edu.cn/oauth2/authorize?appid=10003&redirect_uri=https%3A%2F%2Fwww.qdc.edu.cn%2Fserv%2Fuser%2Fredirect&state="
-  },
-  {
-    "id": "u_4f9b7da6",
-    "name": "泉州医学高等专科学校",
-    "type": "kingosoft",
-    "url": "https://kingsoft.qzmc.edu.cn/cas/login.action"
   },
   {
     "id": "u_b9ab2465",
@@ -5152,18 +4420,6 @@
     "name": "衢州职业技术学院",
     "type": "zhengfang_new",
     "url": "https://vpn.qzct.net/"
-  },
-  {
-    "id": "u_c2a7a4da",
-    "name": "秦皇岛职业技术学院",
-    "type": "kingosoft",
-    "url": "http://111.227.176.122:8080/cas/login.action"
-  },
-  {
-    "id": "u_ac99d33c",
-    "name": "汝州职业技术学院",
-    "type": "kingosoft",
-    "url": "http://jwgl.rzvtc.cn:8081/rzzyjw/cas/login.action"
   },
   {
     "id": "u_e454495e",
@@ -5256,12 +4512,6 @@
     "url": "http://authserver.gist.edu.cn/authserver/login?service=http%3A%2F%2Fjwxt.gist.edu.cn%2Fsso%2Fjziotlogin"
   },
   {
-    "id": "u_b1ecee64",
-    "name": "四川旅游学院",
-    "type": "kingosoft",
-    "url": "http://jw.sctu.edu.cn:8002/stujw/caslogin"
-  },
-  {
     "id": "u_173bd4f1",
     "name": "四川机电职业技术学院",
     "type": "zhengfang_new",
@@ -5310,12 +4560,6 @@
     "url": "https://jwxt.sccvc.com:777/default2.aspx"
   },
   {
-    "id": "u_4e705ef0",
-    "name": "宿州学院",
-    "type": "kingosoft",
-    "url": "http://211.86.128.194/suzxyjw/cas/login.action"
-  },
-  {
     "id": "u_99a6095c",
     "name": "宿州职业技术学院",
     "type": "zhengfang_new",
@@ -5350,12 +4594,6 @@
     "name": "山西应用科技学院",
     "type": "zhengfang_new",
     "url": "10.0.254.251"
-  },
-  {
-    "id": "u_9507c6d9",
-    "name": "山东航空学院（原滨州学院）",
-    "type": "urp",
-    "url": "http://service.sdua.edu.cn/EIP/nonlogin/onewebsitehande/toPersonalCenterPage.htm?activePersonalHomeTab=false"
   },
   {
     "id": "u_777fb3f5",
@@ -5436,22 +4674,10 @@
     "url": "http://jw-stu-edu-cn.webvpn.stu.edu.cn:8118/"
   },
   {
-    "id": "u_df079f5c",
-    "name": "四川建筑职业技术学院",
-    "type": "kingosoft",
-    "url": "https://jw.scac.edu.cn/cas/login.action"
-  },
-  {
     "id": "u_baac317d",
     "name": "山西科技学院",
     "type": "zhengfang_new",
     "url": "http://172.16.241.168/jwglxt/xtgl/login_slogin.html"
-  },
-  {
-    "id": "u_26bd7359",
-    "name": "沈阳农业大学",
-    "type": "urp",
-    "url": "https://jwc.syau.edu.cn/info/1033/4703.htm"
   },
   {
     "id": "u_05ff5b5f",
@@ -5464,36 +4690,6 @@
     "name": "山西工学院",
     "type": "zhengfang_new",
     "url": "https://sso.sxct.edu.cn/auth/#/login?service=http://172.16.46.67:1000/sso/sxcjlogin"
-  },
-  {
-    "id": "u_3d9f11e8",
-    "name": "商丘职业技术学院",
-    "type": "kingosoft",
-    "url": "https://jiaowuxt.sqzy.edu.cn/caslogin"
-  },
-  {
-    "id": "u_286946ec",
-    "name": "山东现代学院",
-    "type": "kingosoft",
-    "url": "http://42.247.18.146/cas/login.action"
-  },
-  {
-    "id": "u_8a12fef0",
-    "name": "三门峡职业技术学院",
-    "type": "kingosoft",
-    "url": "https://jw.smxpt.edu.cn/cas/login.action"
-  },
-  {
-    "id": "u_2564e415",
-    "name": "山东工业职业学院",
-    "type": "kingosoft",
-    "url": "http://jw.sdivc.edu.cn/cas/login.action"
-  },
-  {
-    "id": "u_7b5afe61",
-    "name": "山东工程职业技术大学",
-    "type": "kingosoft",
-    "url": "https://qgjw.suet.edu.cn/cas/login.action"
   },
   {
     "id": "u_78ed76f0",
@@ -5550,30 +4746,6 @@
     "url": "https://cas.sntcm.edu.cn/lyuapServer/login?service=https://ehall.sntcm.edu.cn/shiro-cas"
   },
   {
-    "id": "u_572878c1",
-    "name": "山西林业职业技术学院",
-    "type": "kingosoft",
-    "url": "https://id.sxly.edu.cn/realms/sxly/protocol/openid-connect/auth?client_id=portal&scope=openid&response_type=code&redirect_uri=https://port.sxly.edu.cn/login/qfid"
-  },
-  {
-    "id": "u_1481fa87",
-    "name": "沈阳职业技术学院",
-    "type": "kingosoft",
-    "url": "http://192.168.100.87:8081/syzyjw/cas/login.action"
-  },
-  {
-    "id": "u_601ab847",
-    "name": "石家庄职业技术学院",
-    "type": "kingosoft",
-    "url": "http://jwman.sjzpt.edu.cn/sjzzyjw/cas/login.action"
-  },
-  {
-    "id": "u_325a1a29",
-    "name": "山东商务职业学院",
-    "type": "kingosoft",
-    "url": "https://jwglxt.sdbi.edu.cn/cas/login.action"
-  },
-  {
     "id": "u_77cd6df0",
     "name": "山东传媒职业学院",
     "type": "zhengfang_new",
@@ -5590,18 +4762,6 @@
     "name": "山东城市服务职业学院",
     "type": "zhengfang_new",
     "url": "https://cas.sdcc.edu.cn/lyuapServer/login"
-  },
-  {
-    "id": "u_d7bcb1fb",
-    "name": "苏州托普信息职业技术学院",
-    "type": "kingosoft",
-    "url": "http://jwweb.szetop.com/sztpjw/cas/login.action"
-  },
-  {
-    "id": "u_4878ccde",
-    "name": "山东航空学院",
-    "type": "urp",
-    "url": "http://service.sdua.edu.cn/EIP/nonlogin/onewebsitehande/toPersonalCenterPage.htm?activePersonalHomeTab=false"
   },
   {
     "id": "u_00c1c1e1",
@@ -5634,12 +4794,6 @@
     "url": "https://jwgl.sdxiehe.edu.cn/jsxsd/"
   },
   {
-    "id": "u_506e1a27",
-    "name": "山东城市建设职业学院",
-    "type": "kingosoft",
-    "url": "http://jwxt.sduc.edu.cn/sdcjjw/cas/login.action"
-  },
-  {
     "id": "u_1679288f",
     "name": "山东外贸职业学院",
     "type": "zhengfang_new",
@@ -5656,12 +4810,6 @@
     "name": "山东大学（威海）",
     "type": "qiangzhi",
     "url": "http://service.sdu.edu.cn/"
-  },
-  {
-    "id": "u_a7e443d6",
-    "name": "山东女子学院",
-    "type": "kingosoft",
-    "url": "http://jwxt.sdwu.edu.cn/sdnzjw/cas/login.action"
   },
   {
     "id": "u_e51e4508",
@@ -5818,12 +4966,6 @@
     "name": "山西工商学院",
     "type": "zhengfang_new",
     "url": "http://jwgl.sxtbu.edu.cn/jwglxt/xtgl/login_slogin.html"
-  },
-  {
-    "id": "u_3a48d498",
-    "name": "山西工程技术学院",
-    "type": "urp",
-    "url": "http://211.82.48.36/login"
   },
   {
     "id": "u_f4bcdb25",
@@ -5994,12 +5136,6 @@
     "url": "http://jwxt.sit.edu.cn/"
   },
   {
-    "id": "u_a2ba21f8",
-    "name": "上海海洋大学",
-    "type": "urp",
-    "url": "https://urp.shou.edu.cn/login"
-  },
-  {
     "id": "u_db281589",
     "name": "上海理工大学",
     "type": "zhengfang_new",
@@ -6102,22 +5238,10 @@
     "url": "https://cas.svtc.edu.cn:8443/lyuapServer/login?service=http%3A%2F%2Fjwc.svtc.edu.cn%2Fsso%2Flyiotlogin"
   },
   {
-    "id": "u_7b6dc27d",
-    "name": "陕西师范大学",
-    "type": "kingosoft",
-    "url": "http://jwgl.snnu.edu.cn/jxcjcaslogin"
-  },
-  {
     "id": "u_77d54b77",
     "name": "陕西国际商贸学院",
     "type": "zhengfang_new",
     "url": "https://cas.csiic.com/lyuapServer/login?service=https%3A%2F%2Fsmxcx.csiic.com%2Fprod-api%2F%2Faffairs%2FcasLogin%3FwebRouter%3Dpc"
-  },
-  {
-    "id": "u_89e7fb2a",
-    "name": "陕西国防工业职业技术学院",
-    "type": "kingosoft",
-    "url": "http://jw.gfxy.com/cas/login.action"
   },
   {
     "id": "u_6af2ed3e",
@@ -6240,18 +5364,6 @@
     "url": "http://service.tjsyxy.com:8888/jwglxt/xtgl/login_slogin.html"
   },
   {
-    "id": "u_ad78dbcd",
-    "name": "太原学院",
-    "type": "urp",
-    "url": "10.0.2.7"
-  },
-  {
-    "id": "u_8394d129",
-    "name": "铜陵职业技术学院",
-    "type": "kingosoft",
-    "url": "https://jw.tlpt.net.cn/cas/login.action"
-  },
-  {
     "id": "u_6a7cda77",
     "name": "唐山海运职业学院",
     "type": "zhengfang_new",
@@ -6300,18 +5412,6 @@
     "url": "http://jwgl.tjrac.edu.cn/xtgl/login_slogin.html"
   },
   {
-    "id": "u_5a84846b",
-    "name": "通化师范学院",
-    "type": "kingosoft",
-    "url": "https://jwmis.thnu.edu.cn/cas/login.action"
-  },
-  {
-    "id": "u_5169e73d",
-    "name": "唐山学院",
-    "type": "kingosoft",
-    "url": "https://jiaowu.tsc.edu.cn/tsxyjw/cas/login.action"
-  },
-  {
     "id": "u_7733818b",
     "name": "铜陵学院",
     "type": "qiangzhi",
@@ -6328,12 +5428,6 @@
     "name": "泰山护理职业学院",
     "type": "qiangzhi",
     "url": "https://webvpn.tsvcn.edu.cn/https/77726476706e69737468656265737421f1e2559434357a467b1ac7b88b43203b7414dcc5931a9c/authserver/login?service=https%3A%2F%2Fwebvpn.tsvcn.edu.cn%2Flogin%3Fcas_login%3Dtrue"
-  },
-  {
-    "id": "u_d899fb63",
-    "name": "泰山学院",
-    "type": "kingosoft",
-    "url": "http://jwxt.tsu.edu.cn/cas/login.action"
   },
   {
     "id": "u_11af376c",
@@ -6360,18 +5454,6 @@
     "url": "https://zhjw.zjxyshoufei.cn/jsxsd/"
   },
   {
-    "id": "u_b80fdb0a",
-    "name": "天津职业技术师范大学",
-    "type": "urp",
-    "url": "https://www.tute.edu.cn/xysh/yyxt.htm"
-  },
-  {
-    "id": "u_f2fe319a",
-    "name": "天津科技大学",
-    "type": "urp",
-    "url": "https://id.tust.edu.cn/authserver/login?service=http%3A%2F%2Fe.tust.edu.cn%2Flogin%3Fservice%3Dhttps%3A%2F%2Fe.tust.edu.cn%2Fnew%2Findex.html"
-  },
-  {
     "id": "u_ae37534b",
     "name": "天津滨海职业学院",
     "type": "zhengfang_new",
@@ -6384,28 +5466,10 @@
     "url": "https://jwsys.suoyuan.com.cn/jwglxt/xtgl/login_slogin.html"
   },
   {
-    "id": "u_38d83f28",
-    "name": "天津师范大学",
-    "type": "kingosoft",
-    "url": "http://202.113.110.31:8088/tjsfjw/cas/login.action"
-  },
-  {
     "id": "u_9e94a74e",
     "name": "天津市职业大学",
     "type": "zhengfang_new",
     "url": "https://vpn.tjtc.edu.cn/portal/#!/login"
-  },
-  {
-    "id": "u_65792793",
-    "name": "天津工业大学",
-    "type": "urp",
-    "url": "https://jwxs.tiangong.edu.cn/login"
-  },
-  {
-    "id": "u_84bf093c",
-    "name": "天津城建大学",
-    "type": "urp",
-    "url": "https://authserver.tcu.edu.cn/authserver/login?service=https%3A%2F%2Fjwxs.tcu.edu.cn%2Flogin"
   },
   {
     "id": "u_38be31af",
@@ -6418,12 +5482,6 @@
     "name": "天津商业大学宝德学院",
     "type": "zhengfang_new",
     "url": "http://jwgl.boustead.edu.cn/"
-  },
-  {
-    "id": "u_6bd648d7",
-    "name": "天津商业大学",
-    "type": "urp",
-    "url": "http://stu.j.tjcu.edu.cn/student/teachingResources/classCurriculum/index"
   },
   {
     "id": "u_2407254c",
@@ -6454,12 +5512,6 @@
     "name": "天津中医药大学",
     "type": "qiangzhi",
     "url": "http://jiaowu.tjutcm.edu.cn/jsxsd/"
-  },
-  {
-    "id": "u_e5556e7e",
-    "name": "天水师范学院",
-    "type": "kingosoft",
-    "url": "http://jwxt.tsnu.edu.cn/jw/cas/login.action"
   },
   {
     "id": "u_f8a7c200",
@@ -6498,12 +5550,6 @@
     "url": "http://authserver.tsgzy.edu.cn/authserver/login"
   },
   {
-    "id": "u_8b108d6b",
-    "name": "泰州学院",
-    "type": "kingosoft",
-    "url": "https://ems.tzu.edu.cn/cas/login.action"
-  },
-  {
     "id": "u_f97d97d4",
     "name": "武汉纺织大学",
     "type": "zhengfang_new",
@@ -6514,12 +5560,6 @@
     "name": "武汉电力职业技术学院",
     "type": "qiangzhi",
     "url": "https://cas.whetc.com/lyuapServer/login?service=http://xxmh.whetc.com:8081/"
-  },
-  {
-    "id": "u_94570548",
-    "name": "乌海职业技术学院",
-    "type": "urp",
-    "url": "218.21.240.146"
   },
   {
     "id": "u_e13f8611",
@@ -6666,18 +5706,6 @@
     "url": "https://ca.qcuwh.edu.cn/cas/login?service=https%3A%2F%2Fportal.qcuwh.edu.cn%2F"
   },
   {
-    "id": "u_043dd894",
-    "name": "潍坊科技学院",
-    "type": "kingosoft",
-    "url": "http://172.16.5.11/"
-  },
-  {
-    "id": "u_19861376",
-    "name": "潍坊工程职业学院",
-    "type": "kingosoft",
-    "url": "http://172.17.3.8:8081/wfgcjw/cas/login.action"
-  },
-  {
     "id": "u_860cceaa",
     "name": "武汉铁路桥梁职业学院",
     "type": "qiangzhi",
@@ -6726,12 +5754,6 @@
     "url": "http://jwgl.sdwfvc.cn/jwglxt/xtgl/login_slogin.html"
   },
   {
-    "id": "u_41a6fb34",
-    "name": "无锡城市职业技术学院",
-    "type": "kingosoft",
-    "url": "http://jwmisnew.wxcu.edu.cn:8080/wxcsjw/cas/login.action"
-  },
-  {
     "id": "u_5e64ea03",
     "name": "外交学院",
     "type": "urp",
@@ -6748,12 +5770,6 @@
     "name": "皖西学院",
     "type": "qiangzhi",
     "url": "http://jwxt.wxc.edu.cn/jsxsd/sso.jsp"
-  },
-  {
-    "id": "u_268b377d",
-    "name": "皖江工学院",
-    "type": "kingosoft",
-    "url": "http://jw.wjut.edu.cn/wjgxyjw/cas/login.action"
   },
   {
     "id": "u_342ab37e",
@@ -6894,22 +5910,10 @@
     "url": "http://111.52.253.18:8888/xtgl/login_slogin.html"
   },
   {
-    "id": "u_bcc91926",
-    "name": "新乡医学院",
-    "type": "kingosoft",
-    "url": "https://qgjw.xxmu.edu.cn/rump_frontend/access_forbidden/"
-  },
-  {
     "id": "u_5f39b2ef",
     "name": "新余学院",
     "type": "zhengfang_new",
     "url": "http://ehall.xyc.edu.cn/"
-  },
-  {
-    "id": "u_f7b22817",
-    "name": "新疆大学",
-    "type": "kingosoft",
-    "url": "http://jwxt.xju.edu.cn/xjdxjw/cas/login.action"
   },
   {
     "id": "u_0128f9f8",
@@ -7012,12 +6016,6 @@
     "name": "西华大学",
     "type": "zhengfang_new",
     "url": "http://jwc.xhu.edu.cn/xtgl/login_slogin.html"
-  },
-  {
-    "id": "u_98216ab7",
-    "name": "西南交通大学希望学院",
-    "type": "urp",
-    "url": "http://119.6.110.75:9007"
   },
   {
     "id": "u_aed60ff6",
@@ -7170,24 +6168,6 @@
     "url": "http://112.45.152.8:8000/"
   },
   {
-    "id": "u_308bdd18",
-    "name": "西安医学院",
-    "type": "kingosoft",
-    "url": "http://jwxt.xiyi.edu.cn:8080/xayxyjw/public/dykb.bjkb.html"
-  },
-  {
-    "id": "u_9c955464",
-    "name": "西安翻译学院",
-    "type": "kingosoft",
-    "url": "http://59.75.8.190:8081/xafyjw/cas/login.action"
-  },
-  {
-    "id": "u_00d098d7",
-    "name": "信阳农林学院",
-    "type": "kingosoft",
-    "url": "https://sso.xyafu.edu.cn/sso/login?service=https%3A%2F%2Fjwgl.xyafu.edu.cn%2Fcaslogin"
-  },
-  {
     "id": "u_fd7ba525",
     "name": "宣化科技职业学院",
     "type": "zhengfang_new",
@@ -7204,12 +6184,6 @@
     "name": "湘潭大学兴湘学院",
     "type": "qiangzhi",
     "url": "https://jwxt.xtu.edu.cn/jsxsd/"
-  },
-  {
-    "id": "u_3c17ca64",
-    "name": "西藏民族大学",
-    "type": "kingosoft",
-    "url": "http://jwc.xzmu.edu.cn:8081/xzmujw"
   },
   {
     "id": "u_13bdd781",
@@ -7230,40 +6204,10 @@
     "url": "http://210.43.24.144/jwglxt/xtgl/login_slogin.html?time=1759055198719"
   },
   {
-    "id": "u_c586a869",
-    "name": "厦门城市职业学院",
-    "type": "kingosoft",
-    "url": "https://jw.xmcu.edu.cn/"
-  },
-  {
-    "id": "u_78fc2178",
-    "name": "新乡职业技术学院",
-    "type": "kingosoft",
-    "url": "https://authserver.xxvtc.edu.cn/authserver/login?service=https%3A%2F%2Fehall.xxvtc.edu.cn%3A443%2Flogin%3Fservice%3Dhttps%3A%2F%2Fehall.xxvtc.edu.cn%2Fywtb-portal%2FLite%2Findex.html%23%2Fhome%2FLite_home"
-  },
-  {
-    "id": "u_4aa399df",
-    "name": "西安明德理工学院",
-    "type": "kingosoft",
-    "url": "https://cas.mdit.edu.cn/cas/login?service=https%3A%2F%2Fportal.mdit.edu.cn%2F%3Fpath%3Dhttps%3A%2F%2Fportal.mdit.edu.cn%2Fmain.html%23%2F"
-  },
-  {
-    "id": "u_0c17f874",
-    "name": "信阳艺术职业学院",
-    "type": "kingosoft",
-    "url": "http://40.2.0.105/cas/login.action"
-  },
-  {
     "id": "u_d9b2cece",
     "name": "徐州生物工程职业技术学院",
     "type": "zhengfang_new",
     "url": "http://jw1.xzsw.net/"
-  },
-  {
-    "id": "u_fa2fc47c",
-    "name": "西安财经大学行知学院",
-    "type": "kingosoft",
-    "url": "http://124.89.2.206:8085/xzxyjw/cas/login.action"
   },
   {
     "id": "u_94b74a90",
@@ -7284,22 +6228,10 @@
     "url": "https://jwxt.ylvtc.com/jwglxt/xtgl/login_slogin.html"
   },
   {
-    "id": "u_5545a3bb",
-    "name": "云南能源职业技术学院",
-    "type": "kingosoft",
-    "url": "http://ynny.cn:8300/login/oauth/authorize?response_type=code&client_id=030e3c986fcf6467dfba&redirect_uri=http%3A%2F%2Fynny.cn%3A8000%2Flogin%2F&scope=read&state=ywtb"
-  },
-  {
     "id": "u_aae5b821",
     "name": "燕京理工学院",
     "type": "qiangzhi",
     "url": "http://yitjw.yinghuaonline.com/yjlgxy/"
-  },
-  {
-    "id": "u_d2092bee",
-    "name": "扬州大学",
-    "type": "urp",
-    "url": "https://sso.yzu.edu.cn/login?service=https:%2F%2Fi.yzu.edu.cn%2FLogin%2FCasLogin"
   },
   {
     "id": "u_d70db960",
@@ -7366,12 +6298,6 @@
     "name": "烟台大学文经学院",
     "type": "zhengfang_new",
     "url": "http://jw.ytwenjing.cn/"
-  },
-  {
-    "id": "u_ddab5e2c",
-    "name": "烟台大学（从选课结果导入！）",
-    "type": "urp",
-    "url": "https://cas.ytu.edu.cn/lyuapServer/login"
   },
   {
     "id": "u_0e1d6db8",
@@ -7512,18 +6438,6 @@
     "url": "https://jwxt.yitsd.edu.cn/jwglxt/xtgl/login_slogin.html"
   },
   {
-    "id": "u_83027745",
-    "name": "云南交通职业技术学院",
-    "type": "kingosoft",
-    "url": "https://cas.ynjtc.edu.cn/lyuapServer/login?service=https://i.ynjtc.edu.cn/shiro-cas"
-  },
-  {
-    "id": "u_eb003c9e",
-    "name": "烟台南山学院",
-    "type": "kingosoft",
-    "url": "https://jw.nanshan.edu.cn/cas/login.action"
-  },
-  {
     "id": "u_2b929514",
     "name": "扬州工业职业技术学院",
     "type": "zhengfang_new",
@@ -7542,28 +6456,10 @@
     "url": "https://sfzt.ycu.edu.cn/auth/#/login?service=https://jwxt.ycu.edu.cn/sso/sxcjlogin"
   },
   {
-    "id": "u_4da01a4f",
-    "name": "云南农业职业技术学院",
-    "type": "kingosoft",
-    "url": "http://jwwb.ynavc.com/cas/login.action"
-  },
-  {
     "id": "u_d94c0bcd",
     "name": "银川能源学院",
     "type": "qiangzhi",
     "url": "http://jwgl.ycu.com.cn"
-  },
-  {
-    "id": "u_18b7ad40",
-    "name": "岳阳职业技术学院",
-    "type": "kingosoft",
-    "url": "https://dc.yvtc.edu.cn/cas/login?service=http%3A%2F%2Fdc.yvtc.edu.cn%2Fkingohall%2Fcallback%3Fclient_name%3DKingoHall"
-  },
-  {
-    "id": "u_beb8d187",
-    "name": "豫章师范学院",
-    "type": "kingosoft",
-    "url": "https://vpn.yuznu.edu.cn/portal/#!/login"
   },
   {
     "id": "u_bc36b90c",
@@ -7704,12 +6600,6 @@
     "url": "http://zhxy.hcft.edu.cn:8084/login"
   },
   {
-    "id": "u_ddb9d47c",
-    "name": "浙江水利水电学院",
-    "type": "urp",
-    "url": "http://jwjs.zjweu.edu.cn/"
-  },
-  {
     "id": "u_092cf97e",
     "name": "浙江理工大学科技与艺术学院",
     "type": "zhengfang_new",
@@ -7764,18 +6654,6 @@
     "url": "http://jxgl.zbnc.edu.cn/"
   },
   {
-    "id": "u_82ef2095",
-    "name": "郑州升达经贸管理学院",
-    "type": "kingosoft",
-    "url": "http://jw.shengda.edu.cn:8090/caslogin"
-  },
-  {
-    "id": "u_48578feb",
-    "name": "郑州商学院",
-    "type": "kingosoft",
-    "url": "https://jwgl.zbu.edu.cn/cas/login.action"
-  },
-  {
     "id": "u_ebaf9c74",
     "name": "郑州城市职业学院",
     "type": "zhengfang_new",
@@ -7786,18 +6664,6 @@
     "name": "郑州工业应用技术学院",
     "type": "zhengfang_new",
     "url": "https://portal.zzuit.edu.cn/main.html#/Index"
-  },
-  {
-    "id": "u_99048e1a",
-    "name": "郑州工程技术学院",
-    "type": "kingosoft",
-    "url": "http://211.67.107.13/zzgcjw/cas/login.action"
-  },
-  {
-    "id": "u_242a969c",
-    "name": "郑州工商学院",
-    "type": "kingosoft",
-    "url": "https://zhxy.ztbu.edu.cn/cas/login.action"
   },
   {
     "id": "u_879dea58",
@@ -7816,12 +6682,6 @@
     "name": "郑州电力高等专科学校",
     "type": "zhengfang_new",
     "url": "http://jwgl.zepc.edu.cn/"
-  },
-  {
-    "id": "u_2efe6971",
-    "name": "郑州科技学院",
-    "type": "kingosoft",
-    "url": "https://jwgl.zit.edu.cn/cas/login.action"
   },
   {
     "id": "u_6248f1e0",
@@ -7854,34 +6714,16 @@
     "url": "http://219.129.32.4:9002"
   },
   {
-    "id": "u_2f01ae35",
-    "name": "中央民族大学",
-    "type": "urp",
-    "url": "https://jwxs.muc.edu.cn/login"
-  },
-  {
     "id": "u_3ce1d305",
     "name": "中央音乐学院",
     "type": "urp",
     "url": "https://authserver.ccom.edu.cn/?timestamp=1753770534183&service=https%3A%2F%2Fbkjw.ccom.edu.cn%2F"
   },
   {
-    "id": "u_30273f5e",
-    "name": "遵义师范学院",
-    "type": "kingosoft",
-    "url": "https://cas.zync.edu.cn/lyuapServer/login"
-  },
-  {
     "id": "u_60ae350d",
     "name": "湛江科技学院",
     "type": "zhengfang_new",
     "url": "https://newjwxt.zjkju.edu.cn/xtgl/login_slogin.html"
-  },
-  {
-    "id": "u_4d487b0c",
-    "name": "浙江舟山群岛新区旅游与健康职业学院",
-    "type": "kingosoft",
-    "url": "http://zsthc.cjnep.net/sims/"
   },
   {
     "id": "u_e3754248",
@@ -7896,18 +6738,6 @@
     "url": "https://jwxt.zdxy.cn/jwglxt/xtgl/login_slogin.html"
   },
   {
-    "id": "u_40a61c76",
-    "name": "周口师范学院",
-    "type": "kingosoft",
-    "url": "https://jwgl.zknu.edu.cn/cas/login.action"
-  },
-  {
-    "id": "u_e5cace0c",
-    "name": "郑州旅游职业学院",
-    "type": "kingosoft",
-    "url": "http://authserver.zztrc.edu.cn/authserver/login?service=http%3A%2F%2Fjw.zztrc.edu.cn%2Fcaslogin"
-  },
-  {
     "id": "u_36526610",
     "name": "张家口职业技术学院",
     "type": "zhengfang_new",
@@ -7920,34 +6750,10 @@
     "url": "https://jwc.cueb.edu.cn/"
   },
   {
-    "id": "u_8a41b4c6",
-    "name": "浙江工商职业技术学院",
-    "type": "kingosoft",
-    "url": "https://jwxt.zjgsu.edu.cn/jwglxt/xtgl/login_slogin.html?language=zh_CN&_t=1619664005667"
-  },
-  {
-    "id": "u_8c36d460",
-    "name": "漳州卫生职业学院",
-    "type": "kingosoft",
-    "url": "https://jwc.zzwzy.edu.cn/zzwsjw/cas/login.action"
-  },
-  {
     "id": "u_d1bea785",
     "name": "浙江警察学院",
     "type": "zhengfang_new",
     "url": "https://0vpn.zjjcxy.cn/portal/#!/login"
-  },
-  {
-    "id": "u_83f82cf7",
-    "name": "郑州铁路职业技术学院",
-    "type": "kingosoft",
-    "url": "https://sec.zzrvtc.edu.cn/webvpn/LjIwNC4yMTUuMjE4LjE2My4xNjg=/LjE5OS4xOTYuMjE3Ljk3LjE3NS4xNzcuMjE2LjIxNS4xNjkuMTQ4LjE0OC4xNTUuMTQ4LjE3Mi4xMDIuMTk5LjE2Ng==/login?service=https%3A%2F%2Fsec.zzrvtc.edu.cn%2Frump_frontend%2FloginFromCas%2F"
-  },
-  {
-    "id": "u_b4c6eecc",
-    "name": "郑州经贸学院",
-    "type": "kingosoft",
-    "url": "https://cas.zueb.edu.cn/cas/login?service=https%3A%2F%2Fportal.zueb.edu.cn%2F%3Fpath%3Dhttps%3A%2F%2Fportal.zueb.edu.cn%2Fmain.html%23%2FTourist"
   },
   {
     "id": "u_f7fa9a7f",
@@ -7972,24 +6778,6 @@
     "name": "浙江广厦建设职业技术大学",
     "type": "zhengfang_new",
     "url": "https://cas.zjgsdx.edu.cn/cas/login?service=https%3A%2F%2Fi.zjgsdx.edu.cn%2F"
-  },
-  {
-    "id": "u_4bd895c7",
-    "name": "郑州警察学院",
-    "type": "kingosoft",
-    "url": "http://auth.rpc.edu.cn/cas/login"
-  },
-  {
-    "id": "u_12541762",
-    "name": "浙江金融职业学院",
-    "type": "kingosoft",
-    "url": "https://ids.zfc.edu.cn/authserver/login?service=https://atrust.zfc.edu.cn:443/passport/v1/auth/cas"
-  },
-  {
-    "id": "u_de727a6a",
-    "name": "钟山职业技术学院",
-    "type": "kingosoft",
-    "url": "https://zhpt.zscollege.com:8081/zszyjw/cas/login.action"
   },
   {
     "id": "u_b593b91b",
@@ -8136,12 +6924,6 @@
     "url": "http://jw.cupk.edu.cn/jsxsd/"
   },
   {
-    "id": "u_8e6053a6",
-    "name": "中国海洋大学",
-    "type": "kingosoft",
-    "url": "https://id.ouc.edu.cn/sso/login"
-  },
-  {
     "id": "u_fe88e6e7",
     "name": "中国民航大学",
     "type": "zhengfang_new",
@@ -8212,5 +6994,2261 @@
     "name": "张家界学院",
     "type": "qiangzhi",
     "url": "https://cas.zjjxy-zhxy.net/lyuapServer/login"
+  },
+  {
+    "id": "u_e3380a50",
+    "name": "安阳工学院",
+    "type": "kingosoft_new",
+    "url": "http://jwgl.ayit.edu.cn/"
+  },
+  {
+    "id": "u_11e81c4b",
+    "name": "安阳幼儿师范高等专科学校",
+    "type": "kingosoft_new",
+    "url": "https://jw.ayyz.edu.cn/ayyzjw/cas/login.action"
+  },
+  {
+    "id": "u_f786190a",
+    "name": "安阳师范学院",
+    "type": "kingosoft_new",
+    "url": "https://authserver.aynu.edu.cn/authserver/login?service=https%3A%2F%2Fnginx.aynu.edu.cn%2Fwengine-auth%2flogin%3Fcas_login%3Dtrue"
+  },
+  {
+    "id": "u_d5f2e5b2",
+    "name": "安阳学院",
+    "type": "kingosoft_new",
+    "url": "http://cas.ayxy.edu.cn/cas/login?service=http%3A%2F%2Fjw.ayxy.edu.cn%2Fjxcjcaslogin"
+  },
+  {
+    "id": "u_5962ac8d",
+    "name": "安庆职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://jw.aqvtc.edu.cn/aqzyjw/cas/login.action"
+  },
+  {
+    "id": "u_0f58842c",
+    "name": "安徽文达信息工程学院",
+    "type": "kingosoft_new",
+    "url": "http://218.22.58.76:2346/cas/login.action"
+  },
+  {
+    "id": "u_c788c85b",
+    "name": "安徽城市管理职业学院",
+    "type": "kingosoft_new",
+    "url": "https://jw.cua.edu.cn/ahcsjw/cas/login.action"
+  },
+  {
+    "id": "u_4ad256b2",
+    "name": "北京师范大学",
+    "type": "kingosoft_new",
+    "url": "http://zyfw.prsc.bnu.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_c015655f",
+    "name": "北京师范大学珠海校区",
+    "type": "kingosoft_new",
+    "url": "https://www.bnuzh.edu.cn"
+  },
+  {
+    "id": "u_58672553",
+    "name": "百色学院",
+    "type": "kingosoft_new",
+    "url": "http://jwgl.bsuc.edu.cn/bsxyjw/cas/login.action"
+  },
+  {
+    "id": "u_95bba8a2",
+    "name": "北京邮电大学世纪学院",
+    "type": "urp_new",
+    "url": "http://10.1.1.102/student/courseSelect/thisSemesterCurriculum/index"
+  },
+  {
+    "id": "u_7efa3bda",
+    "name": "蚌埠学院",
+    "type": "kingosoft_new",
+    "url": "http://222.207.13.101/bbxyjw/"
+  },
+  {
+    "id": "u_ddd9bb5b",
+    "name": "北京师范大学（北京校区）",
+    "type": "kingosoft_new",
+    "url": "https://onevpn.bnu.edu.cn/https/77726476706e69737468656265737421f3f652d2253e7d1e7b0c9ce29b5b/cas/login?service=https%3A%2F%2Fonevpn.bnu.edu.cn%2Flogin%3Fcas_login%3Dtrue#"
+  },
+  {
+    "id": "u_c9e10c0d",
+    "name": "北京师范大学（珠海校区）",
+    "type": "kingosoft_new",
+    "url": "https://onevpn.bnu.edu.cn/https/77726476706e69737468656265737421f3f652d2253e7d1e7b0c9ce29b5b/cas/login?service=https%3A%2F%2Fonevpn.bnu.edu.cn%2Flogin%3Fcas_login%3Dtrue#"
+  },
+  {
+    "id": "u_57077554",
+    "name": "蚌埠医科大学",
+    "type": "kingosoft_new",
+    "url": "https://byjw.bbmc.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_fdabd8ac",
+    "name": "重庆工业职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://jwgl.cqipc.edu.cn:9080/cqipcjw/cas/login.action"
+  },
+  {
+    "id": "u_989be029",
+    "name": "重庆工程学院",
+    "type": "kingosoft_new",
+    "url": "http://jw.cqie.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_5069e4bf",
+    "name": "重庆文理学院",
+    "type": "kingosoft_new",
+    "url": "http://www.cqwu.edu.cn/redir/redirTmp.jsp"
+  },
+  {
+    "id": "u_10f1496d",
+    "name": "长沙师范学院",
+    "type": "kingosoft_new",
+    "url": "http://192.168.10.115:8080/cssfjw"
+  },
+  {
+    "id": "u_aeb238fa",
+    "name": "滁州职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://183.167.211.134:8989/czcvcjw/cas/login.action"
+  },
+  {
+    "id": "u_01b4743c",
+    "name": "重庆青年职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://authserver.cqyu.edu.cn/authserver/login?service=http%3A%2F%2Fehall.cqyu.edu.cn%2Flogin%3Fservice%3Dhttp%3A%2F%2Fehall.cqyu.edu.cn%2Fnew%2Findex.html"
+  },
+  {
+    "id": "u_664169d9",
+    "name": "长垣烹饪职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://portal.cyprxy.edu.cn/portal-pc/pc/zzcj/index.html#/"
+  },
+  {
+    "id": "u_d3127f5c",
+    "name": "长治学院",
+    "type": "kingosoft_new",
+    "url": "https://cas.czc.edu.cn/tpass/login?service=https%3A%2F%2Fone.czc.edu.cn%2Ftp_up%2F"
+  },
+  {
+    "id": "u_9cf6a115",
+    "name": "重庆安全技术职业学院",
+    "type": "kingosoft_new",
+    "url": "https://rz.cqvist.net/cas/login?service=https%3A%2F%2Fmhapi.cqvist.net%2Fintegrate%2Fuaap%2Fcas%2Fresolve-cas-return%3Fnext%3Dhttps%253A%252F%252Fmh.cqvist.net%252F%2523%252FcasLogin%253FtoUrl%253D%25252Findex"
+  },
+  {
+    "id": "u_29f28c7c",
+    "name": "重庆工业职业技术大学",
+    "type": "kingosoft_new",
+    "url": "https://jwgl.cqipc.edu.cn:9080/cqipcjw/cas/login.action"
+  },
+  {
+    "id": "u_22c440b7",
+    "name": "东北农业大学",
+    "type": "urp_new",
+    "url": "http://jwc.neau.edu.cn"
+  },
+  {
+    "id": "u_1586f7b9",
+    "name": "东北财经大学",
+    "type": "urp_new",
+    "url": "http://202.199.165.159/login"
+  },
+  {
+    "id": "u_b8a48c18",
+    "name": "东莞理工学院",
+    "type": "kingosoft_new",
+    "url": "http://jwyd.dgut.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_e0e77e9d",
+    "name": "东北师范大学",
+    "type": "qiangzhi_old",
+    "url": "https://authserver-443.webvpn.nenu.edu.cn/authserver/login?service=https%3A%2F%2Fwebvpn.nenu.edu.cn%2Fusers%2Fauth%2Fcas%2Fcallback%3Furl%3Dhttps%253A%252F%252Fjwc.nenu.edu.cn%252F"
+  },
+  {
+    "id": "u_040bf312",
+    "name": "东营职业学院",
+    "type": "kingosoft_new",
+    "url": "https://jw.dyxy.edu.cn:8086/dyzyjw/"
+  },
+  {
+    "id": "u_b67bb903",
+    "name": "鄂州职业大学",
+    "type": "kingosoft_new",
+    "url": "https://jwxt.ezu.cn/ezzyjw/cas/login.action"
+  },
+  {
+    "id": "u_f70ef0b6",
+    "name": "阜阳师范大学",
+    "type": "kingosoft_new",
+    "url": "https://tyrz.fynu.edu.cn/oshall/"
+  },
+  {
+    "id": "u_ed44cfde",
+    "name": "福州英华职业学院",
+    "type": "kingosoft_new",
+    "url": "http://112.5.131.20:94/fzyhjw/cas/login.action"
+  },
+  {
+    "id": "u_e8f8c97a",
+    "name": "阜阳师范大学信息工程学院",
+    "type": "kingosoft_new",
+    "url": "http://jw.fynu.edu.cn:8080/fysdjw/cas/login.action"
+  },
+  {
+    "id": "u_e2044766",
+    "name": "广西工商职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://jwmis.gxgsxy.com/cas/login.action"
+  },
+  {
+    "id": "u_0412db8a",
+    "name": "广西财经学院",
+    "type": "kingosoft_new",
+    "url": "http://jwglxt.gxufe.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_65d2795f",
+    "name": "桂林航天工业学院",
+    "type": "kingosoft_new",
+    "url": "http://jw.guat.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_da10fa03",
+    "name": "广西建设职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://ids.gxjsxy.cn/authserver/login?service=https%3A%2F%2Fehall.gxjsxy.cn%2Flogin%3Fservice%3Dhttps%3A%2F%2Fehall.gxjsxy.cn%2Fnew%2Findex.html"
+  },
+  {
+    "id": "u_d988c194",
+    "name": "桂林师范高等专科学校",
+    "type": "kingosoft_new",
+    "url": "https://authserver.glnc.edu.cn/authserver/login?service=https%3A%2F%2Fehall.glnc.edu.cn%2Flogin%3Fservice%3Dhttps%3A%2F%2Fehall.glnc.edu.cn%2Fnew%2Findex.html%3Fbrowser%3Dno"
+  },
+  {
+    "id": "u_aae88ff4",
+    "name": "贵州黔南科技学院",
+    "type": "kingosoft_new",
+    "url": "http://jw.gzucst.com/gdkyjw/cas/login.action"
+  },
+  {
+    "id": "u_4fcc6068",
+    "name": "广州华商职业学院",
+    "type": "kingosoft_new",
+    "url": "http://jwxt.gdhsc.edu.cn/jsxsd/"
+  },
+  {
+    "id": "u_a7b1cfd7",
+    "name": "广西警察学院",
+    "type": "kingosoft_new",
+    "url": "https://jw.gxjcxy.com/cas/login.action"
+  },
+  {
+    "id": "u_311c6f86",
+    "name": "广东岭南职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://portals.lnc.edu.cn/"
+  },
+  {
+    "id": "u_909072cc",
+    "name": "赣南科技学院",
+    "type": "kingosoft_new",
+    "url": "https://jw.gnust.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_30c13da4",
+    "name": "广西制造工程职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://jwxt.gxzzzy.cn/cas/login.action"
+  },
+  {
+    "id": "u_8d83aa14",
+    "name": "湖北工业大学工程技术学院",
+    "type": "urp_new",
+    "url": "http://202.114.190.75/login"
+  },
+  {
+    "id": "u_41efb29a",
+    "name": "湖南理工学院",
+    "type": "urp_new",
+    "url": "http://uia.hnist.cn"
+  },
+  {
+    "id": "u_98bb78b8",
+    "name": "衡水学院",
+    "type": "urp_new",
+    "url": "http://xjw.hsnc.edu.cn:7777/login"
+  },
+  {
+    "id": "u_339d5bd6",
+    "name": "黑龙江科技大学",
+    "type": "urp_new",
+    "url": "http://xsurp.usth.edu.cn/index.jsp/"
+  },
+  {
+    "id": "u_622ea4a0",
+    "name": "华北理工大学轻工学院",
+    "type": "urp_new",
+    "url": "http://jws.qgxy.cn/login"
+  },
+  {
+    "id": "u_7cfdf7c3",
+    "name": "华北理工大学冀唐学院",
+    "type": "urp_new",
+    "url": "https://authserver.ncst.edu.cn/authserver/login?service=https://webexp.ncst.edu.cn/login/casCallback/RGQGotNQ/"
+  },
+  {
+    "id": "u_70b031dd",
+    "name": "河北科技工程职业技术大学",
+    "type": "kingosoft_new",
+    "url": "http://authserver.hevute.edu.cn/authserver/login"
+  },
+  {
+    "id": "u_6a1b5f75",
+    "name": "湖南石油化工职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://jwc.hnshzy.cn:90/hnshjw/cas/login.action"
+  },
+  {
+    "id": "u_f19f95d4",
+    "name": "河南工学院",
+    "type": "kingosoft_new",
+    "url": "https://sfrz.hait.edu.cn/cas/login?service=https%3A%2F%2Fsec.hait.edu.cn%2Frump_frontend%2FloginFromCas%2F"
+  },
+  {
+    "id": "u_9553a526",
+    "name": "河南经贸职业学院",
+    "type": "kingosoft_new",
+    "url": "https://henetc.hnscen.cn/classroom/login"
+  },
+  {
+    "id": "u_cc755e89",
+    "name": "湖南铁道职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://cas.hnrpc.com/cas/login?service=https://xgxt.hnrpc.com/zftal-xgxt-web/teacher/xtgl/index/check.zf"
+  },
+  {
+    "id": "u_c62a83b7",
+    "name": "河南科技学院",
+    "type": "kingosoft_new",
+    "url": "http://jwgl.hist.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_1c48bb56",
+    "name": "哈尔滨学院",
+    "type": "kingosoft_new",
+    "url": "http://jwmis.hrbu.edu.cn/"
+  },
+  {
+    "id": "u_9ad900c6",
+    "name": "杭州科技职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://cas.hzpt.edu.cn/cas/login?service=https://i.hzpt.edu.cn"
+  },
+  {
+    "id": "u_99ce596c",
+    "name": "湖南汽车工程职业学院",
+    "type": "kingosoft_new",
+    "url": "http://jw.hnqczy.com/cas/login.action"
+  },
+  {
+    "id": "u_9c6c314c",
+    "name": "河南开封科技传媒学院",
+    "type": "kingosoft_new",
+    "url": "https://msjw.humc.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_0331e596",
+    "name": "黄淮学院",
+    "type": "kingosoft_new",
+    "url": "https://huanghuai.jijiaox.com/mg/login?type=3"
+  },
+  {
+    "id": "u_565003fe",
+    "name": "河北机电职业技术学院",
+    "type": "kingosoft_new",
+    "url": "138.1.2.175"
+  },
+  {
+    "id": "u_31ed48dc",
+    "name": "河南牧业经济学院",
+    "type": "kingosoft_new",
+    "url": "http://211.84.213.21/cas/login.action"
+  },
+  {
+    "id": "u_c4495fbc",
+    "name": "湖南幼儿师范高等专科学校",
+    "type": "qiangzhi_old",
+    "url": "https://hnyz.jw.chaoxing.com/"
+  },
+  {
+    "id": "u_d8ac9571",
+    "name": "河南机电职业学院",
+    "type": "kingosoft_new",
+    "url": "http://61.163.103.43:8081/hnjdjw/cas/login.action"
+  },
+  {
+    "id": "u_fc72afbe",
+    "name": "河南地矿职业学院",
+    "type": "kingosoft_new",
+    "url": "https://jwxt.hagmc.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_501e4f6f",
+    "name": "黑龙江工程学院昆仑旅游学院",
+    "type": "kingosoft_new",
+    "url": "http://111.40.42.202:8077/kllyjw/cas/login.action"
+  },
+  {
+    "id": "u_fa20f180",
+    "name": "海南职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://oa.hcvt.cn/"
+  },
+  {
+    "id": "u_99b7dcc9",
+    "name": "海南科技职业大学",
+    "type": "kingosoft_new",
+    "url": "https://auth.hnkjedu.cn/sso/auth?redirect=https://program.hnkjedu.cn/ssoLogin?back="
+  },
+  {
+    "id": "u_409d658f",
+    "name": "淮南联合大学",
+    "type": "kingosoft_new",
+    "url": "http://jwgl.hnuu.edu.cn/hnlhdxjw/cas/login.action"
+  },
+  {
+    "id": "u_57f52e6f",
+    "name": "河西学院",
+    "type": "kingosoft_new",
+    "url": "http://172.20.0.144/hxxyjw/"
+  },
+  {
+    "id": "u_d2e272ec",
+    "name": "河南职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://jwgl.hnzj.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_00a4e94c",
+    "name": "河南大学",
+    "type": "kingosoft_new",
+    "url": "https://xk.henu.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_0b3e260d",
+    "name": "河南农业大学",
+    "type": "kingosoft_new",
+    "url": "http://jw.henau.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_c98c8145",
+    "name": "河北科技大学理工学院",
+    "type": "kingosoft_new",
+    "url": "http://202.206.64.204/hbkjlgxyjw/cas/login.action"
+  },
+  {
+    "id": "u_aae1af58",
+    "name": "河北科技大学",
+    "type": "kingosoft_new",
+    "url": "http://jw.hebust.edu.cn/hbkjjw/cas/login.action"
+  },
+  {
+    "id": "u_3a66c745",
+    "name": "河北工业大学",
+    "type": "urp_new",
+    "url": "https://webvpn.hebut.edu.cn/portal/#/login"
+  },
+  {
+    "id": "u_d72114b5",
+    "name": "河北大学",
+    "type": "urp_new",
+    "url": "http://zhjw.hbu.edu.cn/"
+  },
+  {
+    "id": "u_d18c53b1",
+    "name": "河北地质大学",
+    "type": "urp_new",
+    "url": "https://cas.hgu.edu.cn/cas/login?service=https%3A%2F%2Fmy.hgu.edu.cn%2Fsopcb%2F"
+  },
+  {
+    "id": "u_856a16cd",
+    "name": "华北理工大学",
+    "type": "urp_new",
+    "url": "http://xjw1.ncst.edu.cn/"
+  },
+  {
+    "id": "u_76b1d3ef",
+    "name": "华北水利水电大学",
+    "type": "kingosoft_new",
+    "url": "https://jwmis.ncwu.edu.cn/"
+  },
+  {
+    "id": "u_8ec9ccdb",
+    "name": "河南医药大学",
+    "type": "kingosoft_new",
+    "url": "https://qgjw.xxmu.edu.cn/rump_frontend/access_forbidden/"
+  },
+  {
+    "id": "u_3395b04f",
+    "name": "海南医科大学",
+    "type": "kingosoft_new",
+    "url": "https://zshy.muhn.edu.cn/#/"
+  },
+  {
+    "id": "u_0eeca5dc",
+    "name": "杭州职业技术大学",
+    "type": "kingosoft_new",
+    "url": "http://jwglxt.hzvtc.edu.cn/"
+  },
+  {
+    "id": "u_394562e3",
+    "name": "河南中医药大学",
+    "type": "kingosoft_new",
+    "url": "http://211.69.32.174/zy21w/"
+  },
+  {
+    "id": "u_b1b280b8",
+    "name": "江西警察学院",
+    "type": "kingosoft_new",
+    "url": "http://jw.jxga.edu.cn/jxjcxyjw/cas/login.action"
+  },
+  {
+    "id": "u_09c347e2",
+    "name": "嘉兴南洋职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://www.jxnyi.edu.cn:2316/portal/#/login"
+  },
+  {
+    "id": "u_fca2b2d0",
+    "name": "江苏信息职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://jwxt.jsit.edu.cn/jsxxzyjw/cas/login.action"
+  },
+  {
+    "id": "u_601532e9",
+    "name": "江西财经大学",
+    "type": "kingosoft_new",
+    "url": "http://portal.jxufe.edu.cn/"
+  },
+  {
+    "id": "u_6d4061f3",
+    "name": "江苏农牧科技职业学院",
+    "type": "kingosoft_new",
+    "url": "https://cas.jsahvc.edu.cn/lyuapServer/login"
+  },
+  {
+    "id": "u_c272e115",
+    "name": "集宁师范学院",
+    "type": "kingosoft_new",
+    "url": "http://111.56.74.189:8088/cas/login.action"
+  },
+  {
+    "id": "u_a3fb8b20",
+    "name": "江苏农林职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://authserver.jsafc.edu.cn/authserver/login?service=http%3A%2F%2F121.248.67.6%3A8080%2Fjsafcjw%2Fcaslogin"
+  },
+  {
+    "id": "u_2d3761e4",
+    "name": "江汉大学",
+    "type": "kingosoft_new",
+    "url": "https://jwxt.jhun.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_7189789c",
+    "name": "江西交通职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://jw.jxjtxy.edu.cn/jxjtxy/cas/login.action"
+  },
+  {
+    "id": "u_205e2063",
+    "name": "济源职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://jwgl.jyvtc.edu.cn/jyvtcjw/cas/login.action"
+  },
+  {
+    "id": "u_b26f6581",
+    "name": "济南幼儿师范高等专科学校",
+    "type": "kingosoft_new",
+    "url": "https://jw.jnpec.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_cbc80322",
+    "name": "晋中学院",
+    "type": "kingosoft_new",
+    "url": "https://sso-jzxy-edu-cn-s.jzxy.edu.cn:8118/auth/#/login?service=https://portal.jzxy.edu.cn/auth/cas_validate?entry_id=1"
+  },
+  {
+    "id": "u_b94805c6",
+    "name": "佳木斯大学",
+    "type": "kingosoft_new",
+    "url": "https://jwxt.jmsu.edu.cn:456/jmsujw/cas/login.action"
+  },
+  {
+    "id": "u_01e2b0c1",
+    "name": "晋中信息学院",
+    "type": "urp_new",
+    "url": "https://www.jzci.edu.cn/vpn.htm"
+  },
+  {
+    "id": "u_1a6af38b",
+    "name": "昆明医科大学",
+    "type": "kingosoft_new",
+    "url": "http://61.166.241.221/cas/login.action"
+  },
+  {
+    "id": "u_b12ba74b",
+    "name": "开封职业学院",
+    "type": "kingosoft_new",
+    "url": "http://211.142.110.50:8081/kfzyjw/cas/login.action"
+  },
+  {
+    "id": "u_205914a0",
+    "name": "陇东学院",
+    "type": "kingosoft_new",
+    "url": "https://jwxt.ldxy.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_3c31b303",
+    "name": "鲁东大学",
+    "type": "urp_new",
+    "url": "https://xsjw.ldu.edu.cn/login"
+  },
+  {
+    "id": "u_e8a5f055",
+    "name": "柳州铁道职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://ehall.ltzy.edu.cn/ywtb-portal/ltzy/index.html?browser=no#/home/ltzy_home"
+  },
+  {
+    "id": "u_c690ad78",
+    "name": "吕梁学院",
+    "type": "kingosoft_new",
+    "url": "https://sso.llu.edu.cn/auth/#/login?service=https://jwgl.llu.edu.cn/llxyjw/caslogin"
+  },
+  {
+    "id": "u_c43e10fb",
+    "name": "辽宁省交通高等专科学校",
+    "type": "kingosoft_new",
+    "url": "https://zhjx.lncc.edu.cn/login?redirect=/index"
+  },
+  {
+    "id": "u_c5004098",
+    "name": "辽宁大学",
+    "type": "urp_new",
+    "url": "http://jwstudent.lnu.edu.cn/login"
+  },
+  {
+    "id": "u_9ee89a3c",
+    "name": "辽宁金融职业学院",
+    "type": "kingosoft_new",
+    "url": "https://jw.lnfvc.edu.cn/lnjrjw/cas/login.action"
+  },
+  {
+    "id": "u_ea3b89e1",
+    "name": "兰州博文科技学院",
+    "type": "kingosoft_new",
+    "url": "http://jwxt.bowenedu.cn:8080/cas/login.action"
+  },
+  {
+    "id": "u_02f45abc",
+    "name": "聊城职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://61.133.116.247/"
+  },
+  {
+    "id": "u_e5671b7c",
+    "name": "绵阳城市学院",
+    "type": "kingosoft_new",
+    "url": "https://sso.mycc.edu.cn/mcauth/login?service=http://jwgl.mycc.edu.cn/caslogin"
+  },
+  {
+    "id": "u_b094c469",
+    "name": "牡丹江师范学院",
+    "type": "kingosoft_new",
+    "url": "http://webvpn.mdjnu.edu.cn"
+  },
+  {
+    "id": "u_22dcc272",
+    "name": "内蒙古大学",
+    "type": "urp_new",
+    "url": "https://jwxt.imu.edu.cn/"
+  },
+  {
+    "id": "u_406b6042",
+    "name": "内蒙古民族大学",
+    "type": "urp_new",
+    "url": "http://219.225.128.30/login"
+  },
+  {
+    "id": "u_a4f6a705",
+    "name": "内蒙古科技大学",
+    "type": "urp_new",
+    "url": "https://xsjw.imust.edu.cn/login"
+  },
+  {
+    "id": "u_2f4570f4",
+    "name": "内蒙古大学创业学院",
+    "type": "urp_new",
+    "url": "http://110.16.109.224:82/login"
+  },
+  {
+    "id": "u_58e494de",
+    "name": "南昌师范学院",
+    "type": "urp_new",
+    "url": "http://jwxtxs.ncnu.edu.cn:8080"
+  },
+  {
+    "id": "u_2d65f98e",
+    "name": "齐鲁理工学院",
+    "type": "urp_new",
+    "url": "http://58.56.101.14:881/login"
+  },
+  {
+    "id": "u_109881bd",
+    "name": "齐齐哈尔大学",
+    "type": "urp_new",
+    "url": "http://111.43.36.164"
+  },
+  {
+    "id": "u_4f9b7da6",
+    "name": "泉州医学高等专科学校",
+    "type": "kingosoft_new",
+    "url": "https://kingsoft.qzmc.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_c2a7a4da",
+    "name": "秦皇岛职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://111.227.176.122:8080/cas/login.action"
+  },
+  {
+    "id": "u_ac99d33c",
+    "name": "汝州职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://jwgl.rzvtc.cn:8081/rzzyjw/cas/login.action"
+  },
+  {
+    "id": "u_e4e682b3",
+    "name": "四川大学",
+    "type": "urp_new",
+    "url": "http://zhjw.scu.edu.cn/index"
+  },
+  {
+    "id": "u_b1ecee64",
+    "name": "四川旅游学院",
+    "type": "kingosoft_new",
+    "url": "http://jw.sctu.edu.cn:8002/stujw/caslogin"
+  },
+  {
+    "id": "u_4e705ef0",
+    "name": "宿州学院",
+    "type": "kingosoft_new",
+    "url": "http://211.86.128.194/suzxyjw/cas/login.action"
+  },
+  {
+    "id": "u_9507c6d9",
+    "name": "山东航空学院（原滨州学院）",
+    "type": "urp_new",
+    "url": "http://service.sdua.edu.cn/EIP/nonlogin/onewebsitehande/toPersonalCenterPage.htm?activePersonalHomeTab=false"
+  },
+  {
+    "id": "u_df079f5c",
+    "name": "四川建筑职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://jw.scac.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_26bd7359",
+    "name": "沈阳农业大学",
+    "type": "urp_new",
+    "url": "https://jwc.syau.edu.cn/info/1033/4703.htm"
+  },
+  {
+    "id": "u_3d9f11e8",
+    "name": "商丘职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://jiaowuxt.sqzy.edu.cn/caslogin"
+  },
+  {
+    "id": "u_286946ec",
+    "name": "山东现代学院",
+    "type": "kingosoft_new",
+    "url": "http://42.247.18.146/cas/login.action"
+  },
+  {
+    "id": "u_8a12fef0",
+    "name": "三门峡职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://jw.smxpt.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_2564e415",
+    "name": "山东工业职业学院",
+    "type": "kingosoft_new",
+    "url": "http://jw.sdivc.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_7b5afe61",
+    "name": "山东工程职业技术大学",
+    "type": "kingosoft_new",
+    "url": "https://qgjw.suet.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_572878c1",
+    "name": "山西林业职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://id.sxly.edu.cn/realms/sxly/protocol/openid-connect/auth?client_id=portal&scope=openid&response_type=code&redirect_uri=https://port.sxly.edu.cn/login/qfid"
+  },
+  {
+    "id": "u_1481fa87",
+    "name": "沈阳职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://192.168.100.87:8081/syzyjw/cas/login.action"
+  },
+  {
+    "id": "u_601ab847",
+    "name": "石家庄职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://jwman.sjzpt.edu.cn/sjzzyjw/cas/login.action"
+  },
+  {
+    "id": "u_325a1a29",
+    "name": "山东商务职业学院",
+    "type": "kingosoft_new",
+    "url": "https://jwglxt.sdbi.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_d7bcb1fb",
+    "name": "苏州托普信息职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://jwweb.szetop.com/sztpjw/cas/login.action"
+  },
+  {
+    "id": "u_4878ccde",
+    "name": "山东航空学院",
+    "type": "urp_new",
+    "url": "http://service.sdua.edu.cn/EIP/nonlogin/onewebsitehande/toPersonalCenterPage.htm?activePersonalHomeTab=false"
+  },
+  {
+    "id": "u_506e1a27",
+    "name": "山东城市建设职业学院",
+    "type": "kingosoft_new",
+    "url": "http://jwxt.sduc.edu.cn/sdcjjw/cas/login.action"
+  },
+  {
+    "id": "u_a7e443d6",
+    "name": "山东女子学院",
+    "type": "kingosoft_new",
+    "url": "http://jwxt.sdwu.edu.cn/sdnzjw/cas/login.action"
+  },
+  {
+    "id": "u_3a48d498",
+    "name": "山西工程技术学院",
+    "type": "urp_new",
+    "url": "http://211.82.48.36/login"
+  },
+  {
+    "id": "u_a2ba21f8",
+    "name": "上海海洋大学",
+    "type": "urp_new",
+    "url": "https://urp.shou.edu.cn/login"
+  },
+  {
+    "id": "u_7b6dc27d",
+    "name": "陕西师范大学",
+    "type": "kingosoft_new",
+    "url": "http://jwgl.snnu.edu.cn/jxcjcaslogin"
+  },
+  {
+    "id": "u_89e7fb2a",
+    "name": "陕西国防工业职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://jw.gfxy.com/cas/login.action"
+  },
+  {
+    "id": "u_ad78dbcd",
+    "name": "太原学院",
+    "type": "urp_new",
+    "url": "10.0.2.7"
+  },
+  {
+    "id": "u_8394d129",
+    "name": "铜陵职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://jw.tlpt.net.cn/cas/login.action"
+  },
+  {
+    "id": "u_5a84846b",
+    "name": "通化师范学院",
+    "type": "kingosoft_new",
+    "url": "https://jwmis.thnu.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_5169e73d",
+    "name": "唐山学院",
+    "type": "kingosoft_new",
+    "url": "https://jiaowu.tsc.edu.cn/tsxyjw/cas/login.action"
+  },
+  {
+    "id": "u_d899fb63",
+    "name": "泰山学院",
+    "type": "kingosoft_new",
+    "url": "http://jwxt.tsu.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_b80fdb0a",
+    "name": "天津职业技术师范大学",
+    "type": "urp_new",
+    "url": "https://www.tute.edu.cn/xysh/yyxt.htm"
+  },
+  {
+    "id": "u_f2fe319a",
+    "name": "天津科技大学",
+    "type": "urp_new",
+    "url": "https://id.tust.edu.cn/authserver/login?service=http%3A%2F%2Fe.tust.edu.cn%2Flogin%3Fservice%3Dhttps%3A%2F%2Fe.tust.edu.cn%2Fnew%2Findex.html"
+  },
+  {
+    "id": "u_38d83f28",
+    "name": "天津师范大学",
+    "type": "kingosoft_new",
+    "url": "http://202.113.110.31:8088/tjsfjw/cas/login.action"
+  },
+  {
+    "id": "u_65792793",
+    "name": "天津工业大学",
+    "type": "urp_new",
+    "url": "https://jwxs.tiangong.edu.cn/login"
+  },
+  {
+    "id": "u_84bf093c",
+    "name": "天津城建大学",
+    "type": "urp_new",
+    "url": "https://authserver.tcu.edu.cn/authserver/login?service=https%3A%2F%2Fjwxs.tcu.edu.cn%2Flogin"
+  },
+  {
+    "id": "u_6bd648d7",
+    "name": "天津商业大学",
+    "type": "urp_new",
+    "url": "http://stu.j.tjcu.edu.cn/student/teachingResources/classCurriculum/index"
+  },
+  {
+    "id": "u_e5556e7e",
+    "name": "天水师范学院",
+    "type": "kingosoft_new",
+    "url": "http://jwxt.tsnu.edu.cn/jw/cas/login.action"
+  },
+  {
+    "id": "u_8b108d6b",
+    "name": "泰州学院",
+    "type": "kingosoft_new",
+    "url": "https://ems.tzu.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_94570548",
+    "name": "乌海职业技术学院",
+    "type": "urp_new",
+    "url": "218.21.240.146"
+  },
+  {
+    "id": "u_043dd894",
+    "name": "潍坊科技学院",
+    "type": "kingosoft_new",
+    "url": "http://172.16.5.11/"
+  },
+  {
+    "id": "u_19861376",
+    "name": "潍坊工程职业学院",
+    "type": "kingosoft_new",
+    "url": "http://172.17.3.8:8081/wfgcjw/cas/login.action"
+  },
+  {
+    "id": "u_41a6fb34",
+    "name": "无锡城市职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://jwmisnew.wxcu.edu.cn:8080/wxcsjw/cas/login.action"
+  },
+  {
+    "id": "u_268b377d",
+    "name": "皖江工学院",
+    "type": "kingosoft_new",
+    "url": "http://jw.wjut.edu.cn/wjgxyjw/cas/login.action"
+  },
+  {
+    "id": "u_bcc91926",
+    "name": "新乡医学院",
+    "type": "kingosoft_new",
+    "url": "https://qgjw.xxmu.edu.cn/rump_frontend/access_forbidden/"
+  },
+  {
+    "id": "u_f7b22817",
+    "name": "新疆大学",
+    "type": "kingosoft_new",
+    "url": "http://jwxt.xju.edu.cn/xjdxjw/cas/login.action"
+  },
+  {
+    "id": "u_98216ab7",
+    "name": "西南交通大学希望学院",
+    "type": "urp_new",
+    "url": "http://119.6.110.75:9007"
+  },
+  {
+    "id": "u_308bdd18",
+    "name": "西安医学院",
+    "type": "kingosoft_new",
+    "url": "http://jwxt.xiyi.edu.cn:8080/xayxyjw/public/dykb.bjkb.html"
+  },
+  {
+    "id": "u_9c955464",
+    "name": "西安翻译学院",
+    "type": "kingosoft_new",
+    "url": "http://59.75.8.190:8081/xafyjw/cas/login.action"
+  },
+  {
+    "id": "u_00d098d7",
+    "name": "信阳农林学院",
+    "type": "kingosoft_new",
+    "url": "https://sso.xyafu.edu.cn/sso/login?service=https%3A%2F%2Fjwgl.xyafu.edu.cn%2Fcaslogin"
+  },
+  {
+    "id": "u_3c17ca64",
+    "name": "西藏民族大学",
+    "type": "kingosoft_new",
+    "url": "http://jwc.xzmu.edu.cn:8081/xzmujw"
+  },
+  {
+    "id": "u_c586a869",
+    "name": "厦门城市职业学院",
+    "type": "kingosoft_new",
+    "url": "https://jw.xmcu.edu.cn/"
+  },
+  {
+    "id": "u_78fc2178",
+    "name": "新乡职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://authserver.xxvtc.edu.cn/authserver/login?service=https%3A%2F%2Fehall.xxvtc.edu.cn%3A443%2Flogin%3Fservice%3Dhttps%3A%2F%2Fehall.xxvtc.edu.cn%2Fywtb-portal%2FLite%2Findex.html%23%2Fhome%2FLite_home"
+  },
+  {
+    "id": "u_4aa399df",
+    "name": "西安明德理工学院",
+    "type": "kingosoft_new",
+    "url": "https://cas.mdit.edu.cn/cas/login?service=https%3A%2F%2Fportal.mdit.edu.cn%2F%3Fpath%3Dhttps%3A%2F%2Fportal.mdit.edu.cn%2Fmain.html%23%2F"
+  },
+  {
+    "id": "u_0c17f874",
+    "name": "信阳艺术职业学院",
+    "type": "kingosoft_new",
+    "url": "http://40.2.0.105/cas/login.action"
+  },
+  {
+    "id": "u_fa2fc47c",
+    "name": "西安财经大学行知学院",
+    "type": "kingosoft_new",
+    "url": "http://124.89.2.206:8085/xzxyjw/cas/login.action"
+  },
+  {
+    "id": "u_5545a3bb",
+    "name": "云南能源职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://ynny.cn:8300/login/oauth/authorize?response_type=code&client_id=030e3c986fcf6467dfba&redirect_uri=http%3A%2F%2Fynny.cn%3A8000%2Flogin%2F&scope=read&state=ywtb"
+  },
+  {
+    "id": "u_d2092bee",
+    "name": "扬州大学",
+    "type": "urp_new",
+    "url": "https://sso.yzu.edu.cn/login?service=https:%2F%2Fi.yzu.edu.cn%2FLogin%2FCasLogin"
+  },
+  {
+    "id": "u_ddab5e2c",
+    "name": "烟台大学（从选课结果导入！）",
+    "type": "urp_new",
+    "url": "https://cas.ytu.edu.cn/lyuapServer/login"
+  },
+  {
+    "id": "u_83027745",
+    "name": "云南交通职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://cas.ynjtc.edu.cn/lyuapServer/login?service=https://i.ynjtc.edu.cn/shiro-cas"
+  },
+  {
+    "id": "u_eb003c9e",
+    "name": "烟台南山学院",
+    "type": "kingosoft_new",
+    "url": "https://jw.nanshan.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_4da01a4f",
+    "name": "云南农业职业技术学院",
+    "type": "kingosoft_new",
+    "url": "http://jwwb.ynavc.com/cas/login.action"
+  },
+  {
+    "id": "u_18b7ad40",
+    "name": "岳阳职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://dc.yvtc.edu.cn/cas/login?service=http%3A%2F%2Fdc.yvtc.edu.cn%2Fkingohall%2Fcallback%3Fclient_name%3DKingoHall"
+  },
+  {
+    "id": "u_beb8d187",
+    "name": "豫章师范学院",
+    "type": "kingosoft_new",
+    "url": "https://vpn.yuznu.edu.cn/portal/#!/login"
+  },
+  {
+    "id": "u_ddb9d47c",
+    "name": "浙江水利水电学院",
+    "type": "urp_new",
+    "url": "http://jwjs.zjweu.edu.cn/"
+  },
+  {
+    "id": "u_82ef2095",
+    "name": "郑州升达经贸管理学院",
+    "type": "kingosoft_new",
+    "url": "http://jw.shengda.edu.cn:8090/caslogin"
+  },
+  {
+    "id": "u_48578feb",
+    "name": "郑州商学院",
+    "type": "kingosoft_new",
+    "url": "https://jwgl.zbu.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_99048e1a",
+    "name": "郑州工程技术学院",
+    "type": "kingosoft_new",
+    "url": "http://211.67.107.13/zzgcjw/cas/login.action"
+  },
+  {
+    "id": "u_242a969c",
+    "name": "郑州工商学院",
+    "type": "kingosoft_new",
+    "url": "https://zhxy.ztbu.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_2efe6971",
+    "name": "郑州科技学院",
+    "type": "kingosoft_new",
+    "url": "https://jwgl.zit.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_2f01ae35",
+    "name": "中央民族大学",
+    "type": "urp_new",
+    "url": "https://jwxs.muc.edu.cn/login"
+  },
+  {
+    "id": "u_30273f5e",
+    "name": "遵义师范学院",
+    "type": "kingosoft_new",
+    "url": "https://cas.zync.edu.cn/lyuapServer/login"
+  },
+  {
+    "id": "u_4d487b0c",
+    "name": "浙江舟山群岛新区旅游与健康职业学院",
+    "type": "kingosoft_new",
+    "url": "http://zsthc.cjnep.net/sims/"
+  },
+  {
+    "id": "u_40a61c76",
+    "name": "周口师范学院",
+    "type": "kingosoft_new",
+    "url": "https://jwgl.zknu.edu.cn/cas/login.action"
+  },
+  {
+    "id": "u_e5cace0c",
+    "name": "郑州旅游职业学院",
+    "type": "kingosoft_new",
+    "url": "http://authserver.zztrc.edu.cn/authserver/login?service=http%3A%2F%2Fjw.zztrc.edu.cn%2Fcaslogin"
+  },
+  {
+    "id": "u_8a41b4c6",
+    "name": "浙江工商职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://jwxt.zjgsu.edu.cn/jwglxt/xtgl/login_slogin.html?language=zh_CN&_t=1619664005667"
+  },
+  {
+    "id": "u_8c36d460",
+    "name": "漳州卫生职业学院",
+    "type": "kingosoft_new",
+    "url": "https://jwc.zzwzy.edu.cn/zzwsjw/cas/login.action"
+  },
+  {
+    "id": "u_83f82cf7",
+    "name": "郑州铁路职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://sec.zzrvtc.edu.cn/webvpn/LjIwNC4yMTUuMjE4LjE2My4xNjg=/LjE5OS4xOTYuMjE3Ljk3LjE3NS4xNzcuMjE2LjIxNS4xNjkuMTQ4LjE0OC4xNTUuMTQ4LjE3Mi4xMDIuMTk5LjE2Ng==/login?service=https%3A%2F%2Fsec.zzrvtc.edu.cn%2Frump_frontend%2FloginFromCas%2F"
+  },
+  {
+    "id": "u_b4c6eecc",
+    "name": "郑州经贸学院",
+    "type": "kingosoft_new",
+    "url": "https://cas.zueb.edu.cn/cas/login?service=https%3A%2F%2Fportal.zueb.edu.cn%2F%3Fpath%3Dhttps%3A%2F%2Fportal.zueb.edu.cn%2Fmain.html%23%2FTourist"
+  },
+  {
+    "id": "u_4bd895c7",
+    "name": "郑州警察学院",
+    "type": "kingosoft_new",
+    "url": "http://auth.rpc.edu.cn/cas/login"
+  },
+  {
+    "id": "u_12541762",
+    "name": "浙江金融职业学院",
+    "type": "kingosoft_new",
+    "url": "https://ids.zfc.edu.cn/authserver/login?service=https://atrust.zfc.edu.cn:443/passport/v1/auth/cas"
+  },
+  {
+    "id": "u_de727a6a",
+    "name": "钟山职业技术学院",
+    "type": "kingosoft_new",
+    "url": "https://zhpt.zscollege.com:8081/zszyjw/cas/login.action"
+  },
+  {
+    "id": "u_8e6053a6",
+    "name": "中国海洋大学",
+    "type": "kingosoft_new",
+    "url": "https://id.ouc.edu.cn/sso/login"
+  },
+  {
+    "id": "u_ad1fc65f",
+    "name": "安徽中澳科技职业学院",
+    "type": "wisedu",
+    "url": "http://ehall.acac.cn/new/index.html"
+  },
+  {
+    "id": "u_9e51ef8a",
+    "name": "安徽医学高等专科学校",
+    "type": "wisedu",
+    "url": "http://authserver.ahyz.cn/authserver/login?service=http://fysso.chaoxing.com/cassso/ahyz1537"
+  },
+  {
+    "id": "u_2647a015",
+    "name": "安徽电气工程职业技术学院",
+    "type": "wisedu",
+    "url": "https://zt.aepu.com.cn/http/webvpn72eac4eb4dc8e2a039c8b6f3caab24955193a4ad25c9584e88a49b450bf0ce50/authserver/login?service=https://zt.aepu.com.cn/enlink/api/client/callback/cas"
+  },
+  {
+    "id": "u_ec4ec8d4",
+    "name": "安徽林业职业技术学院",
+    "type": "wisedu",
+    "url": "https://sso.ahlyxy.edu.cn/cas/login?service=http%3A%2F%2Fehall.ahlyxy.edu.cn%2Fjwapp%2Fsys%2Femaphome%2Fportal%2Findex.do"
+  },
+  {
+    "id": "u_7066b057",
+    "name": "安徽艺术学院",
+    "type": "chaoxing",
+    "url": "https://ahuac.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_e45c2f6e",
+    "name": "鞍山师范学院",
+    "type": "chaoxing",
+    "url": "https://assh.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_cc34dff4",
+    "name": "北京信息科技大学",
+    "type": "wisedu",
+    "url": "http://jwxt.bistu.edu.cn/"
+  },
+  {
+    "id": "u_ef4feca8",
+    "name": "北京工业大学耿丹学院",
+    "type": "chaoxing",
+    "url": "https://bgd.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_9fc7ee8b",
+    "name": "北京理工大学",
+    "type": "wisedu",
+    "url": "http://jwms.bit.edu.cn/"
+  },
+  {
+    "id": "u_027a9830",
+    "name": "白城师范学院",
+    "type": "wisedu",
+    "url": "http://jwxt.bcsfxy.com/"
+  },
+  {
+    "id": "u_88e389a4",
+    "name": "北京理工大学 - 研究生",
+    "type": "wisedu",
+    "url": "http://jxzxehall.bit.edu.cn/new/index.html"
+  },
+  {
+    "id": "u_20ffd41f",
+    "name": "北京大学医学部",
+    "type": "wisedu",
+    "url": "http://elective.pku.edu.cn"
+  },
+  {
+    "id": "u_fbb030bd",
+    "name": "北京林业大学 - 研究生",
+    "type": "south_soft",
+    "url": "https://graduate.bjfu.edu.cn"
+  },
+  {
+    "id": "u_fce83d4a",
+    "name": "成都大学",
+    "type": "chaoxing",
+    "url": "http://cdujx.mh.chaoxing.com"
+  },
+  {
+    "id": "u_f1724584",
+    "name": "成都航空职业技术学院",
+    "type": "wisedu",
+    "url": "https://authserver.cap.edu.cn/authserver/login?service=https%3A%2F%2Fauthserver.cap.edu.cn%2Fauthserver%2Foauth2.0%2FcallbackAuthorize%3Fclient_id%3DcWsbtG8U%26redirect_uri%3Dhttps%253A%252F%252Frhmh.cap.edu.cn%252F%26response_type%3Dcode%26state%3DcapAuth%26client_name%3DCasOAuthClient"
+  },
+  {
+    "id": "u_8ac12b44",
+    "name": "重庆三峡职业学院",
+    "type": "wisedu",
+    "url": "http://ehall.cqsxedu.com/new/index.html"
+  },
+  {
+    "id": "u_10898587",
+    "name": "长春中医药大学",
+    "type": "chaoxing",
+    "url": "http://125.223.201.17:8071/sso/login?service=http%3A%2F%2F125.223.201.18%2Fweb%2Fguest"
+  },
+  {
+    "id": "u_c20cc3ba",
+    "name": "长春大学旅游学院",
+    "type": "chaoxing",
+    "url": "https://cdly.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_afb9c197",
+    "name": "重庆理工大学 - 研究生",
+    "type": "south_soft",
+    "url": "https://uis.cqut.edu.cn/unified_identity_logon/#/login?applicationCode=XZim715"
+  },
+  {
+    "id": "u_35f68319",
+    "name": "长春科技学院",
+    "type": "chaoxing",
+    "url": "https://cckjxy.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_080d4c9b",
+    "name": "常州工业职业技术学院",
+    "type": "chaoxing",
+    "url": "https://ciit.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_28a83fd2",
+    "name": "重庆健康职业学院",
+    "type": "chaoxing",
+    "url": "https://www.cqhve.cn/#"
+  },
+  {
+    "id": "u_8e3709d9",
+    "name": "东南大学 - 研究生",
+    "type": "wisedu",
+    "url": "http://ehall.seu.edu.cn/appShow?appId=4979568947762216"
+  },
+  {
+    "id": "u_b6df876c",
+    "name": "东南大学成贤学院",
+    "type": "wisedu",
+    "url": "http://my.cxxy.seu.edu.cn/"
+  },
+  {
+    "id": "u_ce3bc36a",
+    "name": "大连工业大学",
+    "type": "chaoxing",
+    "url": "http://jwgl.dlpu.edu.cn/admin/"
+  },
+  {
+    "id": "u_f6d3b9cf",
+    "name": "大连财经学院",
+    "type": "wisedu",
+    "url": "http://jw.dlufe.edu.cn/"
+  },
+  {
+    "id": "u_20a9867b",
+    "name": "滇西科技师范学院",
+    "type": "wisedu",
+    "url": "https://ciap.wynu.edu.cn/authserver/login?service=https%3A%2F%2Fehall.wynu.edu.cn%2Flogin%3Fservice%3Dhttps%3A%2F%2Fehall.wynu.edu.cn%2Fnew%2Findex.html"
+  },
+  {
+    "id": "u_d250b49a",
+    "name": "大连理工大学城市学院",
+    "type": "wisedu",
+    "url": "http://jw.dlutci.edu.cn/jwapp/sys/emaphome/portal/index.do"
+  },
+  {
+    "id": "u_eed7465b",
+    "name": "东营科技职业学院",
+    "type": "chaoxing",
+    "url": "http://jw.dykj.edu.cn/"
+  },
+  {
+    "id": "u_d0afd63c",
+    "name": "大连职业技术学院",
+    "type": "chaoxing",
+    "url": "https://jwgl.dlvtc.edu.cn/admin/login"
+  },
+  {
+    "id": "u_b3e3ef44",
+    "name": "抚州幼儿师范高等专科学校",
+    "type": "chaoxing",
+    "url": "http://cas.fzpec.cn/authserver/login?service=http%3A%2F%2Fehall.fzpec.cn%2Flogin%3Fservice%3Dhttp%3A%2F%2Fehall.fzpec.cn%2Fywtb-portal%2Fstandard%2Findex.html#/hall"
+  },
+  {
+    "id": "u_90420bdb",
+    "name": "福建警察学院",
+    "type": "chaoxing",
+    "url": "https://fjpsc.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_bce2fbd8",
+    "name": "阜阳科技职业学院",
+    "type": "chaoxing",
+    "url": "https://fykjzy.gzkz.chaoxing.com/login"
+  },
+  {
+    "id": "u_9cb9fd54",
+    "name": "福建艺术职业学院",
+    "type": "chaoxing",
+    "url": "https://fjyszyxy.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_c846256b",
+    "name": "贵州理工学院",
+    "type": "chaoxing",
+    "url": "https://gzlgxy.jw.chaoxing.com/"
+  },
+  {
+    "id": "u_c8fdcbe8",
+    "name": "贵州装备制造职业学院",
+    "type": "chaoxing",
+    "url": "https://3ymo6xfi.mh.chaoxing.com"
+  },
+  {
+    "id": "u_cfdd022b",
+    "name": "赣南医学院",
+    "type": "chaoxing",
+    "url": "https://gmu.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_fef2f9c9",
+    "name": "赣南师范大学科技学院",
+    "type": "chaoxing",
+    "url": "https://gnnustc.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_ab470f15",
+    "name": "甘肃政法大学",
+    "type": "wisedu",
+    "url": "https://www.gsupl.edu.cn/"
+  },
+  {
+    "id": "u_9f7c5a38",
+    "name": "广西物流职业技术学院",
+    "type": "wisedu",
+    "url": "http://jw.gxlvtc.edu.cn"
+  },
+  {
+    "id": "u_f03e6347",
+    "name": "广东江门中医药职业学院",
+    "type": "wisedu",
+    "url": "http://jw.gdjmcmc.edu.cn:9091/jwapp/sys/emapfunauth/pages/welcome.do?service=http%3A%2F%2Fjw.gdjmcmc.edu.cn%3A9091%2Fjwapp%2Fsys%2Femaphome%2Fportal%2Findex.do"
+  },
+  {
+    "id": "u_e9d5dcc3",
+    "name": "贵阳人文科技学院",
+    "type": "chaoxing",
+    "url": "https://gzmyrw.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_2a85055f",
+    "name": "贵阳康养职业大学（超星）",
+    "type": "chaoxing",
+    "url": "https://gkd.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_2f6adf6a",
+    "name": "广西农业工程职业技术学院",
+    "type": "wisedu",
+    "url": "http://jw.gxngy.cn/jwapp/sys/yjsrzfwapp/dbLogin/index.do"
+  },
+  {
+    "id": "u_8e1d458e",
+    "name": "广西安全工程职业技术学院",
+    "type": "chaoxing",
+    "url": "https://gxaqzy.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_9d25ed5e",
+    "name": "广州科技职业技术大学",
+    "type": "chaoxing",
+    "url": "https://cas.gkd.edu.cn/lyuapServer/login?service=https%3A%2F%2Fjw.gkd.edu.cn%2Fadmin%2Fcaslogin"
+  },
+  {
+    "id": "u_d9357160",
+    "name": "甘孜职业学院",
+    "type": "chaoxing",
+    "url": "http://web.scgzzyxy.com/#/login"
+  },
+  {
+    "id": "u_d0505268",
+    "name": "赣南医科大学",
+    "type": "chaoxing",
+    "url": "https://gmu.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_17fcaaad",
+    "name": "湖北工业大学",
+    "type": "chaoxing",
+    "url": "https://jwxt.hbut.edu.cn/admin/login"
+  },
+  {
+    "id": "u_98394019",
+    "name": "湖南工业职业技术学院",
+    "type": "wisedu",
+    "url": "http://jwc.hunangy.com/SSJWC/index.asp"
+  },
+  {
+    "id": "u_81818dcc",
+    "name": "湖南理工职业技术学院",
+    "type": "chaoxing",
+    "url": "https://hnlgzy.jw.chaoxing.com/"
+  },
+  {
+    "id": "u_362deea9",
+    "name": "河南科技职业大学",
+    "type": "wisedu",
+    "url": "https://havust.jijiaox.com/mg/login?type=3"
+  },
+  {
+    "id": "u_10b5bef4",
+    "name": "湖南大学 - 研究生",
+    "type": "south_soft",
+    "url": "http://yjsxt.hnu.edu.cn/gmis/home/stulogin"
+  },
+  {
+    "id": "u_38ba4f35",
+    "name": "河海大学 - 研究生",
+    "type": "south_soft",
+    "url": "http://yjss.hhu.edu.cn/home/stulogin#"
+  },
+  {
+    "id": "u_82890271",
+    "name": "河北农业大学现代科技学院",
+    "type": "wisedu",
+    "url": "http://urp.hebau.edu.cn:1009/jwapp/sys/yjsrzfwapp/dbLogin/main.do"
+  },
+  {
+    "id": "u_1509c142",
+    "name": "黑龙江农业工程职业学院",
+    "type": "chaoxing",
+    "url": "https://hljswkj.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_f89b5b92",
+    "name": "华侨大学",
+    "type": "wisedu",
+    "url": "https://jwc.hqu.edu.cn"
+  },
+  {
+    "id": "u_9386ef82",
+    "name": "湖北中医药大学 - 研究生",
+    "type": "south_soft",
+    "url": "http://218.197.176.171/home/stulogin"
+  },
+  {
+    "id": "u_ac8e9b34",
+    "name": "河北医科大学 - 研究生",
+    "type": "south_soft",
+    "url": "http://202.206.48.246/gmis5/(S(n01ufjze2atwrp0n0erhjt3p))/home/stulogin"
+  },
+  {
+    "id": "u_b79bb674",
+    "name": "哈尔滨音乐学院 - 研究生",
+    "type": "chaoxing",
+    "url": "https://hrbcmyjs.mh.chaoxing.com/"
+  },
+  {
+    "id": "u_345324a0",
+    "name": "湖南三一工业职业技术学院",
+    "type": "wisedu",
+    "url": "http://ehall.sanyedu.com/new/index.html"
+  },
+  {
+    "id": "u_d23d2bdb",
+    "name": "河南城建学院",
+    "type": "chaoxing",
+    "url": "https://icas.huuc.edu.cn/cas/login?service=http%3A%2F%2Fjwglxt.huuc.edu.cn%3A8061%2Fadmin%2Fcaslogin"
+  },
+  {
+    "id": "u_5c300951",
+    "name": "湖南民族职业学院",
+    "type": "chaoxing",
+    "url": "https://hnvc.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_a20eec77",
+    "name": "红河卫生职业学院",
+    "type": "chaoxing",
+    "url": "https://hhwzy.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_849e53e2",
+    "name": "河北能源职业技术学院",
+    "type": "chaoxing",
+    "url": "https://hbnyxy.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_ac38c05d",
+    "name": "黑龙江护理高等专科学校",
+    "type": "chaoxing",
+    "url": "https://jwc.hljnc.edu.cn:8080/admin/login"
+  },
+  {
+    "id": "u_90cc19bb",
+    "name": "河南农业职业学院",
+    "type": "wisedu",
+    "url": "https://authserver.hnca.edu.cn/authserver/login?service=https%3A%2F%2Fehall.hnca.edu.cn%3A443%2Flogin%3Fservice%3Dhttps%3A%2F%2Fehall.hnca.edu.cn%2Fnew%2Findex.html"
+  },
+  {
+    "id": "u_584edd9b",
+    "name": "河北科技师范学院",
+    "type": "chaoxing",
+    "url": "https://hevttc.jw.chaoxing.com/"
+  },
+  {
+    "id": "u_4a996b7f",
+    "name": "河北民族师范学院",
+    "type": "wisedu",
+    "url": "https://authserver.hbun.edu.cn/authserver/login?service=https%3A%2F%2Fehall.hbun.edu.cn%2Flogin"
+  },
+  {
+    "id": "u_f1024f38",
+    "name": "河北化工医药职业技术学院",
+    "type": "wisedu",
+    "url": "https://authserver.hebcpc.cn/authserver/login?service=https%3A%2F%2Fehall.hebcpc.cn%3A443%2Flogin%3Fservice%3Dhttps%3A%2F%2Fehall.hebcpc.cn%2Fnew%2Findex.html%3Fbrowser%3Dno"
+  },
+  {
+    "id": "u_fefc02c4",
+    "name": "河北农业大学",
+    "type": "wisedu",
+    "url": "https://www.hebau.edu.cn/info/1001/11851.htm"
+  },
+  {
+    "id": "u_d8d78e45",
+    "name": "哈尔滨工程大学",
+    "type": "wisedu",
+    "url": "https://jwgl.wvpn.hrbeu.edu.cn/jwapp/sys/wdkb/*default/index.do?EMAP_LANG=zh#/xskcb"
+  },
+  {
+    "id": "u_76ad9b41",
+    "name": "吉林农业科技学院",
+    "type": "chaoxing",
+    "url": "https://jlnku.jw.chaoxing.com"
+  },
+  {
+    "id": "u_abda90ee",
+    "name": "吉林建筑科技学院",
+    "type": "chaoxing",
+    "url": "10.100.0.11"
+  },
+  {
+    "id": "u_3138aa1d",
+    "name": "吉林财经大学",
+    "type": "wisedu",
+    "url": "http://10.0.2.160:9080/epstar/web/swms/mainframe/homePage.jsp"
+  },
+  {
+    "id": "u_c8435821",
+    "name": "暨南大学",
+    "type": "wisedu",
+    "url": "https://webvpn.jnu.edu.cn/"
+  },
+  {
+    "id": "u_32531341",
+    "name": "吉林农业大学",
+    "type": "chaoxing",
+    "url": "https://jlau.jw.chaoxing.com/admin"
+  },
+  {
+    "id": "u_743a4ae2",
+    "name": "吉林大学(新)教务管理系统 - 研究生",
+    "type": "wisedu",
+    "url": "https://vpn.jlu.edu.cn/login"
+  },
+  {
+    "id": "u_c5fb98b0",
+    "name": "吉林工商学院",
+    "type": "chaoxing",
+    "url": "https://tysfrz.jlbtc.edu.cn/cas/login?service=http%3A%2F%2Fwebvpn.jlbtc.edu.cn%3A8090%2Fusers%2Fauth%2Fcas%2Fcallback%3Furl"
+  },
+  {
+    "id": "u_074249f1",
+    "name": "济南护理职业学院",
+    "type": "chaoxing",
+    "url": "https://sdjnwx.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_bed10d1f",
+    "name": "昆明学院",
+    "type": "wisedu",
+    "url": "http://xk.kmu.edu.cn/"
+  },
+  {
+    "id": "u_c054264f",
+    "name": "昆明文理学院",
+    "type": "wisedu",
+    "url": "http://jwxt.caskm.cn/"
+  },
+  {
+    "id": "u_5aabbfcb",
+    "name": "昆明冶金高等专科学校",
+    "type": "wisedu",
+    "url": "https://cas.kmyz.edu.cn/lyuapServer/login?service=http%3A%2F%2Fehall.kmyz.edu.cn%2Fjwapp%2Fsys%2Femaphome%2Fportal%2Findex.do"
+  },
+  {
+    "id": "u_849451c1",
+    "name": "辽宁师范大学海华学院",
+    "type": "wisedu",
+    "url": "http://jwxt.lshhxy.edu.cn/jwapp/sys/emapfunauth/pages/funauth-login.do?service=http%3A%2F%2Fjwxt.lshhxy.edu.cn%2Fjwapp%2Fsys%2Fhomeapp%2Findex.do#/"
+  },
+  {
+    "id": "u_5070e1e8",
+    "name": "兰州理工大学",
+    "type": "wisedu",
+    "url": "https://jwxt.lut.edu.cn/jwapp/sys/yjsrzfwapp/dbLogin/index.do"
+  },
+  {
+    "id": "u_27cd5311",
+    "name": "辽宁科技大学",
+    "type": "chaoxing",
+    "url": "https://ustl.jw.chaoxing.com/"
+  },
+  {
+    "id": "u_ab44e7ff",
+    "name": "黎明职业大学",
+    "type": "chaoxing",
+    "url": "https://jw.lmu.cn/"
+  },
+  {
+    "id": "u_dc5d8938",
+    "name": "六盘水职业技术学院",
+    "type": "chaoxing",
+    "url": "https://lpszyxy.jw.chaoxing.com/"
+  },
+  {
+    "id": "u_954e1864",
+    "name": "辽宁中医药大学 - 研究生",
+    "type": "south_soft",
+    "url": "https://yjszs.lnutcm.edu.cn:7777/Gmis/home/stulogin"
+  },
+  {
+    "id": "u_c94b83ee",
+    "name": "茅台学院",
+    "type": "wisedu",
+    "url": "https://ids.mtxy.edu.cn/authserver/login?service=https%3A%2F%2Fjwxt.mtxy.edu.cn%2Fapi%2F%2Fcas%2Flogin%3Fpattern%3Dmanager-login%26returnUrl%3Dhttps%253A%252F%252Fjwxt.mtxy.edu.cn%252F"
+  },
+  {
+    "id": "u_3874e90c",
+    "name": "闽西职业技术学院",
+    "type": "chaoxing",
+    "url": "https://mxdx.jw.chaoxing.com/"
+  },
+  {
+    "id": "u_4fc9d651",
+    "name": "闽江师范高等专科学校",
+    "type": "chaoxing",
+    "url": "https://edums.app.fzmjtc.cn/"
+  },
+  {
+    "id": "u_023521d5",
+    "name": "内蒙古师范大学",
+    "type": "chaoxing",
+    "url": "https://auth.imnu.edu.cn/auth/cas/login?service=https%3A%2F%2Fjwxt.imnu.edu.cn%2Fadmin%2Fcaslogin"
+  },
+  {
+    "id": "u_9ac4a04e",
+    "name": "南京机电职业技术学院",
+    "type": "chaoxing",
+    "url": "https://nimt.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_7ce549e2",
+    "name": "内蒙古建筑职业技术学院",
+    "type": "chaoxing",
+    "url": "https://imaa.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_24c671de",
+    "name": "南京信息工程大学",
+    "type": "wisedu",
+    "url": "http://jwxt.nuist.edu.cn/"
+  },
+  {
+    "id": "u_65b8d156",
+    "name": "南京农业大学 - 研究生",
+    "type": "wisedu",
+    "url": "http://myportal.njau.edu.cn/new/index.html"
+  },
+  {
+    "id": "u_151d2892",
+    "name": "南京大学 - 研究生",
+    "type": "wisedu",
+    "url": "https://ehall.nju.edu.cn/ywtb-portal/official/index.html#/hall"
+  },
+  {
+    "id": "u_ff08fce5",
+    "name": "南京师范大学",
+    "type": "wisedu",
+    "url": "http://ehall.nnu.edu.cn/new/index.html"
+  },
+  {
+    "id": "u_b1ed15b3",
+    "name": "南京晓庄学院",
+    "type": "wisedu",
+    "url": "http://xsxk.njxzc.edu.cn/"
+  },
+  {
+    "id": "u_797c2732",
+    "name": "宁波大学 - 研究生",
+    "type": "wisedu",
+    "url": "https://ehall.nbu.edu.cn/new/index.html"
+  },
+  {
+    "id": "u_410ef1c1",
+    "name": "南京工业职业技术大学",
+    "type": "wisedu",
+    "url": "https://auth.njuit.edu.cn/cas/login?service=https%3A%2F%2Fjwxt.niit.edu.cn%2Fjwapp%2Fsys%2Femaphome%2Fportal%2Findex.do%3FforceCas%3D1"
+  },
+  {
+    "id": "u_6b72c07b",
+    "name": "曲靖师范学院",
+    "type": "wisedu",
+    "url": "http://jw.qjnu.edu.cn"
+  },
+  {
+    "id": "u_866f0393",
+    "name": "青海师范大学",
+    "type": "wisedu",
+    "url": "http://idsnew.qhnu.edu.cn/authserver/login?service=http%3A%2F%2Fone.qhnu.edu.cn%2Fdefault%2Fportal%2Findex.jsp"
+  },
+  {
+    "id": "u_29ec23b7",
+    "name": "青岛农业大学海都学院",
+    "type": "chaoxing",
+    "url": "https://hdxy.jw.chaoxing.com"
+  },
+  {
+    "id": "u_5cbe4ca9",
+    "name": "青岛电影学院",
+    "type": "wisedu",
+    "url": "https://www.qdfa.edu.cn/index/list/525.html\nhttps://www.qdfa.edu.cn/index/list/526.html"
+  },
+  {
+    "id": "u_9b9b802c",
+    "name": "四川国际标榜职业学院",
+    "type": "chaoxing",
+    "url": "https://polus.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_2a982937",
+    "name": "四川警察学院",
+    "type": "wisedu",
+    "url": "https://authserver.scpolicec.edu.cn/authserver/login?service=https%3A%2F%2Fehall.scpolicec.edu.cn%3A443%2Flogin%3Fservice%3Dhttps%3A%2F%2Fehall.scpolicec.edu.cn%2Fnew%2Findex.html"
+  },
+  {
+    "id": "u_68fc445d",
+    "name": "三峡大学科技学院",
+    "type": "wisedu",
+    "url": "http://kjjw.ctgu.edu.cn/jwapp/sys/yjsrzfwapp/dbLogin/main.do"
+  },
+  {
+    "id": "u_a3524947",
+    "name": "四川大学 - 研究生",
+    "type": "wisedu",
+    "url": "https://ehall.scu.edu.cn/gsapp/sys/wdkbapp/*default/index.do?THEME=cherry&amp;EMAP_LANG=zh#/xskcb"
+  },
+  {
+    "id": "u_526dba8d",
+    "name": "深圳北理莫斯科大学",
+    "type": "wisedu",
+    "url": "https://authserver.smbu.edu.cn/authserver/login?service=https%3A%2F%2Fwebvpn.smbu.edu.cn%2Fauth%2Fcas_validate%3Fentry_id%3D1%26redirect_uri%3Dhttps%253A%252F%252Foa-smbu-edu-cn-s.webvpn.smbu.edu.cn%253A8118%252F"
+  },
+  {
+    "id": "u_67b1618d",
+    "name": "四川城市技师学院",
+    "type": "chaoxing",
+    "url": "https://sccsjs.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_44647482",
+    "name": "上海中医药大学",
+    "type": "wisedu",
+    "url": "https://cas.shutcm.edu.cn/cas/login?service=https%3A%2F%2Fyjsjw.shutcm.edu.cn%2Fgsapp%2Fsys%2Fyjsemaphome%2Fportal%2Findex.do"
+  },
+  {
+    "id": "u_779dd61a",
+    "name": "三峡大学 - 研究生",
+    "type": "south_soft",
+    "url": "http://yjsgl.ctgu.edu.cn/gmis5/home/stulogin"
+  },
+  {
+    "id": "u_02932cab",
+    "name": "沈阳建筑大学 - 研究生",
+    "type": "wisedu",
+    "url": "http://yjsglxt.sjzu.edu.cn/gsapp/sys/yjsemaphome/portal/index.do"
+  },
+  {
+    "id": "u_5b16ddd6",
+    "name": "沈阳科技学院",
+    "type": "wisedu",
+    "url": "http://jwxt.syist.edu.cn:30334/jwapp/sys/emapfunauth/pages/funauth-login.do#/"
+  },
+  {
+    "id": "u_2d809442",
+    "name": "深圳大学",
+    "type": "wisedu",
+    "url": "http://ehall.szu.edu.cn/jwapp/sys/kcbcx/*default/index.do"
+  },
+  {
+    "id": "u_b5f8df11",
+    "name": "深圳职业技术大学",
+    "type": "wisedu",
+    "url": "http://bkjwxt.szpu.edu.cn/https://bkjwxt.szpt.edu.cn/https://authserver.szpu.edu.cn/authserver/login?service=https%3A%2F%2Fehall.szpu.edu.cn%2Flogin%3FportalService%3Dhttps%253A%252F%252Fehall.szpu.edu.cn%252Fszpu%252Findex.html%26login%3Dno"
+  },
+  {
+    "id": "u_bd221fd1",
+    "name": "三峡大学",
+    "type": "wisedu",
+    "url": "http://jwxt.ctgu.edu.cn/jwapp/sys/yjsrzfwapp/dbLogin/main.do?"
+  },
+  {
+    "id": "u_59400ef7",
+    "name": "上海大学（2024新版） - 研究生",
+    "type": "wisedu",
+    "url": "https://yjs.shu.edu.cn/gsapp/sys/yjsemaphome/portal/index.do"
+  },
+  {
+    "id": "u_5427973f",
+    "name": "石河子大学 - 研究生",
+    "type": "south_soft",
+    "url": "http://gs.shzu.edu.cn/gmis5/student/default/index"
+  },
+  {
+    "id": "u_6cf4c604",
+    "name": "陕西机电职业技术学院",
+    "type": "wisedu",
+    "url": "https://authserver.sxjdzy.cn/authserver/login?service=https%3A%2F%2Fnewehall.sxjdzy.cn%2Flogin"
+  },
+  {
+    "id": "u_014aa6f7",
+    "name": "山东外国语职业技术大学",
+    "type": "chaoxing",
+    "url": "https://swut.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_a8801d7c",
+    "name": "苏州工业园区服务外包职业学院",
+    "type": "chaoxing",
+    "url": "https://siso.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_c577de44",
+    "name": "苏州大学 - 研究生",
+    "type": "south_soft",
+    "url": "http://yjs.suda.edu.cn"
+  },
+  {
+    "id": "u_e2f6230c",
+    "name": "天津财经大学",
+    "type": "chaoxing",
+    "url": "https://eass.tjufe.edu.cn/admin/"
+  },
+  {
+    "id": "u_4f3d9b8e",
+    "name": "台州科技职业学院",
+    "type": "chaoxing",
+    "url": "https://tzvcst.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_7e6603ee",
+    "name": "太原幼儿师范高等专科学校",
+    "type": "chaoxing",
+    "url": "https://youshi.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_d24812e1",
+    "name": "太原工业学院",
+    "type": "chaoxing",
+    "url": "https://tit.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_9ab06ba2",
+    "name": "台州职业技术学院",
+    "type": "chaoxing",
+    "url": "https://tzvtc.jw.chaoxing.com/"
+  },
+  {
+    "id": "u_00490b72",
+    "name": "天津理工大学",
+    "type": "wisedu",
+    "url": "https://jwxt.tjut.edu.cn/jwapp/sys/wdkb/*default/index.do?THEME=teal#/xskcb"
+  },
+  {
+    "id": "u_1ac7e1b0",
+    "name": "塔里木理工学院",
+    "type": "chaoxing",
+    "url": "https://tlmlgxy.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_30727704",
+    "name": "铁门关职业技术学院",
+    "type": "chaoxing",
+    "url": "https://tmgzj.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_c5a49364",
+    "name": "梧州医学高等专科学校",
+    "type": "chaoxing",
+    "url": "https://passport2.chaoxing.com/login?fid=&newversion=true&refer=https%3A%2F%2Fi.chaoxing.com"
+  },
+  {
+    "id": "u_1a67130b",
+    "name": "武汉设计工程学院",
+    "type": "chaoxing",
+    "url": "https://wids.jw.chaoxing.com/"
+  },
+  {
+    "id": "u_c45c6fed",
+    "name": "潍坊理工学院",
+    "type": "chaoxing",
+    "url": "https://cxxxt.wfit.edu.cn/admin/login"
+  },
+  {
+    "id": "u_b1a1d999",
+    "name": "武昌理工学院",
+    "type": "chaoxing",
+    "url": "http://jwxt.wut.edu.cn"
+  },
+  {
+    "id": "u_29ea39ec",
+    "name": "武汉理工大学",
+    "type": "wisedu",
+    "url": "https://jwxt.whut.edu.cn"
+  },
+  {
+    "id": "u_54b0d578",
+    "name": "武汉生物工程学院",
+    "type": "chaoxing",
+    "url": "https://whsw.jw.chaoxing.com/"
+  },
+  {
+    "id": "u_9cddd6a7",
+    "name": "武汉交通职业学院",
+    "type": "chaoxing",
+    "url": "http://xjw.whtcc.edu.cn/"
+  },
+  {
+    "id": "u_8be1a67e",
+    "name": "武汉职业技术学院",
+    "type": "chaoxing",
+    "url": "http://jwxt.wtc.edu.cn/admin/login"
+  },
+  {
+    "id": "u_6c85a4fd",
+    "name": "厦门医学院",
+    "type": "wisedu",
+    "url": "https://ehall.xmmc.edu.cn/new/index.html"
+  },
+  {
+    "id": "u_ed9a4d69",
+    "name": "厦门大学（教务）",
+    "type": "wisedu",
+    "url": "https://jw.xmu.edu.cn/new/index.html"
+  },
+  {
+    "id": "u_fa63ffdb",
+    "name": "厦门大学 - 研究生",
+    "type": "wisedu",
+    "url": "https://jw.xmu.edu.cn/new/index.html"
+  },
+  {
+    "id": "u_50a88292",
+    "name": "西北农林科技大学",
+    "type": "wisedu",
+    "url": "https://newehall.nwafu.edu.cn"
+  },
+  {
+    "id": "u_be703b52",
+    "name": "西南石油大学",
+    "type": "wisedu",
+    "url": "https://deanservices.swpu.edu.cn/"
+  },
+  {
+    "id": "u_460742c7",
+    "name": "西南石油大学南充校区",
+    "type": "wisedu",
+    "url": "https://deancs.swpu.edu.cn/xsxk/profile/index.html"
+  },
+  {
+    "id": "u_47696a26",
+    "name": "西安思源学院",
+    "type": "wisedu",
+    "url": "http://ehall.xasyu.cn/new/index.html"
+  },
+  {
+    "id": "u_7817f5e9",
+    "name": "西安电子科技大学",
+    "type": "wisedu",
+    "url": "http://ehall.xidian.edu.cn/new/index.html"
+  },
+  {
+    "id": "u_33e6c04a",
+    "name": "西安电子科技大学 - 研究生",
+    "type": "wisedu",
+    "url": "http://yjspt.xidian.edu.cn/"
+  },
+  {
+    "id": "u_c72069d5",
+    "name": "西藏大学",
+    "type": "wisedu",
+    "url": "http://192.168.90.216/"
+  },
+  {
+    "id": "u_9fe6835e",
+    "name": "新疆政法学院",
+    "type": "wisedu",
+    "url": "https://authserver.xjzfu.edu.cn/authserver/login?service=https%3A%2F%2Fone.xjzfu.edu.cn%2FEIP%2Fcaslogin.jsp"
+  },
+  {
+    "id": "u_54598f70",
+    "name": "新疆科技学院",
+    "type": "wisedu",
+    "url": "http://authserver.xjust.edu.cn/authserver/login?service=http://ehall.xjust.edu.cn/jwapp/sys/wdkb/*default/index.do"
+  },
+  {
+    "id": "u_842a378e",
+    "name": "云南中医药大学",
+    "type": "wisedu",
+    "url": "http://sso.ynucm.edu.cn/sso/login?service=http://ehall.ynucm.edu.cn/jwapp/sys/emaphome/portal/index.do"
+  },
+  {
+    "id": "u_d675d949",
+    "name": "云南国防工业职业技术学院",
+    "type": "chaoxing",
+    "url": "https://ynou.jw.chaoxing.com/admin/"
+  },
+  {
+    "id": "u_39c1a13d",
+    "name": "延边大学 - 研究生",
+    "type": "south_soft",
+    "url": "https://authserver.ybu.edu.cn/authserver/login?service=https%3A%2F%2Fportal.ybu.edu.cn%2Flogin%3Fservice%3Dhttps%3A%2F%2Fportal.ybu.edu.cn%2Fywtb-portal%2Fofficial%2Findex.html"
+  },
+  {
+    "id": "u_67fba869",
+    "name": "燕山大学",
+    "type": "wisedu",
+    "url": "https://jwxt.ysu.edu.cn/jwapp/sys/homeapp/home/index.html?av=&contextPath=/jwapp#/"
+  },
+  {
+    "id": "u_88d41589",
+    "name": "宜宾学院",
+    "type": "wisedu",
+    "url": "https://ehall.yibinu.edu.cn"
+  },
+  {
+    "id": "u_f6308d56",
+    "name": "云南师范大学 - 研究生",
+    "type": "south_soft",
+    "url": "https://yjsms.ynnu.edu.cn/home/login"
+  },
+  {
+    "id": "u_e34209a5",
+    "name": "云南大学",
+    "type": "wisedu",
+    "url": "https://ids.ynu.edu.cn/authserver/login?service=https%3A%2F%2Fehall.ynu.edu.cn%3A443%2Flogin"
+  },
+  {
+    "id": "u_8884d072",
+    "name": "盐城工业职业技术学院",
+    "type": "wisedu",
+    "url": "https://xfnhm.v.chaoxing.com/backSchool/toLogin?refer=%2Fmanage"
+  },
+  {
+    "id": "u_6a67d586",
+    "name": "永州师范高等专科学校",
+    "type": "chaoxing",
+    "url": "https://hndxsf.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_915a13c9",
+    "name": "烟台黄金职业学院",
+    "type": "chaoxing",
+    "url": "https://ytgc.jw.chaoxing.com/admin/login"
+  },
+  {
+    "id": "u_5a2527a5",
+    "name": "株洲师范高等专科学校",
+    "type": "chaoxing",
+    "url": "https://zzyesf.jw.chaoxing.com/"
+  },
+  {
+    "id": "u_d6291a5f",
+    "name": "浙江宇翔职业技术学院",
+    "type": "chaoxing",
+    "url": "https://yxwy.jw.chaoxing.com/"
+  },
+  {
+    "id": "u_2d6a2d2e",
+    "name": "中国药科大学 - 研究生",
+    "type": "south_soft",
+    "url": "http://ygl.cpu.edu.cn/gmis5/oauthLogin/zgyk"
+  },
+  {
+    "id": "u_d9f381b9",
+    "name": "中国人民公安大学",
+    "type": "chaoxing",
+    "url": "https://webvpn.ppsuc.edu.cn/login"
+  },
+  {
+    "id": "u_0c414a76",
+    "name": "中国农业大学 - 研究生",
+    "type": "south_soft",
+    "url": "https://gmsstu.cau.edu.cn/logon"
+  },
+  {
+    "id": "u_c9f767ac",
+    "name": "中国传媒大学",
+    "type": "wisedu",
+    "url": "https://bkjw.cuc.edu.cn/"
+  },
+  {
+    "id": "u_c4da413e",
+    "name": "中国人民大学 - 研究生",
+    "type": "wisedu",
+    "url": "https://v.ruc.edu.cn/"
+  },
+  {
+    "id": "u_27716e59",
+    "name": "中原工学院 - 研究生",
+    "type": "wisedu",
+    "url": "http://i.zut.edu.cn/new/index.html"
+  },
+  {
+    "id": "u_da307d13",
+    "name": "中原工学院",
+    "type": "wisedu",
+    "url": "http://xsxk.zut.edu.cn/"
+  },
+  {
+    "id": "u_abf16b19",
+    "name": "中南民族大学",
+    "type": "wisedu",
+    "url": "https://webvpn.scuec.edu.cn/"
   }
 ]
