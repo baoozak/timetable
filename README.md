@@ -61,6 +61,10 @@ school-timetable/
 ├── pages/
 │   ├── index/
 │   │   └── index.vue           # 📊 主页 - 课表网格展示 + 周次切换 + 课程详情
+│   ├── today/
+│   │   └── today.vue           # 📅 今日日程 - 聚合今日课程与待办，支持通知栏快捷预览
+│   ├── todo/
+│   │   └── add.vue             # ✅ 待办事宜 - 添加/管理个人待办事项
 │   ├── import/
 │   │   ├── select-school.vue   # 🏫 选择学校页 - 搜索并选择要导入的高校
 │   │   └── import.vue          # 📥 导入页 - WebView 登录对应教务系统自动抓取数据
@@ -72,9 +76,10 @@ school-timetable/
 │       └── edit.vue            # ✏️ 编辑课表页 - 修改名称和开学日期
 │
 └── utils/
-    ├── storage.js              # 💾 存储层 - 多Profile管理 + 课程/设置CRUD
+    ├── storage.js              # 💾 存储层 - 多Profile管理 + 课程/待办/设置CRUD
     ├── parsers/                # 🧩 解析器引擎目录
     │   ├── index.js            # 统一入口与分发引擎
+    │   ├── dom_matrix_helper.js # 辅助工具 - 处理复杂表格矩阵解析
     │   ├── zhengfang_new.js    # 正方教务解析器
     │   ├── urp.js              # URP教务解析器 (含 urp_new.js)
     │   ├── kingosoft.js        # 青果教务解析器 (含 kingosoft_new.js)
