@@ -517,8 +517,8 @@ export default {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	height: calc(100vh - 100rpx);
-	/* 精确计算减去导航栏多出的高度，避免底部留白 */
+	height: 100vh;
+	/* 使用 100vh 填充可用区域，uniapp tabbar 页面会自动处理剩余高度 */
 }
 
 .timetable-swiper {

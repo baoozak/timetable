@@ -207,7 +207,7 @@ export default {
 .content-scroll {
     height: 100vh;
     box-sizing: border-box;
-    padding-bottom: 50rpx; /* safe area bottom */
+    /* uniapp tabbar 页面会自动处理底部高度 */
 }
 
 .timeline-container {
