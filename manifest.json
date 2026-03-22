@@ -2,7 +2,7 @@
     "name" : "下节啥课",
     "appid" : "__UNI__1F19F18",
     "description" : "",
-    "versionName" : "1.1.5",
+    "versionName" : "1.1.6",
     "versionCode" : "100",
     "transformPx" : false,
     "app-plus" : {
@@ -15,7 +15,9 @@
             "autoclose" : true,
             "delay" : 0
         },
-        "modules" : {},
+        "modules" : {
+            "Push" : {}
+        },
         "distribute" : {
             "android" : {
                 "permissions" : [
@@ -42,7 +44,19 @@
             "ios" : {
                 "dSYMs" : false
             },
-            "sdkConfigs" : {},
+            "sdkConfigs" : {
+                "push" : {
+                    "unipush" : {
+                        "version" : "2",
+                        "offline" : true,
+                        "icons" : {
+                            "small" : {
+                                "xxhdpi" : "unpackage/res/icons/72x72.png"
+                            }
+                        }
+                    }
+                }
+            },
             "icons" : {
                 "android" : {
                     "xxxhdpi" : "unpackage/res/icons/192x192.png",
@@ -106,5 +120,10 @@
     "uniStatistics" : {
         "enable" : false
     },
-    "vueVersion" : "3"
+    "vueVersion" : "3",
+    "h5" : {
+        "unipush" : {
+            "enable" : false
+        }
+    }
 }

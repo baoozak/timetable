@@ -100,6 +100,7 @@ export function createProfile(name, semesterStart, makeActive = true) {
       semesterStart: semesterStart || "",
     },
     courses: [],
+    todos: [],
     createAt: Date.now(),
   };
 
@@ -197,3 +198,51 @@ export function getSettings() {
   }
   return { ...DEFAULT_SETTINGS };
 }
+
+/**
+ * =======================
+ * 待办事项 (To-Do) 读写 API
+ * =======================
+ */
+
+export function saveTodos(todos) {
+  const activeId = getActiveProfileId();
+  if (!activeId) return false;
+
+  const profiles = getProfiles();
+  const target = profiles.find((p) => p.id === activeId);
+  if (target) {
+    target.todos = todos;
+    return saveProfiles(profiles);
+  }
+  return false;
+}
+
+export function getTodos() {
+  const activeProfile = getActiveProfile();
+  return activeProfile ? activeProfile.todos || [] : [];
+}
+
+export function addTodo(todo) {
+  const todos = getTodos();
+  todos.push(todo);
+  return saveTodos(todos);
+}
+
+export function toggleTodoStatus(id) {
+  const todos = getTodos();
+  const index = todos.findIndex(t => t.id === id);
+  if (index !== -1) {
+    todos[index].status = todos[index].status === 1 ? 0 : 1;
+    saveTodos(todos);
+    return true;
+  }
+  return false;
+}
+
+export function removeTodo(id) {
+  let todos = getTodos();
+  todos = todos.filter(t => t.id !== id);
+  return saveTodos(todos);
+}
+

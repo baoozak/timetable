@@ -311,3 +311,75 @@ export function requestIgnoreBatteryOptimization() {
   }
   // #endif
 }
+
+// =============================================
+// ===== 待办事项：本地延时推送功能 =====
+// =============================================
+
+const PUSH_MAP_KEY = "timetable_push_map";
+
+function getPushMap() {
+    try {
+        const val = uni.getStorageSync(PUSH_MAP_KEY);
+        return val ? JSON.parse(val) : {};
+    } catch (e) {
+        return {};
+    }
+}
+
+function savePushMap(map) {
+    uni.setStorageSync(PUSH_MAP_KEY, JSON.stringify(map));
+}
+
+/**
+ * 调度一个新的待办提醒
+ * @param {Object} todo - 待办对象
+ * @param {Number} targetTimestamp - 预估要触发提醒的绝对时间戳 (毫秒)
+ */
+export function scheduleReminder(todo, targetTimestamp) {
+    const now = Date.now();
+    const delaySeconds = Math.floor((targetTimestamp - now) / 1000);
+    
+    // 如果设定时间已经过期，直接忽略
+    if (delaySeconds <= 0) return;
+
+    // #ifdef APP-PLUS
+    // 仅在 App 环境下有 plus API
+    if (typeof plus !== 'undefined' && plus.push) {
+        const title = "待办提醒";
+        const content = `您有一个待办事项即将开始：${todo.title}`;
+        const payload = { type: 'todo', id: todo.id };
+        
+        // 创建带有 delay 的本地定时消息 
+        const msg = plus.push.createMessage(content, JSON.stringify(payload), {
+            title: title,
+            delay: delaySeconds
+        });
+        
+        const map = getPushMap();
+        map[todo.id] = { timestamp: targetTimestamp };
+        savePushMap(map);
+        
+        console.log(`[Notification] 已通过 App 底层注册本地延时推送，延迟 ${delaySeconds} 秒: ${todo.title}`);
+        return;
+    }
+    // #endif
+
+    console.log(`[Notification] 待办 "${todo.title}" 将于延后 ${delaySeconds} 秒提醒。`);
+}
+
+/**
+ * 取消待办提醒
+ */
+export function cancelReminder(todoId) {
+    // #ifdef APP-PLUS
+    if (typeof plus !== 'undefined' && plus.push) {
+        const map = getPushMap();
+        if (map[todoId]) {
+            delete map[todoId];
+            savePushMap(map);
+            console.log(`[Notification] 撤销待办提醒 ${todoId}`);
+        }
+    }
+    // #endif
+}

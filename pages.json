@@ -1,6 +1,21 @@
 {
   "pages": [
     {
+      "path": "pages/today/today",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "今日安排"
+      }
+    },
+    {
+      "path": "pages/todo/add",
+      "style": {
+        "navigationBarTitleText": "新建待办",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
       "path": "pages/index/index",
       "style": {
         "navigationStyle": "custom",
@@ -71,5 +86,25 @@
     "navigationBarBackgroundColor": "#4A6CF7",
     "backgroundColor": "#F5F6FA"
   },
-  "uniIdRouter": {}
+  "uniIdRouter": {},
+  "tabBar": {
+    "color": "#94A3B8",
+    "selectedColor": "#4A6CF7",
+    "backgroundColor": "#ECFEFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/today/today",
+        "text": "今日日程",
+        "iconPath": "static/tab-today.png",
+        "selectedIconPath": "static/tab-today-active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "本周课表",
+        "iconPath": "static/tab-schedule.png",
+        "selectedIconPath": "static/tab-schedule-active.png"
+      }
+    ]
+  }
 }
