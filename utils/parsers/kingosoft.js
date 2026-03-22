@@ -1,10 +1,13 @@
 import { parseWeeks } from "../parser.js";
 
+import { DOM_MATRIX_HELPER } from "./dom_matrix_helper.js";
+
 export default {
     id: "kingosoft",
     name: "金智教务系统",
     provider: `
         (function() {
+            ${DOM_MATRIX_HELPER}
             try {
                 var table = document.getElementById('kbtable') || document.querySelector('table.kbtable');
                 if (!table) {
@@ -16,34 +19,28 @@ export default {
                         }
                     }
                 }
-                if (!table) {
-                    document.title = 'KEBIAO_ERR:未查找到金智课表表格';
-                    return;
-                }
+                if (!table) return void (document.title = 'KEBIAO_ERR:未查找到金智课表表格');
 
-                var trs = table.getElementsByTagName('tr');
+                var grid = parseTableToGrid(table);
                 var courses = [];
-                for (var i = 1; i < trs.length; i++) {
-                    var tds = trs[i].getElementsByTagName('td');
-                    // 首列是节次，后面的列是星期一到日
-                    for (var j = 0; j < tds.length; j++) {
-                        var td = tds[j];
-                        var html = td.innerHTML.trim();
-                        if (html === '' || html === '&nbsp;') continue;
+                
+                // 从第 1 行开始（跳过表头行），通常 1-7 列为星期一到日
+                for (var r = 1; r < grid.length; r++) {
+                    if (!grid[r]) continue;
+                    for (var c = 1; c <= 7; c++) {
+                        var cell = grid[r][c];
+                        if (!cell || !cell.isOrigin || cell.html === '' || cell.html === '&nbsp;') continue;
                         
-                        var sections = html.split(/<br(?:\\s*\\/?)>|-----------------------/g);
+                        var sections = cell.html.split(/<br(?:\\s*\\/?)>|-----------------------/g);
                         var currentCourse = [];
+                        
                         for (var k = 0; k < sections.length; k++) {
                             var text = sections[k].replace(/<[^>]+>/g, '').trim();
                             if (text) currentCourse.push(text);
                             
-                            // 每一门课大约有3-4个字段
                             if (currentCourse.length >= 3 && (k === sections.length - 1 || sections[k] === '')) {
-                                // 推测各个字段
                                 var cName = currentCourse[0];
-                                var cTeacher = '';
-                                var cWeeks = '';
-                                var cRoom = '';
+                                var cTeacher = '', cWeeks = '', cRoom = '';
                                 
                                 for (var p = 1; p < currentCourse.length; p++) {
                                     var item = currentCourse[p];
@@ -52,31 +49,23 @@ export default {
                                     else cRoom = item;
                                 }
                                 
-                                var day = td.cellIndex; // 修正列号计算
-                                if (day > 0 && day <= 7) {
-                                    courses.push([
-                                        cName.replace(/[~|]/g, ' '),
-                                        day,
-                                        (i * 2 - 1) + '-' + (i * 2), // 粗略估算节次：每行代表两节课
-                                        cRoom.replace(/[~|]/g, ' '),
-                                        cWeeks.replace(/[~|]/g, ' '),
-                                        cTeacher.replace(/[~|]/g, ' ')
-                                    ].join('~'));
-                                }
+                                courses.push([
+                                    cName.replace(/[~|]/g, ' '),
+                                    c, // 矩阵的列天然精确等于星期 
+                                    (r * 2 - 1) + '-' + ((r + cell.rowspan - 1) * 2),
+                                    cRoom.replace(/[~|]/g, ' '),
+                                    cWeeks.replace(/[~|]/g, ' '),
+                                    cTeacher.replace(/[~|]/g, ' ')
+                                ].join('~'));
+                                
                                 currentCourse = [];
                             }
                         }
                     }
                 }
                 
-                if (courses.length === 0) {
-                    document.title = 'KEBIAO_ERR:未能提取到格式正确的课程数据';
-                } else {
-                    document.title = 'KEBIAO_OK:' + courses.join('|');
-                }
-            } catch(e) {
-                document.title = 'KEBIAO_ERR:' + e.message;
-            }
+                document.title = courses.length ? 'KEBIAO_OK:' + courses.join('|') : 'KEBIAO_ERR:未能提取到格式正确的课程数据';
+            } catch(e) { document.title = 'KEBIAO_ERR:' + e.message; }
         })();
     `,
     parser: function(compactStr) {

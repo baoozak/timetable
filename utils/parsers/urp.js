@@ -1,10 +1,13 @@
 import { parseWeeks } from "../parser.js";
 
+import { DOM_MATRIX_HELPER } from "./dom_matrix_helper.js";
+
 export default {
     id: "urp",
     name: "URP 综合教务系统",
     provider: `
         (function() {
+            ${DOM_MATRIX_HELPER}
             try {
                 var table = document.getElementById('cwTable') || document.querySelector('.displayTag');
                 if (!table) {
@@ -16,31 +19,25 @@ export default {
                         }
                     }
                 }
-                
-                if (!table) {
-                    document.title = 'KEBIAO_ERR:未查找到URP课表表格';
-                    return;
-                }
+                if (!table) return void (document.title = 'KEBIAO_ERR:未查找到URP课表表格');
 
-                var trs = table.getElementsByTagName('tr');
+                var grid = parseTableToGrid(table);
                 var courses = [];
-                for (var i = 1; i < trs.length; i++) {
-                    var tds = trs[i].getElementsByTagName('td');
-                    for (var j = 0; j < tds.length; j++) {
-                        var td = tds[j];
-                        if (td.className === 'infoTitle') continue;
+                for (var r = 1; r < grid.length; r++) {
+                    if (!grid[r]) continue;
+                    for (var c = 1; c <= 7; c++) {
+                        var cell = grid[r][c];
+                        if (!cell || !cell.isOrigin || cell.td.className === 'infoTitle') continue;
                         
-                        var html = td.innerHTML.trim();
-                        // 多个课程可能在同一个格子里，用换行或 hr 分隔
+                        var html = cell.html;
                         var courseTexts = html.split(/<br\\s*\\/?>|<hr\\s*\\/?>/gi);
                         var validTexts = courseTexts.map(t => t.replace(/<[^>]+>/g, '').trim()).filter(t => t);
                         
                         if (validTexts.length >= 3) {
-                            var day = j; // 依赖跨行情况计算
                             courses.push([
                                 validTexts[0].replace(/[~|]/g, ' '),
-                                td.cellIndex > 0 ? td.cellIndex : (j+1),
-                                (i * 2 - 1) + '-' + (i * 2),
+                                c, // 列即精确星期
+                                (r * 2 - 1) + '-' + ((r + cell.rowspan - 1) * 2), // 根据原版 urp.js，单行通常为两节
                                 (validTexts[2] || '').replace(/[~|]/g, ' '),
                                 (validTexts[1] || '').replace(/[~|]/g, ' '),
                                 (validTexts[3] || '').replace(/[~|]/g, ' ')
@@ -49,14 +46,8 @@ export default {
                     }
                 }
                 
-                if (courses.length === 0) {
-                    document.title = 'KEBIAO_ERR:未能提取到课程数据';
-                } else {
-                    document.title = 'KEBIAO_OK:' + courses.join('|');
-                }
-            } catch(e) {
-                document.title = 'KEBIAO_ERR:' + e.message;
-            }
+                document.title = courses.length ? 'KEBIAO_OK:' + courses.join('|') : 'KEBIAO_ERR:未能提取到课程数据';
+            } catch(e) { document.title = 'KEBIAO_ERR:' + e.message; }
         })();
     `,
     parser: function(compactStr) {
