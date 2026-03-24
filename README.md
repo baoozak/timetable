@@ -159,7 +159,7 @@ school-timetable/
 
 1. **选择学校**：在"查学校"页面浏览或搜索您的大学（目前系统内置支持近 1400 所高校数据库），系统会自动匹配该校背后的教务系统底层类型及首选登录入口地址。
 2. **授权登录**（APP 端）：内部 WebView 会为您打开教务系统，请正常输入账号密码登录。
-3. **一键获取**：进入课表查询界面后，点击右上角的"导入课表"按钮。系统将自动调用对应的系统 `Parser` 解析 HTML 或 JSON，为您精准抓取课程信息。
+3. **一键获取**：进入课表查询界面后，点击右下角的"导入"按钮。系统将自动调用对应的系统 `Parser` 解析 HTML 或 JSON，为您精准抓取课程信息。
 4. **自定义导入**：如果暂时未能收录您的学校，也支持直接输入学校通用教务系统网址来尝试导入，底层识别引擎会尽可能进行智能兜底适配。
 
 ### 管理多课表
@@ -301,13 +301,13 @@ UI 风格要点：
 
 基于 `plus.android` 桥接调用：
 
-| 函数                                               | 说明                                      |
-| -------------------------------------------------- | ----------------------------------------- |
-| `showPersistentNotification(title, content, subText)` | 显示/更新常驻通知                         |
-| `hideNotification()`                                | 隐藏通知                                  |
-| `startBackgroundTimer(callback, intervalMs)`         | 启动原生 Handler 定时器（后台保活）        |
-| `stopBackgroundTimer()`                             | 停止定时器并释放资源                       |
-| `requestIgnoreBatteryOptimization()`                | 请求忽略电池优化（Doze 模式白名单）        |
+| 函数                                                  | 说明                                |
+| ----------------------------------------------------- | ----------------------------------- |
+| `showPersistentNotification(title, content, subText)` | 显示/更新常驻通知                   |
+| `hideNotification()`                                  | 隐藏通知                            |
+| `startBackgroundTimer(callback, intervalMs)`          | 启动原生 Handler 定时器（后台保活） |
+| `stopBackgroundTimer()`                               | 停止定时器并释放资源                |
+| `requestIgnoreBatteryOptimization()`                  | 请求忽略电池优化（Doze 模式白名单） |
 
 通知特性：
 

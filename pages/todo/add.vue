@@ -1,48 +1,78 @@
 <template>
     <view class="page">
-        <view class="form-section">
-            <view class="form-item" @tap="focusOn('title')">
-                <text class="label">待办事宜 *</text>
-                <input class="input-box main-input" v-model="todo.title" :focus="focusField === 'title'" @blur="onBlur"
-                    placeholder="例如：去图书馆还书" placeholder-class="ph-style" />
+        <!-- 顶部导航栏 -->
+        <view class="nav-bar" :style="{ paddingTop: statusBarHeight + 'px' }">
+            <view class="nav-content">
+                <view class="nav-left clickable" @tap="goBack">
+                    <text class="nav-back">←</text>
+                    <text class="nav-title">新建待办</text>
+                </view>
             </view>
+        </view>
 
-            <view class="form-item" @tap="focusOn('desc')">
-                <text class="label">详情备注（可选）</text>
-                <textarea class="textarea-box" v-model="todo.desc" :focus="focusField === 'desc'" @blur="onBlur"
-                    placeholder="写点什么补充一下..." placeholder-class="ph-style" />
-            </view>
+        <!-- 内容容器 -->
+        <view class="form-container" :style="{ paddingTop: statusBarHeight + 50 + 'px' }">
+            <view class="form-section">
+                <view class="form-item" @tap="focusOn('title')">
+                    <text class="label">待办事宜 *</text>
+                    <input class="input-box main-input" v-model="todo.title" :focus="focusField === 'title'" @blur="onBlur"
+                        placeholder="例如：去图书馆还书" placeholder-class="ph-style" />
+                </view>
 
-            <view class="form-item">
-                <text class="label">计划开始时间 *</text>
-                <picker mode="time" :value="todo.time" @change="onTimeChange">
-                    <view class="picker-box clickable">
+                <view class="form-item" @tap="focusOn('desc')">
+                    <text class="label">详情备注（可选）</text>
+                    <textarea class="textarea-box" v-model="todo.desc" :focus="focusField === 'desc'" @blur="onBlur"
+                        placeholder="写点什么补充一下..." placeholder-class="ph-style" />
+                </view>
+
+                <view class="form-item">
+                    <text class="label">计划开始时间 *</text>
+                    <view class="picker-box clickable" @tap="openPicker">
                         <text :class="{ 'selected': todo.time }">{{ todo.time ? todo.time : '请选择时间' }}</text>
                         <text class="arr">></text>
                     </view>
-                </picker>
-            </view>
-        </view>
-
-        <view class="form-section">
-            <view class="section-title">
-                <text class="label">提醒时间</text>
-            </view>
-
-            <view class="quick-tags">
-                <view class="tag clickable" v-for="(item, index) in reminderOptions" :key="index"
-                    :class="{ 'active': todo.reminderMinutes === item.val }" @tap="todo.reminderMinutes = item.val">
-                    <text>{{ item.text }}</text>
                 </view>
             </view>
-            <view class="hint-text" v-if="todo.time && todo.reminderMinutes !== null">
-                我们将于 {{ calculatedReminderTime }} 准时提醒您
+
+            <view class="form-section">
+                <view class="section-title">
+                    <text class="label">提醒时间</text>
+                </view>
+
+                <view class="quick-tags">
+                    <view class="tag clickable" v-for="(item, index) in reminderOptions" :key="index"
+                        :class="{ 'active': todo.reminderMinutes === item.val }" @tap="todo.reminderMinutes = item.val">
+                        <text>{{ item.text }}</text>
+                    </view>
+                </view>
+                <view class="hint-text" v-if="todo.time && todo.reminderMinutes !== null">
+                    我们将于 {{ calculatedReminderTime }} 准时提醒您
+                </view>
+            </view>
+
+            <view class="bottom-action">
+                <view class="btn primary-btn clickable" @tap="saveTodo">
+                    <text>创建待办</text>
+                </view>
             </view>
         </view>
 
-        <view class="bottom-action">
-            <view class="btn primary-btn clickable" @tap="saveTodo">
-                <text>创建待办</text>
+        <!-- 自定义底部时间选择器 -->
+        <view class="picker-mask" :class="{ 'show': showTimePicker }" @tap="showTimePicker = false" @touchmove.stop.prevent>
+            <view class="picker-content" :class="{ 'show': showTimePicker }" @tap.stop>
+                <view class="picker-header">
+                    <text class="picker-cancel" @tap="showTimePicker = false">取消</text>
+                    <text class="picker-title">选择时间</text>
+                    <text class="picker-confirm" @tap="confirmTime">确定</text>
+                </view>
+                <picker-view class="picker-view" :value="tempPickerValue" @change="onPickerChange" indicator-style="height: 50px;">
+                    <picker-view-column>
+                        <view class="picker-item" v-for="(item, index) in hours" :key="index">{{ item }} 时</view>
+                    </picker-view-column>
+                    <picker-view-column>
+                        <view class="picker-item" v-for="(item, index) in minutes" :key="index">{{ item }} 分</view>
+                    </picker-view-column>
+                </picker-view>
             </view>
         </view>
     </view>
@@ -55,6 +85,7 @@ import { scheduleReminder } from '@/utils/notification.js';
 export default {
     data() {
         return {
+            statusBarHeight: 0,
             todo: {
                 title: '',
                 desc: '',
@@ -67,7 +98,12 @@ export default {
                 { text: '提前15分', val: 15 },
                 { text: '提前30分', val: 30 }
             ],
-            focusField: null
+            focusField: null,
+            // 自定义 Picker 相关
+            showTimePicker: false,
+            hours: Array.from({ length: 24 }, (_, i) => i.toString().padStart(2, '0')),
+            minutes: Array.from({ length: 60 }, (_, i) => i.toString().padStart(2, '0')),
+            tempPickerValue: [12, 0]
         }
     },
     computed: {
@@ -82,15 +118,41 @@ export default {
             return `${rh.toString().padStart(2, '0')}:${rm.toString().padStart(2, '0')}`;
         }
     },
+    onLoad() {
+        const sysInfo = uni.getSystemInfoSync();
+        this.statusBarHeight = sysInfo.statusBarHeight || 20;
+    },
     methods: {
+        goBack() {
+            uni.navigateBack();
+        },
         focusOn(field) {
             this.focusField = field;
         },
         onBlur() {
             this.focusField = null;
         },
-        onTimeChange(e) {
-            this.todo.time = e.detail.value;
+        openPicker() {
+            // 如果已有值，则滚动到对应位置；否则默认当前时间
+            if (this.todo.time) {
+                const [h, m] = this.todo.time.split(':').map(Number);
+                this.tempPickerValue = [h, m];
+            } else {
+                const now = new Date();
+                this.tempPickerValue = [now.getHours(), now.getMinutes()];
+            }
+            this.showTimePicker = true;
+            // 隐藏键盘
+            uni.hideKeyboard();
+        },
+        onPickerChange(e) {
+            this.tempPickerValue = e.detail.value;
+        },
+        confirmTime() {
+            const h = this.hours[this.tempPickerValue[0]];
+            const m = this.minutes[this.tempPickerValue[1]];
+            this.todo.time = `${h}:${m}`;
+            this.showTimePicker = false;
         },
         selectReminder(val) {
             this.todo.reminderMinutes = val;
@@ -140,7 +202,44 @@ export default {
 .page {
     min-height: 100vh;
     background-color: var(--color-bg) !important;
-    padding: 32rpx;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: var(--color-bg);
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    height: 100rpx;
+    padding: 0 32rpx;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 16rpx;
+}
+
+.nav-back {
+    font-size: 40rpx;
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.nav-title {
+    font-size: 34rpx;
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.form-container {
+    padding: 0 32rpx 32rpx;
     box-sizing: border-box;
 }
 
@@ -280,5 +379,79 @@ export default {
     font-size: 32rpx;
     font-weight: 700;
     box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.3);
+}
+
+/* ========== 自定义 Picker 样式 ========== */
+.picker-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.picker-mask.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.picker-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    border-radius: 40rpx 40rpx 0 0;
+    padding-bottom: env(safe-area-inset-bottom);
+    transform: translateY(100%);
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.picker-content.show {
+    transform: translateY(0);
+}
+
+.picker-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32rpx 40rpx;
+    border-bottom: 2rpx solid #F1F5F9;
+}
+
+.picker-cancel {
+    font-size: 30rpx;
+    color: #64748B;
+}
+
+.picker-title {
+    font-size: 32rpx;
+    font-weight: 700;
+    color: #0F172A;
+}
+
+.picker-confirm {
+    font-size: 30rpx;
+    color: #3B82F6;
+    font-weight: 700;
+}
+
+.picker-view {
+    width: 100%;
+    height: 480rpx;
+}
+
+.picker-item {
+    line-height: 50px;
+    text-align: center;
+    font-size: 34rpx;
+    font-weight: 500;
+    color: #0F172A;
 }
 </style>

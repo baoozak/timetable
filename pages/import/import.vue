@@ -33,7 +33,8 @@ export default {
       webviewUrl: "",
       adapterType: "",
       importing: false,
-      tipText: "登录后进入教务系统页面，点右上角「导入课表」按钮",
+      tipText: "登录后进入教务系统页面，点右下角「导入」按钮",
+      floatBtn: null
     };
   },
   onLoad(options) {
@@ -43,16 +44,84 @@ export default {
       this.webviewUrl = "https://vpn.tzc.edu.cn/";
     }
     this.adapterType = options.type || "zhengfang_new";
+    
+    // #ifdef APP-PLUS
+    this.createFloatBtn();
+    // #endif
   },
-  // 监听原生导航栏按钮点击
-  onNavigationBarButtonTap() {
-    this.handleImport();
+  onUnload() {
+    // #ifdef APP-PLUS
+    if (this.floatBtn) {
+      this.floatBtn.close();
+    }
+    // #endif
   },
   methods: {
+    // 创建原生悬浮按钮
+    createFloatBtn() {
+      const sysInfo = uni.getSystemInfoSync();
+      const screenWidth = sysInfo.screenWidth;
+      const screenHeight = sysInfo.screenHeight;
+      
+      // 按钮尺寸调优：54px 是平衡点击率和遮挡率的黄金尺寸
+      const btnSize = 54; 
+      const right = 20;
+      const bottom = 50;
+      
+      this.floatBtn = new plus.nativeObj.View('importBtn', {
+        top: screenHeight - bottom - btnSize,
+        left: screenWidth - right - btnSize,
+        width: btnSize,
+        height: btnSize
+      });
+      
+      // 1. 绘制更精致的阴影
+      this.floatBtn.drawRect({
+          color: 'rgba(34, 197, 94, 0.2)',
+          radius: '27px'
+      }, {
+          top: '2px',
+          left: '2px',
+          width: '50px',
+          height: '50px'
+      });
+
+      // 2. 绘制圆形背景
+      this.floatBtn.drawRect({
+          color: '#22C55E',
+          radius: '27px'
+      }, {
+          top: '0px',
+          left: '0px',
+          width: '54px',
+          height: '54px'
+      });
+      
+      // 3. 绘制文字 (字号微调)
+      this.floatBtn.drawText('导入', {
+          top: '0px',
+          left: '0px',
+          width: '54px',
+          height: '54px'
+      }, {
+          size: '14px',
+          color: '#FFFFFF',
+          weight: 'bold'
+      });
+      
+      this.floatBtn.show();
+      
+      // 4. 监听点击
+      this.floatBtn.addEventListener('click', () => {
+        this.handleImport();
+      });
+    },
+
     // 点击导入按钮
     handleImport() {
       if (this.importing) return;
       this.importing = true;
+      if (this.floatBtn) this.floatBtn.hide();
       this.tipText = "正在获取课表数据...";
 
       // #ifdef APP-PLUS
@@ -116,6 +185,7 @@ export default {
         if (!courses || courses.length === 0) {
           uni.showToast({ title: "未解析到课程或格式不支持", icon: "none" });
           this.importing = false;
+          if (this.floatBtn) this.floatBtn.show();
           return;
         }
 
@@ -123,6 +193,7 @@ export default {
         saveCourses(courses);
 
         this.importing = false;
+        // 成功时不需要再显示，因为页面会 reLaunch
         uni.showModal({
           title: "导入成功",
           content: `已成功导入 ${courses.length} 门课程`,
@@ -142,6 +213,7 @@ export default {
       } catch (e) {
         console.error("解析课表数据失败:", e);
         this.importing = false;
+        if (this.floatBtn) this.floatBtn.show();
         uni.showToast({ title: "数据解析失败", icon: "none" });
       }
     },
@@ -149,6 +221,7 @@ export default {
     // 导入失败
     handleImportError(errMsg) {
       this.importing = false;
+      if (this.floatBtn) this.floatBtn.show();
       uni.showModal({
         title: "导入失败",
         content: errMsg || "未知错误，请重试",
