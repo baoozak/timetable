@@ -10,9 +10,8 @@
     {
       "path": "pages/todo/add",
       "style": {
-        "navigationBarTitleText": "新建待办",
-        "navigationBarBackgroundColor": "#ffffff",
-        "navigationBarTextStyle": "black"
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "新建待办"
       }
     },
     {
@@ -35,20 +34,7 @@
       "style": {
         "navigationBarTitleText": "导入课表",
         "navigationBarBackgroundColor": "#0891B2",
-        "navigationBarTextStyle": "white",
-        "app-plus": {
-          "titleNView": {
-            "buttons": [
-              {
-                "text": "导入课表",
-                "fontSize": "14",
-                "color": "#FFFFFF",
-                "background": "#22C55E",
-                "width": "90px"
-              }
-            ]
-          }
-        }
+        "navigationBarTextStyle": "white"
       }
     },
     {

@@ -49,21 +49,36 @@
             <text class="item-label"> 第 {{ idx + 1 }} 节</text>
           </view>
           <view class="time-inputs">
-            <picker mode="time" :value="item.start" @change="onStartChange($event, idx)">
-              <view class="time-box active-box clickable">
+            <view class="time-box active-box clickable" @tap="openPicker(idx, 'start')">
                 <text class="time-text">{{ item.start }}</text>
-              </view>
-            </picker>
+            </view>
             <text class="time-sep">-</text>
             <view class="time-box muted-box" v-if="sameLength">
               <text class="time-text muted-text">{{ item.end }}</text>
             </view>
-            <picker v-else mode="time" :value="item.end" @change="onEndChange($event, idx)">
-              <view class="time-box active-box clickable">
+            <view v-else class="time-box active-box clickable" @tap="openPicker(idx, 'end')">
                 <text class="time-text">{{ item.end }}</text>
-              </view>
-            </picker>
+            </view>
           </view>
+        </view>
+      </view>
+
+      <!-- 自定义底部时间选择器 -->
+      <view class="picker-mask" :class="{ 'show': showTimePicker }" @tap="showTimePicker = false" @touchmove.stop.prevent>
+        <view class="picker-content" :class="{ 'show': showTimePicker }" @tap.stop>
+            <view class="picker-header">
+                <text class="picker-cancel" @tap="showTimePicker = false">取消</text>
+                <text class="picker-title">选择{{ currentEditingType === 'start' ? '开始' : '结束' }}时间</text>
+                <text class="picker-confirm" @tap="confirmTime">确定</text>
+            </view>
+            <picker-view class="picker-view" :value="tempPickerValue" @change="onPickerChange" indicator-style="height: 50px;">
+                <picker-view-column>
+                    <view class="picker-item" v-for="(item, index) in hours" :key="index">{{ item }} 时</view>
+                </picker-view-column>
+                <picker-view-column>
+                    <view class="picker-item" v-for="(item, index) in minutes" :key="index">{{ item }} 分</view>
+                </picker-view-column>
+            </picker-view>
         </view>
       </view>
 
@@ -94,6 +109,13 @@ export default {
       duration: 40,
       durationRange: [Array.from({ length: 41 }, (_, i) => i + 20 + "")],
       durationIdx: [20],
+      // 自定义 Picker 相关
+      showTimePicker: false,
+      hours: Array.from({ length: 24 }, (_, i) => i.toString().padStart(2, '0')),
+      minutes: Array.from({ length: 60 }, (_, i) => i.toString().padStart(2, '0')),
+      tempPickerValue: [8, 0],
+      currentEditingIdx: 0,
+      currentEditingType: 'start' // 'start' or 'end'
     };
   },
   onLoad() {
@@ -125,14 +147,32 @@ export default {
       const nm = total % 60;
       return `${String(nh).padStart(2, "0")}:${String(nm).padStart(2, "0")}`;
     },
-    onStartChange(e, idx) {
-      this.schedule[idx].start = e.detail.value;
-      if (this.sameLength) {
-        this.schedule[idx].end = this.addMinutes(e.detail.value, this.duration);
-      }
+    openPicker(idx, type) {
+      this.currentEditingIdx = idx;
+      this.currentEditingType = type;
+      const currentTime = this.schedule[idx][type];
+      const [h, m] = currentTime.split(':').map(Number);
+      this.tempPickerValue = [h, m];
+      this.showTimePicker = true;
     },
-    onEndChange(e, idx) {
-      this.schedule[idx].end = e.detail.value;
+    onPickerChange(e) {
+      this.tempPickerValue = e.detail.value;
+    },
+    confirmTime() {
+      const h = this.hours[this.tempPickerValue[0]];
+      const m = this.minutes[this.tempPickerValue[1]];
+      const timeVal = `${h}:${m}`;
+      
+      const idx = this.currentEditingIdx;
+      if (this.currentEditingType === 'start') {
+        this.schedule[idx].start = timeVal;
+        if (this.sameLength) {
+          this.schedule[idx].end = this.addMinutes(timeVal, this.duration);
+        }
+      } else {
+        this.schedule[idx].end = timeVal;
+      }
+      this.showTimePicker = false;
     },
     onDurationChange(e) {
       const val = parseInt(this.durationRange[0][e.detail.value[0]]);
@@ -452,5 +492,79 @@ export default {
   font-size: 32rpx;
   font-weight: 700;
   color: #ffffff;
+}
+
+/* ========== 自定义 Picker 样式 ========== */
+.picker-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(8px);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.picker-mask.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.picker-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    border-radius: 40rpx 40rpx 0 0;
+    padding-bottom: env(safe-area-inset-bottom);
+    transform: translateY(100%);
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.picker-content.show {
+    transform: translateY(0);
+}
+
+.picker-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32rpx 40rpx;
+    border-bottom: 2rpx solid #F1F5F9;
+}
+
+.picker-cancel {
+    font-size: 30rpx;
+    color: #64748B;
+}
+
+.picker-title {
+    font-size: 32rpx;
+    font-weight: 700;
+    color: #0F172A;
+}
+
+.picker-confirm {
+    font-size: 30rpx;
+    color: #3B82F6;
+    font-weight: 700;
+}
+
+.picker-view {
+    width: 100%;
+    height: 480rpx;
+}
+
+.picker-item {
+    line-height: 50px;
+    text-align: center;
+    font-size: 34rpx;
+    font-weight: 500;
+    color: #0F172A;
 }
 </style>
