@@ -116,7 +116,9 @@ school-timetable/
 | 技术                   | 说明                                                            |
 | ---------------------- | --------------------------------------------------------------- |
 | **uni-app** (Vue 3)    | 跨平台应用开发框架                                              |
-| **Android Native API** | 通过 `plus.android` 调用 `NotificationManager` 实现常驻通知     |
+| **Android Native API** | 通过 `plus.android` 调用 `NotificationManager` 实现**状态栏常驻通知** |
+| **Android 强保活方案** | 结合 **WakeLock** (唤醒锁) 与 **Android Handler** (原生定时器) 确保后台刷新 |
+| **本地推送服务**       | 通过 `plus.push` 实现**待办事项定时提醒**（支持延迟精准推送）   |
 | **LocalStorage**       | 基于 `uni.getStorageSync` / `uni.setStorageSync` 管理多课表数据 |
 
 ---
